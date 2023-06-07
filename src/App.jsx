@@ -1,10 +1,6 @@
-import "./App.css";
-import "./reset.css";
-import "./normalise.css";
-import "./global.css";
-import "./homepage.css";
 import Home from "./pages/Home";
 import Thrift from "./pages/Work/Thrift";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (

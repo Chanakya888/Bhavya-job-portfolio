@@ -4,9 +4,9 @@ const Thrift = () => {
   return (
     <div>
       <Navbar />
-      <section className="px-[72px]">
+      <section className="px-[72px] pt-[46px]">
         <div>
-          <h1 className="text-8xl">Thrift it</h1>
+          <h1 className="text-8xl m-0">Thrift it</h1>
           <div className="pt-[46px] flex flex-row space-x-[230px]">
             <p className=" w-[600px]">
               Thrift It is an app concept that helps people find new thrift

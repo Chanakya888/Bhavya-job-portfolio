@@ -4,12 +4,12 @@ const Navbar = () => {
   return (
     <>
       <div className="w-full flex justify-between px-[72px] pt-[55px] pb-10">
-        <h1 className="Circular-std text-primaryGreen">Bhavya Gupta</h1>
+        <h3>Bhavya Gupta</h3>
         <div className="flex space-x-10">
-          <h1 className="Circular-std text-primaryGreen">Info.</h1>
-          <h1 className="Circular-std text-primaryGreen">Resume</h1>
+          <h3>Info.</h3>
+          <h3>Resume</h3>
         </div>
-        <h1 className="Circular-std text-primaryGreen">Archive</h1>
+        <h3>Archive</h3>
       </div>
     </>
   );
