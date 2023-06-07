@@ -1,0 +1,61 @@
+:root {
+  --primary-green: #1b812c;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+@font-face {
+  font-family: "Circular-std";
+  src: url("http://fonts.cdnfonts.com/css/circular-std");
+}
+
+/* h1 {
+  font-family: "Circular Std", sans-serif;
+  font-weight: 450;
+  color: var(--primary-green);
+  font-size: 2.5em;
+} */
+
+h3 {
+  font-family: "Circular Std", sans-serif;
+  font-size: 1.25em;
+  color: var(--primary-green);
+  font-weight: 400;
+}
+
+p {
+  font-size: 24px;
+  color: var(--primary-green);
+}
+
+.description {
+  font-family: Arial;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: var(--primary-green);
+}
+
+.navbar-container {
+  padding: 48px 48px 0px 48px;
+}
+.navbar-titles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.greenline {
+  width: 100%;
+  border-top: 2px solid var(--primary-green);
+}
+
+.remove-bottom-padding {
+  margin-bottom: 0px !important;
+}
