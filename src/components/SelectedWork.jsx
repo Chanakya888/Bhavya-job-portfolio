@@ -1,4 +1,5 @@
 import Hrline from "./Hrline";
+import { Link } from "react-router-dom";
 
 const SelectedWork = () => {
   return (
@@ -8,10 +9,14 @@ const SelectedWork = () => {
         <h2 className="text-primaryGreen text-xs uppercase">type</h2>
       </div>
       <Hrline />
-      <div className="grid grid-cols-2">
-        <h2 className="text-primaryGreen text-xl">Thrift it</h2>
-        <h2 className="text-primaryGreen text-xl">App concept design, UI/UX</h2>
-      </div>
+      <Link to={`/thrift`} className="flex items-center">
+        <div className="grid grid-cols-2">
+          <h2 className="text-primaryGreen text-xl">Thrift it</h2>
+          <h2 className="text-primaryGreen text-xl">
+            App concept design, UI/UX
+          </h2>
+        </div>
+      </Link>
       <Hrline />
       <div className="grid grid-cols-2">
         <h2 className="text-primaryGreen text-xl">Social Internet</h2>

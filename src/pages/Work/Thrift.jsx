@@ -1,4 +1,15 @@
 import Navbar from "../../components/Navbar";
+import ThriftItJeans from "../../assets/thrift-it-jeans.png";
+import Y2k from "../../assets/Y2k.png";
+import ThriftNavbar from "../../assets/thrift-it-nav.png";
+import Calendar from "../../assets/calendar.png";
+import CalendarMin from "../../assets/calendar-min.png";
+import { Link } from "react-router-dom";
+import Affordable from "../../assets/affordable.png";
+import ShoppingCart from "../../assets/shopping-bag.png";
+import Shirt from "../../assets/shirt.png";
+import Rachel from "../../assets/rachel.png";
+import MindMap from "../../assets/Mind-map.png";
 
 const Thrift = () => {
   return (
@@ -6,8 +17,8 @@ const Thrift = () => {
       <Navbar />
       <section className="px-[72px] pt-[46px]">
         <div>
-          <h1 className="text-8xl m-0">Thrift it</h1>
-          <div className="pt-[46px] flex flex-row space-x-[230px]">
+          <h1 className="m-0 text-8xl">Thrift it</h1>
+          <div className="flex flex-row space-x-[230px] pt-[46px]">
             <p className=" w-[600px]">
               Thrift It is an app concept that helps people find new thrift
               shops, and assists with tracking their favourite collection drops.
@@ -29,13 +40,125 @@ const Thrift = () => {
                 <p className="text-base">Type</p>
                 <p>Product Design, UI/UX</p>
               </div>
-              <div className="mt-[30px] border border-1 border-primaryGreen p-1 inline-flex rounded">
-                <p className="uppercase text-xl">self initiated</p>
+              <div className="border-1 mt-[30px] inline-flex rounded border border-primaryGreen p-1">
+                <p className="text-xl uppercase">self initiated</p>
               </div>
             </div>
           </div>
         </div>
         <div></div>
+      </section>
+
+      <section className="mt-[186px] bg-primaryGreen">
+        <div className="flex w-full justify-center pt-[90px]">
+          <div className="flex space-x-[43px]">
+            <img className="pt-[176px]" src={ThriftItJeans} alt="" />
+            <img className="object-contain" src={ThriftItJeans} alt="" />
+          </div>
+        </div>
+        <div className="flex w-full justify-center space-x-[180px] pt-[160px]">
+          <div>
+            <img src={Y2k} alt="" />
+          </div>
+          <div>
+            <div className="flex space-x-4">
+              <div className="border-1 inline-flex h-min rounded-3xl border border-white px-4 py-1">
+                <p className="uppercase text-white">New drop</p>
+              </div>
+              <div className="inline-flex h-min rounded-3xl bg-white px-4 py-1">
+                <p className="uppercase">30% Off</p>
+              </div>
+              <div className="border-1 inline-flex h-min rounded-3xl border border-white px-4 py-1">
+                <p className="text-white">Jeans</p>
+              </div>
+            </div>
+            <div className="pt-[20px]">
+              <p className="max-w-[500px] text-white">
+                The top panel consists of tags that can be selected, and they
+                keep refreshing according to the user’s search pattern. The
+                items also indicate the number of times they have been used by
+                the seller or if they belong to an export-rejected stock.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex h-full w-full justify-center space-x-[100px] pt-[90px]">
+          <div className="pt-[300px]">
+            <img className="object-contain" src={ThriftNavbar} alt="" />
+            <p className="max-w-[400px] pt-[64px] text-white">
+              Get notified button essentially allows the user to be informed
+              about new collection drops or any offers that the seller would be
+              announcing on any given date. This information also gets collated
+              on the calendar feature that will be discussed further.
+            </p>
+          </div>
+          <img className="object-contain" src={ThriftItJeans} alt="" />
+        </div>
+
+        <div className="flex w-full justify-center space-x-[100px] pt-[130px]">
+          <img className="object-contain" src={Calendar} alt="" />
+          <div className="pt-[40px]">
+            <p className="max-w-[420px] text-white">
+              Found in the menu option on the nav bar, the calendar feature
+              essentially helps you keep track of all your favorite stores and
+              informs you about collection drops or offers timely.
+            </p>
+            <img
+              className="object-contain pt-[62px]"
+              src={CalendarMin}
+              alt=""
+            />
+            <img
+              className="object-contain pl-[62px] pt-[107px]"
+              src={Affordable}
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="flex w-full justify-center space-x-[172px] pt-[130px]">
+          <div>
+            <img className="object-contain" src={Shirt} alt="" />
+            <img className="object-contain pt-[60px]" src={Rachel} alt="" />
+          </div>
+          <img className="object-contain" src={ShoppingCart} alt="" />
+        </div>
+
+        <div className="flex justify-center space-x-[70px] pt-[200px]">
+          <img className="object-contain" src={MindMap} alt="" />
+          <p className="max-w-[450px] text-white">
+            The idea was to bring all the thrift stores on one platform and to
+            encourage thrift shopping among people. Social media portals like
+            Instagram or Facebook have been known for promoting small businesses
+            and thrifting, but here are a few drawbacks -
+            <ul className="list-disc">
+              <li className="pl-3 pt-4">
+                Instagram and Facebook’s pages both work on the basis of ads and
+                follower count, and higher the number of followers, higher
+                becomes the credibility of the page. With Thrift It, all the
+                products can essentially be compared with the help of customer
+                reviews on a particular brand or business. Hence, reviews become
+                the source of credibility among products.
+              </li>
+              <li className="pl-3 pt-4">
+                Social media platforms essentially showcase one page at a time,
+                so to switch to a new page the user should either use tags or
+                type out the name of the business, which also limits the scope
+                to compare multiple products together. With Thrift It one gets
+                to view and compare all the products at once just like any
+                E-commerce platform.
+              </li>
+            </ul>
+          </p>
+        </div>
+
+        <div className="pb-10 pl-[100px] pt-[180px]">
+          <div>
+            <Link to={`/`}>
+              <p className="text-2xl text-white">Home</p>
+            </Link>
+          </div>
+        </div>
       </section>
     </div>
   );
