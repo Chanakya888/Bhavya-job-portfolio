@@ -35,15 +35,15 @@ const Thrift = () => {
             <div>
               <div className="flex w-full justify-between pt-6">
                 <div>
-                  <p className="text-base">Year</p>
+                  <p className="text-xs lg:text-base">Year</p>
                   <p>2022</p>
                 </div>
                 <div className="lg:mt-[30px]">
-                  <p className="text-base">Type</p>
+                  <p className="text-xs lg:text-base">Type</p>
                   <p>Product Design, UI/UX</p>
                 </div>
               </div>
-              <div className="border-1 mt-[30px] inline-flex rounded border border-primaryGreen p-1">
+              <div className="border-1 mt-[30px] hidden rounded border border-primaryGreen p-1 lg:inline-flex">
                 <p className="text-xl uppercase">self initiated</p>
               </div>
             </div>
@@ -52,7 +52,7 @@ const Thrift = () => {
         <div></div>
       </section>
 
-      <section className="mt-[186px] bg-primaryGreen">
+      <section className="mt-14 bg-primaryGreen lg:mt-[186px]">
         <div className="flex w-full justify-center pt-[90px]">
           <div className="flex space-x-[43px]">
             <img className="pt-[176px]" src={ThriftItJeans} alt="" />
