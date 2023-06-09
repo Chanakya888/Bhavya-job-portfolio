@@ -15,30 +15,33 @@ const Thrift = () => {
   return (
     <div>
       <Navbar />
-      <section className="px-[72px] pt-[46px]">
+      <section className="px-6 lg:px-[72px] lg:pt-[46px]">
         <div>
-          <h1 className="m-0 text-8xl">Thrift it</h1>
-          <div className="flex flex-row space-x-[230px] pt-[46px]">
-            <p className=" w-[600px]">
+          <h1 className="m-0 text-5xl lg:text-8xl">Thrift it</h1>
+          <div className="flex flex-col pt-4 lg:w-[600px] lg:flex-row lg:space-x-[230px] lg:pt-[46px]">
+            <p>
               Thrift It is an app concept that helps people find new thrift
               shops, and assists with tracking their favourite collection drops.
               Thrift It can help make thrifting easier and more accessible for
               people. It is an initiative to encourage thrifting among people by
               reducing the consumerism that has contributed to our landfills,
               which has been a huge contributor to Climate Change.
-              <br />
+            </p>
+            <p className="pt-4">
               Thrift It is a self initiated project that started off during my
               summer break to explore app ideas and experiment with the approach
               towards a design language.
             </p>
             <div>
-              <div>
-                <p className="text-base">Year</p>
-                <p>2022</p>
-              </div>
-              <div className="mt-[30px]">
-                <p className="text-base">Type</p>
-                <p>Product Design, UI/UX</p>
+              <div className="flex w-full justify-between pt-6">
+                <div>
+                  <p className="text-base">Year</p>
+                  <p>2022</p>
+                </div>
+                <div className="lg:mt-[30px]">
+                  <p className="text-base">Type</p>
+                  <p>Product Design, UI/UX</p>
+                </div>
               </div>
               <div className="border-1 mt-[30px] inline-flex rounded border border-primaryGreen p-1">
                 <p className="text-xl uppercase">self initiated</p>

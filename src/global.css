@@ -32,11 +32,15 @@ h3 {
   color: var(--primary-green);
   font-weight: 400;
 }
-
 p {
   font-family: Arial;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--primary-green);
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 24px;
+  }
 }
 
 .description {
