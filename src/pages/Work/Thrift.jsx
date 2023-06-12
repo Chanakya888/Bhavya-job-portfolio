@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar";
 import ThriftItJeans from "../../assets/thrift-it-jeans.png";
 import Y2k from "../../assets/Y2k.png";
-import ThriftNavbar from "../../assets/thrift-it-nav.png";
+// import ThriftNavbar from "../../assets/thrift-it-nav.png";
 import Calendar from "../../assets/calendar.png";
 import CalendarMin from "../../assets/calendar-min.png";
 import { Link } from "react-router-dom";
@@ -87,7 +87,7 @@ const Thrift = () => {
         </div>
         <div className="flex h-full w-full flex-col justify-center pt-[90px] lg:flex-row lg:space-x-[100px]">
           <div className="pt-[300px]">
-            <img className="object-contain" src={ThriftNavbar} alt="" />
+            {/* <img className="object-contain" src={ThriftNavbar} alt="" /> */}
             <p className="max-w-[400px] pt-[64px] text-white">
               Get notified button essentially allows the user to be informed
               about new collection drops or any offers that the seller would be
