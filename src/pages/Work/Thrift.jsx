@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import Affordable from "../../assets/affordable.png";
 import ShoppingCart from "../../assets/shopping-bag.png";
 import Shirt from "../../assets/shirt.png";
-import Rachel from "../../assets/rachel.png";
+import Rachel from "../../assets/unique-collection.png";
 import MindMap from "../../assets/Mind-map.png";
 
 const Thrift = () => {
