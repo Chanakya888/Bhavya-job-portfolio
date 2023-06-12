@@ -54,7 +54,7 @@ const Thrift = () => {
 
       <section className="mt-14 bg-primaryGreen lg:mt-[186px]">
         <div className="flex w-full justify-center pt-[90px]">
-          <div className="flex space-x-[43px]">
+          <div className="flex flex-col space-x-[43px] lg:flex-row">
             <img className="pt-[176px]" src={ThriftItJeans} alt="" />
             <img className="object-contain" src={ThriftItJeans} alt="" />
           </div>
@@ -64,7 +64,7 @@ const Thrift = () => {
             <img src={Y2k} alt="" />
           </div>
           <div>
-            <div className="flex space-x-4">
+            <div className="flex flex-col space-x-4 lg:flex-row">
               <div className="border-1 inline-flex h-min rounded-3xl border border-white px-4 py-1">
                 <p className="uppercase text-white">New drop</p>
               </div>
@@ -85,7 +85,7 @@ const Thrift = () => {
             </div>
           </div>
         </div>
-        <div className="flex h-full w-full justify-center space-x-[100px] pt-[90px]">
+        <div className="flex h-full w-full flex-col justify-center pt-[90px] lg:flex-row lg:space-x-[100px]">
           <div className="pt-[300px]">
             <img className="object-contain" src={ThriftNavbar} alt="" />
             <p className="max-w-[400px] pt-[64px] text-white">
@@ -98,7 +98,7 @@ const Thrift = () => {
           <img className="object-contain" src={ThriftItJeans} alt="" />
         </div>
 
-        <div className="flex w-full justify-center space-x-[100px] pt-[130px]">
+        <div className="flex w-full flex-col justify-center space-x-[100px] pt-[130px] lg:flex-row">
           <img className="object-contain" src={Calendar} alt="" />
           <div className="pt-[40px]">
             <p className="max-w-[420px] text-white">
@@ -119,7 +119,7 @@ const Thrift = () => {
           </div>
         </div>
 
-        <div className="flex w-full justify-center space-x-[172px] pt-[130px]">
+        <div className="flex w-full flex-col justify-center space-x-[172px] pt-[130px] lg:flex-row">
           <div>
             <img className="object-contain" src={Shirt} alt="" />
             <img className="object-contain pt-[60px]" src={Rachel} alt="" />
@@ -127,7 +127,7 @@ const Thrift = () => {
           <img className="object-contain" src={ShoppingCart} alt="" />
         </div>
 
-        <div className="flex justify-center space-x-[70px] pt-[200px]">
+        <div className="flex flex-col justify-center space-x-[70px] pt-[200px] lg:flex-row">
           <img className="object-contain" src={MindMap} alt="" />
           <p className="max-w-[450px] text-white">
             The idea was to bring all the thrift stores on one platform and to
