@@ -31,6 +31,9 @@ p {
   font-size: 18px;
   color: var(--primary-green);
 }
+.p-top-padding {
+  padding-top: 12px;
+}
 @media (min-width: 1024px) {
   p {
     font-size: 24px;
