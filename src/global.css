@@ -15,12 +15,6 @@ body {
   src: url("http://fonts.cdnfonts.com/css/circular-std");
 }
 
-/* h1 {
-  font-family: "Circular Std", sans-serif;
-  font-weight: 450;
-  color: var(--primary-green);
-  font-size: 2.5em;
-} */
 h1 {
   font-family: "Circular Std", sans-serif;
   color: var(--primary-green);

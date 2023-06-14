@@ -10,12 +10,14 @@ import ShoppingCart from "../../assets/shopping-bag.png";
 import Shirt from "../../assets/shirt.png";
 import Rachel from "../../assets/unique-collection.png";
 import MindMap from "../../assets/Mind-map.png";
+import Jeans from "../../assets/Jeans-new.png";
+import Nav from "../../assets/Nav.png";
 
 const Thrift = () => {
   return (
     <div>
       <Navbar />
-      <section className="px-6 lg:px-[72px] lg:pt-[46px]">
+      <section className="px-6 pb-12 pt-[53px] lg:px-[72px]">
         <div>
           <h1 className="m-0 text-5xl lg:text-8xl">Thrift it</h1>
           <div className="flex flex-col pt-4 lg:w-[600px] lg:flex-row lg:space-x-[230px] lg:pt-[46px]">
@@ -36,11 +38,11 @@ const Thrift = () => {
               <div className="flex w-full justify-between pt-6">
                 <div>
                   <p className="text-xs lg:text-base">Year</p>
-                  <p>2022</p>
+                  <p className="text-xl">2022</p>
                 </div>
                 <div className="lg:mt-[30px]">
                   <p className="text-xs lg:text-base">Type</p>
-                  <p>Product Design, UI/UX</p>
+                  <p className="text-xl">Product Design, UI/UX</p>
                 </div>
               </div>
               <div className="border-1 mt-[30px] hidden rounded border border-primaryGreen p-1 lg:inline-flex">
@@ -52,50 +54,60 @@ const Thrift = () => {
         <div></div>
       </section>
 
-      <section className="mt-14 bg-primaryGreen lg:mt-[186px]">
-        <div className="flex w-full justify-center pt-[90px]">
-          <div className="flex flex-col space-x-[43px] lg:flex-row">
-            <img className="pt-[176px]" src={ThriftItJeans} alt="" />
-            <img className="object-contain" src={ThriftItJeans} alt="" />
-          </div>
+      <section className="bg-primaryGreen px-6 pt-10 lg:mt-[186px]">
+        <div className="flex flex-col space-x-[43px] lg:flex-row">
+          <img
+            className="w-full object-contain lg:pt-[176px]"
+            src={ThriftItJeans}
+            alt=""
+          />
+          <img className="object-contain" src={ThriftItJeans} alt="" />
         </div>
-        <div className="flex w-full justify-center space-x-[180px] pt-[160px]">
-          <div>
-            <img src={Y2k} alt="" />
-          </div>
-          <div>
-            <div className="flex flex-col space-x-4 lg:flex-row">
+        <div className="flex w-full flex-col justify-start pt-10 lg:space-x-[180px] lg:pt-[160px]">
+          <div className="">
+            <div className="flex flex-row space-x-1 lg:flex-row">
               <div className="border-1 inline-flex h-min rounded-3xl border border-white px-4 py-1">
-                <p className="uppercase text-white">New drop</p>
+                <p className="text-xs uppercase text-white">New drop</p>
               </div>
               <div className="inline-flex h-min rounded-3xl bg-white px-4 py-1">
-                <p className="uppercase">30% Off</p>
+                <p className="text-xs uppercase">30% Off</p>
               </div>
               <div className="border-1 inline-flex h-min rounded-3xl border border-white px-4 py-1">
-                <p className="text-white">Jeans</p>
+                <p className="text-xs text-white">Jeans</p>
               </div>
             </div>
-            <div className="pt-[20px]">
-              <p className="max-w-[500px] text-white">
+            <div className="max-w-[500px] pt-3">
+              <p className="text-sm text-white">
                 The top panel consists of tags that can be selected, and they
-                keep refreshing according to the user’s search pattern. The
-                items also indicate the number of times they have been used by
-                the seller or if they belong to an export-rejected stock.
+                keep refreshing according to the user’s search pattern.
+              </p>
+              <p className="text-sm text-white">
+                The items also indicate the number of times they have been used
+                by the seller or if they belong to an export-rejected stock.
               </p>
             </div>
           </div>
-        </div>
-        <div className="flex h-full w-full flex-col justify-center pt-[90px] lg:flex-row lg:space-x-[100px]">
-          <div className="pt-[300px]">
-            {/* <img className="object-contain" src={ThriftNavbar} alt="" /> */}
-            <p className="max-w-[400px] pt-[64px] text-white">
-              Get notified button essentially allows the user to be informed
-              about new collection drops or any offers that the seller would be
-              announcing on any given date. This information also gets collated
-              on the calendar feature that will be discussed further.
-            </p>
+          <div className="w-full pt-4">
+            <img className="object-contain" src={Y2k} alt="" />
           </div>
-          <img className="object-contain" src={ThriftItJeans} alt="" />
+        </div>
+
+        <div className="flex h-[440px] w-full flex-row justify-center space-x-5 pt-10 lg:flex-row lg:space-x-[100px] lg:pt-[90px]">
+          <img className="w-1/2 object-contain" src={Jeans} alt="" />
+          <div className="flex h-full flex-col justify-center lg:pt-[300px]">
+            <img className="w-full object-contain" src={Nav} alt="" />
+            <div className="max-w-[400px] pt-4 lg:pt-[64px]">
+              <p className="text-sm text-white">
+                Get notified button essentially allows the user to be informed
+                about new collection drops or any offers that the seller would
+                be announcing on any given date.
+              </p>
+              <p className="pt-3 text-sm text-white">
+                This information also gets collated on the calendar feature that
+                will be discussed further.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="flex w-full flex-col justify-center space-x-[100px] pt-[130px] lg:flex-row">
