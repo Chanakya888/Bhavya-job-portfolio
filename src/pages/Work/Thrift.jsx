@@ -133,11 +133,7 @@ const Thrift = () => {
                 src={NewDrop}
                 alt=""
               />
-              <img
-                className="max-w-[414px] object-contain pt-5"
-                src={CalendarMin}
-                alt=""
-              />
+              <img className="object-contain pt-5" src={CalendarMin} alt="" />
               <p className="max-w-[420px] pt-10 text-xs text-white sm:text-base lg:text-xl">
                 Found in the menu option on the nav bar, the calendar feature
                 essentially helps you keep track of all your favorite stores and
