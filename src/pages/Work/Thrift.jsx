@@ -17,11 +17,11 @@ const Thrift = () => {
   return (
     <div>
       <Navbar />
-      <section className="px-6 pb-44 pt-[53px] lg:px-[72px]">
+      <section className="px-6 pb-12 pt-[53px] lg:px-[72px]">
         <div>
           <h1 className="m-0 text-5xl lg:text-8xl">Thrift it</h1>
           <div className="lg:flex lg:space-x-52 lg:pt-10">
-            <div className="flex flex-col pt-4 sm:w-9/12 lg:w-1/2">
+            <div className="flex flex-col pt-4 sm:w-9/12 lg:w-8/12">
               <p className="text-base lg:text-2xl">
                 Thrift It is an app concept that helps people find new thrift
                 shops, and assists with tracking their favourite collection
@@ -70,20 +70,21 @@ const Thrift = () => {
             alt=""
           />
         </div>
-        <div className="flex w-full flex-col pt-32  lg:space-x-[180px] lg:pt-[160px]">
-          <div className="flex w-full flex-row space-x-1 lg:w-full lg:flex-row lg:justify-start">
-            <div className="border-1 inline-flex h-min rounded-3xl border border-white px-4 py-1">
-              <p className="text-xs uppercase text-white">New drop</p>
+
+        <div className="flex w-full flex-row pt-32 lg:justify-evenly lg:pt-[160px]">
+          <div>
+            <div className="flex w-full flex-row space-x-1">
+              <div className="border-1 inline-flex h-min rounded-3xl border border-white px-2 py-1 lg:px-4">
+                <p className="super-small uppercase text-white">New drop</p>
+              </div>
+              <div className="inline-flex h-min rounded-3xl bg-white px-2 py-1 lg:px-4">
+                <p className="super-small uppercase">30% Off</p>
+              </div>
+              <div className="border-1 inline-flex h-min rounded-3xl border border-white px-2 py-1 lg:px-4">
+                <p className="super-small text-white">Jeans</p>
+              </div>
             </div>
-            <div className="inline-flex h-min rounded-3xl bg-white px-4 py-1">
-              <p className="text-xs uppercase">30% Off</p>
-            </div>
-            <div className="border-1 inline-flex h-min rounded-3xl border border-white px-4 py-1">
-              <p className="text-xs text-white">Jeans</p>
-            </div>
-          </div>
-          <div className="flex space-x-1">
-            <div className="pt-3 sm:w-1/2">
+            <div className="pt-3">
               <p className="max-w-[320px] text-xs text-white sm:text-base lg:text-xl">
                 The top panel consists of tags that can be selected, and they
                 keep refreshing according to the user’s search pattern.
@@ -93,9 +94,9 @@ const Thrift = () => {
                 by the seller or if they belong to an export-rejected stock.
               </p>
             </div>
-            <div className="min-w-[160px] pt-3">
-              <img className="object-contain" src={Y2k} alt="" />
-            </div>
+          </div>
+          <div className="min-w-[160px] pt-3">
+            <img className="object-contain" src={Y2k} alt="" />
           </div>
         </div>
 
@@ -105,13 +106,13 @@ const Thrift = () => {
             src={Jeans}
             alt=""
           />
-          <div className="flex flex-col justify-center lg:justify-start lg:pt-32">
+          <div className="flex flex-col justify-center lg:justify-start lg:pt-48">
             <img
               className="w-full max-w-[414px] object-contain"
               src={Nav}
               alt=""
             />
-            <div className="max-w-[400px] pt-4 lg:pt-[64px]">
+            <div className="max-w-[400px] pt-4 lg:pt-16">
               <p className="text-xs text-white sm:text-base lg:text-xl">
                 Get notified button essentially allows the user to be informed
                 about new collection drops or any offers that the seller would
@@ -126,68 +127,99 @@ const Thrift = () => {
         </div>
 
         <div className="flex w-full flex-col justify-center space-x-[100px] pt-32 lg:flex-row">
-          <div className="flex space-x-6">
-            <div className="">
+          <div className="flex justify-center space-x-6 lg:space-x-10">
+            <div>
               <img
-                className="max-w-[162px] object-contain pt-10"
+                className="max-w-[162px] object-contain pt-10 lg:max-w-[300px]"
                 src={NewDrop}
                 alt=""
               />
-              <img className="object-contain pt-5" src={CalendarMin} alt="" />
+              <img
+                className="object-contain pt-5 lg:w-full lg:max-w-[280px]"
+                src={CalendarMin}
+                alt=""
+              />
               <p className="max-w-[420px] pt-10 text-xs text-white sm:text-base lg:text-xl">
                 Found in the menu option on the nav bar, the calendar feature
                 essentially helps you keep track of all your favorite stores and
                 informs you about collection drops or offers timely.
               </p>
+              <img
+                className="hidden w-full max-w-[300px] object-contain lg:inline lg:pt-10"
+                src={Affordable}
+                alt=""
+              />
             </div>
             <div className="space-y-5">
-              <img className="w-full object-contain" src={Calendar} alt="" />
-              <img className="object-contain" src={Affordable} alt="" />
+              <img
+                className="w-full max-w-[414px]  object-contain"
+                src={Calendar}
+                alt=""
+              />
+              <img
+                className="w-full max-w-[300px] object-contain lg:hidden"
+                src={Affordable}
+                alt=""
+              />
             </div>
           </div>
         </div>
 
-        <div className="flex w-full justify-center space-x-4 pt-32 lg:flex-row lg:space-x-[172px] lg:pt-[130px]">
-          <img className="w-1/2 object-contain" src={ShoppingCart} alt="" />
+        <div className="flex w-full justify-evenly space-x-4 pt-32 lg:flex-row lg:space-x-10 lg:pt-[130px]">
+          <img
+            className="w-1/2 max-w-[414px] object-contain"
+            src={ShoppingCart}
+            alt=""
+          />
           <div className="flex flex-col justify-center">
-            <img className="object-contain" src={Shirt} alt="" />
             <img
-              className="object-contain pt-4 lg:pt-[60px]"
+              className="w-full max-w-[400px] object-contain"
+              src={Shirt}
+              alt=""
+            />
+            <img
+              className="w-full max-w-[360px] object-contain pt-4 lg:pt-[60px]"
               src={Rachel}
               alt=""
             />
           </div>
         </div>
 
-        <div className="flex flex-col justify-center pt-32 lg:flex-row lg:space-x-[70px] lg:pt-[200px]">
-          <img className="object-contain" src={MindMap} alt="" />
-          <div className="pt-16 sm:w-9/12">
-            <p className="text-xs text-white sm:text-base">
-              The idea was to bring all the thrift stores on one platform and to
-              encourage thrift shopping among people. Social media portals like
-              Instagram or Facebook have been known for promoting small
-              businesses and thrifting, but here are a few drawbacks:
-            </p>
-            <p className="p-top-padding text-xs text-white sm:text-base">
-              Instagram and Facebook’s pages both work on the basis of ads and
-              follower count, and higher the number of followers, higher becomes
-              the credibility of the page. With Thrift It, all the products can
-              essentially be compared with the help of customer reviews on a
-              particular brand or business. Hence, reviews become the source of
-              credibility among products.
-            </p>
-            <p className="p-top-padding text-xs text-white sm:text-base">
-              Social media platforms essentially showcase one page at a time, so
-              to switch to a new page the user should either use tags or type
-              out the name of the business, which also limits the scope to
-              compare multiple products together. With Thrift It one gets to
-              view and compare all the products at once just like any E-commerce
-              platform.
-            </p>
+        <div className="flex flex-col justify-center pt-32 lg:flex-row lg:space-x-16 lg:pt-[200px] xl:w-full">
+          <div className="flex flex-col lg:w-10/12 lg:flex-row lg:space-x-16">
+            <img
+              className="w-full object-contain lg:max-w-[500px]"
+              src={MindMap}
+              alt=""
+            />
+            <div className="pt-16 sm:w-9/12">
+              <p className="text-xs text-white sm:text-base">
+                The idea was to bring all the thrift stores on one platform and
+                to encourage thrift shopping among people. Social media portals
+                like Instagram or Facebook have been known for promoting small
+                businesses and thrifting, but here are a few drawbacks:
+              </p>
+              <p className="p-top-padding text-xs text-white sm:text-base">
+                Instagram and Facebook’s pages both work on the basis of ads and
+                follower count, and higher the number of followers, higher
+                becomes the credibility of the page. With Thrift It, all the
+                products can essentially be compared with the help of customer
+                reviews on a particular brand or business. Hence, reviews become
+                the source of credibility among products.
+              </p>
+              <p className="p-top-padding text-xs text-white sm:text-base">
+                Social media platforms essentially showcase one page at a time,
+                so to switch to a new page the user should either use tags or
+                type out the name of the business, which also limits the scope
+                to compare multiple products together. With Thrift It one gets
+                to view and compare all the products at once just like any
+                E-commerce platform.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="pb-10 pl-[100px] pt-[180px]">
+        <div className="pb-10 pl-[100px] pt-[170px]">
           <div>
             <Link to={`/`}>
               <p className="text-2xl text-white">Home</p>
