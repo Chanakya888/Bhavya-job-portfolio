@@ -7,6 +7,9 @@ import "./global.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Thrift from "./pages/Work/Thrift.jsx";
+import Sindhol from "./pages/Work/Sindhol";
+import SmallWeb from "./pages/Work/SmallWeb";
+import BrowserProject from "./pages/Work/BrowserProject";
 
 const router = createBrowserRouter([
   {
@@ -17,11 +20,23 @@ const router = createBrowserRouter([
     path: "/thrift",
     element: <Thrift />,
   },
+  {
+    path: "/sindhol",
+    element: <Sindhol />,
+  },
+  {
+    path: "/small-web",
+    element: <SmallWeb />,
+  },
+  {
+    path: "/browser-project",
+    element: <BrowserProject />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div className="w-screen h-screen">
+    <div className="h-screen w-screen">
       <RouterProvider router={router} />
     </div>
   </React.StrictMode>

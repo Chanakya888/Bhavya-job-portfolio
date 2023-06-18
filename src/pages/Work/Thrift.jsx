@@ -12,51 +12,23 @@ import MindMap from "../../assets/Mind-map.png";
 import Jeans from "../../assets/Jeans-new.png";
 import Nav from "../../assets/Nav.png";
 import NewDrop from "../../assets/New-drop.png";
+import ProjectIntro from "../../components/ProjectIntro";
 
 const Thrift = () => {
+  let paragraphs = [
+    "Thrift It is an app concept that helps people find new thrift shops, and assists with tracking their favourite collection drops. Thrift It can help make thrifting easier and more accessible for people. It is an initiative to encourage thrifting among people by reducing the consumerism that has contributed to our landfills, which has been a huge contributor to Climate Change.",
+    "Thrift It is a self initiated project that started off during my summer break to explore app ideas and experiment with the approach towards a design language.",
+  ];
   return (
     <div>
       <Navbar />
-      <section className="px-6 pb-12 pt-[53px] lg:px-[72px]">
-        <div>
-          <h1 className="m-0 text-5xl lg:text-8xl">Thrift it</h1>
-          <div className="lg:flex lg:space-x-52 lg:pt-10">
-            <div className="flex flex-col pt-4 sm:w-9/12 lg:w-8/12">
-              <p className="text-base lg:text-2xl">
-                Thrift It is an app concept that helps people find new thrift
-                shops, and assists with tracking their favourite collection
-                drops. Thrift It can help make thrifting easier and more
-                accessible for people. It is an initiative to encourage
-                thrifting among people by reducing the consumerism that has
-                contributed to our landfills, which has been a huge contributor
-                to Climate Change.
-              </p>
-              <p className="p-top-padding text-base lg:text-2xl">
-                Thrift It is a self initiated project that started off during my
-                summer break to explore app ideas and experiment with the
-                approach towards a design language.
-              </p>
-            </div>
-            <div>
-              <div className="flex w-full justify-between pt-6 sm:justify-start sm:space-x-6 lg:flex-col lg:space-x-0">
-                <div>
-                  <p className="text-xs lg:text-base">Year</p>
-                  <p className="text-xl lg:text-2xl">2022</p>
-                </div>
-                <div className="lg:mt-[30px]">
-                  <p className="text-xs lg:text-base">Type</p>
-                  <p className="text-xl lg:text-2xl">Product Design, UI/UX</p>
-                </div>
-              </div>
-              <div className="border-1 mt-[30px] hidden rounded border border-primaryGreen p-1 lg:inline-flex">
-                <p className="text-xl uppercase">self initiated</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </section>
-
+      <ProjectIntro
+        title="Thrift it"
+        paragraphs={paragraphs}
+        year="2022"
+        type="Product Design, UI/UX"
+        type2="SELF INITIATED"
+      />
       <section className="bg-primaryGreen px-6 pt-10">
         <div className="flex space-x-10 overflow-hidden lg:flex-row lg:justify-center">
           <img
@@ -84,12 +56,12 @@ const Thrift = () => {
                 <p className="super-small text-white">Jeans</p>
               </div>
             </div>
-            <div className="pt-3">
+            <div className="p-container pt-3">
               <p className="max-w-[320px] text-xs text-white sm:text-base lg:text-xl">
                 The top panel consists of tags that can be selected, and they
                 keep refreshing according to the user’s search pattern.
               </p>
-              <p className="p-top-padding max-w-[320px] text-xs text-white sm:text-base lg:text-xl">
+              <p className="max-w-[320px] text-xs text-white sm:text-base lg:text-xl">
                 The items also indicate the number of times they have been used
                 by the seller or if they belong to an export-rejected stock.
               </p>
@@ -112,13 +84,13 @@ const Thrift = () => {
               src={Nav}
               alt=""
             />
-            <div className="max-w-[400px] pt-4 lg:pt-16">
+            <div className="p-container max-w-[400px] pt-4 lg:pt-16">
               <p className="text-xs text-white sm:text-base lg:text-xl">
                 Get notified button essentially allows the user to be informed
                 about new collection drops or any offers that the seller would
                 be announcing on any given date.
               </p>
-              <p className="p-top-padding text-xs text-white sm:text-base lg:text-xl">
+              <p className="text-xs text-white sm:text-base lg:text-xl">
                 This information also gets collated on the calendar feature that
                 will be discussed further.
               </p>
@@ -192,14 +164,14 @@ const Thrift = () => {
               src={MindMap}
               alt=""
             />
-            <div className="pt-16 sm:w-9/12">
-              <p className="text-xs text-white sm:text-base">
+            <div className="p-container pt-16 sm:w-9/12">
+              <p className="text-xs text-white sm:text-base lg:text-xl">
                 The idea was to bring all the thrift stores on one platform and
                 to encourage thrift shopping among people. Social media portals
                 like Instagram or Facebook have been known for promoting small
                 businesses and thrifting, but here are a few drawbacks:
               </p>
-              <p className="p-top-padding text-xs text-white sm:text-base">
+              <p className=" text-xs text-white sm:text-base lg:text-xl">
                 Instagram and Facebook’s pages both work on the basis of ads and
                 follower count, and higher the number of followers, higher
                 becomes the credibility of the page. With Thrift It, all the
@@ -207,7 +179,7 @@ const Thrift = () => {
                 reviews on a particular brand or business. Hence, reviews become
                 the source of credibility among products.
               </p>
-              <p className="p-top-padding text-xs text-white sm:text-base">
+              <p className=" text-xs text-white sm:text-base lg:text-xl">
                 Social media platforms essentially showcase one page at a time,
                 so to switch to a new page the user should either use tags or
                 type out the name of the business, which also limits the scope

@@ -5,6 +5,9 @@ export default {
     extend: {
       colors: {
         primaryGreen: "#1b812c",
+        secondaryBlue: "#0800F3",
+        secondaryPurple: "#CF72EC",
+        browserProjectBlue: "#487AFB",
       },
     },
   },

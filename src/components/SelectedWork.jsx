@@ -32,12 +32,14 @@ const SelectedWork = () => {
           </h2>
         </div>
         <Hrline />
-        <div className="grid lg:grid-cols-2">
-          <h2 className="text-base text-primaryGreen lg:text-xl">
-            From the Lambanis of Sindhol
-          </h2>
-          <h2 className="hidden text-xl text-primaryGreen lg:block">Zine </h2>
-        </div>
+        <Link to={`/sindhol`} className="block">
+          <div className="grid lg:grid-cols-2">
+            <h2 className="text-base text-primaryGreen lg:text-xl">
+              From the Lambanis of Sindhol
+            </h2>
+            <h2 className="hidden text-xl text-primaryGreen lg:block">Zine </h2>
+          </div>
+        </Link>
         <Hrline />
         <div className="grid grid-cols-2">
           <h2 className="text-base text-primaryGreen lg:text-xl">

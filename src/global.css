@@ -26,20 +26,31 @@ h3 {
   color: var(--primary-green);
   font-weight: 400;
 }
-p {
+p,
+li {
   font-family: Arial;
-  font-size: 18px;
+  font-size: 12px;
   color: var(--primary-green);
 }
-.p-top-padding {
-  padding-top: 12px;
-}
+
 .super-small {
   font-size: 8px;
 }
+.p-container p:not(:first-child) {
+  padding-top: 12px;
+}
+.p-white p {
+  @apply text-white;
+}
+
+.x-padding {
+  @apply px-6 lg:px-12;
+}
+
 @media (min-width: 1024px) {
-  p {
-    font-size: 24px;
+  p,
+  li {
+    font-size: 20px;
   }
   .super-small {
     font-size: 12px;
