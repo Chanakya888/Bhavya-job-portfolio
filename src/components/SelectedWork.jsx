@@ -23,14 +23,16 @@ const SelectedWork = () => {
           </div>
         </Link>
         <Hrline />
-        <div className="grid grid-cols-2">
-          <h2 className="text-base text-primaryGreen lg:text-xl">
-            Social Internet
-          </h2>
-          <h2 className="hidden text-xl text-primaryGreen lg:block">
-            Speculative & Interaction design
-          </h2>
-        </div>
+        <Link to={`/small-web`} className="block">
+          <div className="grid grid-cols-2">
+            <h2 className="text-base text-primaryGreen lg:text-xl">
+              Social Internet
+            </h2>
+            <h2 className="hidden text-xl text-primaryGreen lg:block">
+              Speculative & Interaction design
+            </h2>
+          </div>
+        </Link>
         <Hrline />
         <Link to={`/sindhol`} className="block">
           <div className="grid lg:grid-cols-2">
@@ -41,12 +43,16 @@ const SelectedWork = () => {
           </div>
         </Link>
         <Hrline />
-        <div className="grid grid-cols-2">
-          <h2 className="text-base text-primaryGreen lg:text-xl">
-            The Browser project
-          </h2>
-          <h2 className="hidden text-xl text-primaryGreen lg:block">UI/ UX</h2>
-        </div>
+        <Link to={`/browser-project`} className="block">
+          <div className="grid grid-cols-2">
+            <h2 className="text-base text-primaryGreen lg:text-xl">
+              The Browser project
+            </h2>
+            <h2 className="hidden text-xl text-primaryGreen lg:block">
+              UI/ UX
+            </h2>
+          </div>
+        </Link>
         <Hrline />
       </div>
     </div>

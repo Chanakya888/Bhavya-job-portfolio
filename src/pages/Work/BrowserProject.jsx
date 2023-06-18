@@ -13,6 +13,7 @@ import RightSideText from "../../components/RightSideText";
 import BrowserProjectNotes from "../../components/BrowserProjectNotes";
 import MobileTools from "../../components/MobileTools";
 import DesktopTools from "../../components/DesktopTools";
+import Footer from "../../components/Footer";
 
 const BrowserProject = () => {
   let paragraphs = [
@@ -137,6 +138,7 @@ const BrowserProject = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
