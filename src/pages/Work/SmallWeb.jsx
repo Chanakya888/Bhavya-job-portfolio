@@ -7,6 +7,7 @@ import ResponseB from "../../assets/small-web/response-b.png";
 import Gradient from "../../assets/small-web/gradient.png";
 import Proto from "../../assets/small-web/proto.png";
 import LiveDemo from "../../assets/small-web/live.png";
+import Footer from "../../components/Footer";
 
 const SmallWeb = () => {
   let paragraphs = [
@@ -191,8 +192,8 @@ const SmallWeb = () => {
           </div>
         </section>
       </div>
-      <section className="mt-14 bg-secondaryBlue px-6 pt-7">
-        <div className="p-container text-white">
+      <section className="mt-14 bg-secondaryBlue px-6 pt-7 ">
+        <div className="p-container text-white lg:w-8/12">
           <p className=" text-white">
             The project "Reimagining a Public Digital Space: The Small Web
             Edition" has been a journey of exploration and discovery into the
@@ -226,6 +227,7 @@ const SmallWeb = () => {
             today.
           </p>
         </div>
+        <Footer />
       </section>
     </div>
   );

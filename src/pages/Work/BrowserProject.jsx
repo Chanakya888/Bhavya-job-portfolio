@@ -14,6 +14,7 @@ import BrowserProjectNotes from "../../components/BrowserProjectNotes";
 import MobileTools from "../../components/MobileTools";
 import DesktopTools from "../../components/DesktopTools";
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 
 const BrowserProject = () => {
   let paragraphs = [
@@ -22,6 +23,7 @@ const BrowserProject = () => {
   ];
   return (
     <div>
+      <Navbar />
       <ProjectIntro
         title="The Browser Project"
         paragraphs={paragraphs}
@@ -137,8 +139,8 @@ const BrowserProject = () => {
             </p>
           </div>
         </section>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

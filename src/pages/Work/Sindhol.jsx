@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import ProjectIntro from "../../components/ProjectIntro";
+import Footer from "../../components/Footer";
 
 const Sindhol = () => {
   let paragraphs = [
@@ -37,6 +38,7 @@ const Sindhol = () => {
           </p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

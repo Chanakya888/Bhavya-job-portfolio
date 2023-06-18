@@ -13,6 +13,7 @@ import Jeans from "../../assets/Jeans-new.png";
 import Nav from "../../assets/Nav.png";
 import NewDrop from "../../assets/New-drop.png";
 import ProjectIntro from "../../components/ProjectIntro";
+import Footer from "../../components/Footer";
 
 const Thrift = () => {
   let paragraphs = [
@@ -191,13 +192,7 @@ const Thrift = () => {
           </div>
         </div>
 
-        <div className="pb-10 pl-[100px] pt-[170px]">
-          <div>
-            <Link to={`/`}>
-              <p className="text-2xl text-white">Home</p>
-            </Link>
-          </div>
-        </div>
+        <Footer />
       </section>
     </div>
   );
