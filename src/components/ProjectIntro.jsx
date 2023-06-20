@@ -10,7 +10,7 @@ const ProjectIntro = ({ title, paragraphs, year, type, type2 }) => {
           <div className="p-container flex max-w-[636px] flex-col pt-4 sm:w-9/12">
             {paragraphs.map((eachPara, index) => {
               return (
-                <p key={index} className="text-base lg:text-2xl">
+                <p key={index} className="text-base lg:text-xl">
                   {eachPara}
                 </p>
               );

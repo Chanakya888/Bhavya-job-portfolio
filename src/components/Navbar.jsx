@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
+import OpenNavbar from "./OpenNavbar";
+import { NavbarContext } from "../contexts/NavBarContext";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const { toggleNav, setToggleNav } = useContext(NavbarContext);
 
   const handleClick = () => {
-    setOpen(!open);
+    setToggleNav(!toggleNav);
   };
+
   return (
     <>
       <div className="flex h-20 w-full items-center justify-between px-6 lg:hidden">
@@ -34,6 +37,7 @@ const Navbar = () => {
         </div>
         <h3 className="">Archive</h3>
       </div>
+      {toggleNav && <OpenNavbar />}
     </>
   );
 };

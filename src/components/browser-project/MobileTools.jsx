@@ -1,10 +1,10 @@
 import React from "react";
 import LeftSideText from "./LeftSideText";
 import RightSideText from "./RightSideText";
-import Tools from "../assets/browser-project/the-tools.png";
-import Notes from "../assets/browser-project/notes.png";
-import Draw from "../assets/browser-project/draw.png";
-import Code from "../assets/browser-project/code.png";
+import Tools from "../../assets/browser-project/the-tools.png";
+import Notes from "../../assets/browser-project/notes.png";
+import Draw from "../../assets/browser-project/draw.png";
+import Code from "../../assets/browser-project/code.png";
 
 const MobileTools = () => {
   return (

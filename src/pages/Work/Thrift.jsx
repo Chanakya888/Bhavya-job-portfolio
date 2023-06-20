@@ -22,7 +22,6 @@ const Thrift = () => {
   ];
   return (
     <div>
-      <Navbar />
       <ProjectIntro
         title="Thrift it"
         paragraphs={paragraphs}

@@ -16,7 +16,6 @@ const SmallWeb = () => {
   ];
   return (
     <div>
-      <Navbar />
       <ProjectIntro
         title="The Small Social Web"
         paragraphs={paragraphs}
@@ -192,8 +191,8 @@ const SmallWeb = () => {
           </div>
         </section>
       </div>
-      <section className="mt-14 bg-secondaryBlue px-6 pt-7 lg:px-12">
-        <div className="p-container text-white lg:w-8/12">
+      <section className="mt-14 bg-secondaryBlue pt-7 lg:pt-24">
+        <div className="p-container px-6 text-white lg:w-8/12 lg:px-12">
           <p className=" text-white">
             The project "Reimagining a Public Digital Space: The Small Web
             Edition" has been a journey of exploration and discovery into the

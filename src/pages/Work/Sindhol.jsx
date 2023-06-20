@@ -10,7 +10,6 @@ const Sindhol = () => {
   ];
   return (
     <div>
-      <Navbar />
       <ProjectIntro
         title="From the Lambanis of Sindhol"
         paragraphs={paragraphs}

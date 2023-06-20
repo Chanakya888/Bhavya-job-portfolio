@@ -4,15 +4,11 @@ import TitleImage from "../../assets/browser-project/title-image.png";
 import Anatomy from "../../assets/browser-project/anatomy.png";
 import Frequently from "../../assets/browser-project/frequently.png";
 import Tabs from "../../assets/browser-project/the-tabs.png";
-import Tools from "../../assets/browser-project/the-tools.png";
-import Notes from "../../assets/browser-project/notes.png";
-import Draw from "../../assets/browser-project/draw.png";
-import Code from "../../assets/browser-project/code.png";
-import LeftSideText from "../../components/LeftSideText";
-import RightSideText from "../../components/RightSideText";
-import BrowserProjectNotes from "../../components/BrowserProjectNotes";
-import MobileTools from "../../components/MobileTools";
-import DesktopTools from "../../components/DesktopTools";
+import LeftSideText from "../../components/browser-project/LeftSideText";
+import RightSideText from "../../components/browser-project/RightSideText";
+import BrowserProjectNotes from "../../components/browser-project/BrowserProjectNotes";
+import MobileTools from "../../components/browser-project/MobileTools";
+import DesktopTools from "../../components/browser-project/DesktopTools";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
@@ -23,7 +19,6 @@ const BrowserProject = () => {
   ];
   return (
     <div>
-      <Navbar />
       <ProjectIntro
         title="The Browser Project"
         paragraphs={paragraphs}
@@ -107,7 +102,7 @@ const BrowserProject = () => {
         </LeftSideText>
       </section>
       <BrowserProjectNotes />
-      <div className="p-white bg-browserProjectBlue pt-8 lg:pt-24">
+      <div className="p-white mt-16 bg-browserProjectBlue pt-8 lg:mt-10 lg:pt-24">
         <MobileTools />
         <DesktopTools />
         <section className="x-padding mt-28 md:w-9/12 lg:pt-44">

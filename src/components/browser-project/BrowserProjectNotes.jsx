@@ -1,5 +1,5 @@
 import React from "react";
-import Notes from "../assets/browser-project/notes.png";
+import Notes from "../../assets/browser-project/notes.png";
 
 const BrowserProjectNotes = () => {
   return (

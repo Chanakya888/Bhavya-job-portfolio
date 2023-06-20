@@ -1,7 +1,7 @@
 import React from "react";
-import Tools from "../assets/browser-project/the-tools.png";
-import Draw from "../assets/browser-project/draw.png";
-import Code from "../assets/browser-project/code.png";
+import Tools from "../../assets/browser-project/the-tools.png";
+import Draw from "../../assets/browser-project/draw.png";
+import Code from "../../assets/browser-project/code.png";
 
 const DesktopTools = () => {
   return (
