@@ -27,15 +27,17 @@ const Navbar = () => {
           <p>@bhavyeahgupta</p>
         </div>
       </div>
-      <div className="hidden w-full justify-between lg:flex lg:px-[72px] lg:pb-10 lg:pt-[55px]">
-        <Link to={`/`}>
-          <h3>Bhavya Gupta</h3>
+      <div className="hidden w-full lg:grid lg:grid-cols-10 lg:px-6 lg:pb-10 lg:pt-[55px]">
+        <Link to={`/`} className="inline">
+          <h3 className="inline whitespace-nowrap lg:col-start-1 lg:col-end-3 lg:pl-12">
+            Bhavya Gupta
+          </h3>
         </Link>
-        <div className="  flex space-x-10">
+        <div className="col-start-5 col-end-6 flex space-x-10">
           <h3>Info.</h3>
           <h3>Resume</h3>
         </div>
-        <h3 className="">Archive</h3>
+        <h3 className="lg:col-start-10 lg:pr-12">Archive</h3>
       </div>
       {toggleNav && <OpenNavbar />}
     </>

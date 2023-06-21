@@ -8,6 +8,10 @@ import Gradient from "../../assets/small-web/gradient.png";
 import Proto from "../../assets/small-web/proto.png";
 import LiveDemo from "../../assets/small-web/live.png";
 import Footer from "../../components/Footer";
+import DesktopCover from "../../components/small-web/DesktopCover";
+import FieldGuideDesktop from "../../components/small-web/FieldGuideDesktop";
+import FieldGuideMobile from "../../components/small-web/FieldGuideMobile";
+import MobileCover from "../../components/small-web/MobileCover";
 
 const SmallWeb = () => {
   let paragraphs = [
@@ -23,9 +27,10 @@ const SmallWeb = () => {
         type="Speculative & Interaction design"
         type2="CAPSTONE PROJECT"
       />
+      <DesktopCover />
+      <MobileCover />
       <div className="w-full px-6 lg:px-16">
         <section>
-          <div className="h-[1440px] w-full bg-secondaryBlue"></div>
           <div className="pt-10 lg:flex lg:space-x-10">
             <div className="p-container">
               <p>
@@ -72,7 +77,9 @@ const SmallWeb = () => {
             </div>
           </div>
         </section>
-        <section>
+        <FieldGuideMobile />
+        <FieldGuideDesktop />
+        <section className="pt-14">
           <p className="text-2xl md:text-3xl lg:text-5xl">The Interactions</p>
           <div className="p-container pt-5 lg:w-1/2 lg:pt-8">
             <p>

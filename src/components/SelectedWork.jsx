@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SelectedWork = () => {
   return (
-    <div className="pb-10 lg:pb-0 lg:pr-[72px]">
+    <div className="pb-10 lg:pb-0 ">
       <div className="grid grid-cols-2 pb-3">
         <h2 className="text-xs uppercase text-primaryGreen">selected work</h2>
         <h2 className="hidden text-xs uppercase text-primaryGreen lg:block">
