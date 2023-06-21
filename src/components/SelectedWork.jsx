@@ -13,43 +13,45 @@ const SelectedWork = () => {
       <div className="space-y-5">
         <Hrline />
         <Link to={`/thrift`} className="block">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 space-y-0.5 lg:grid-cols-2 lg:space-y-0">
             <h2 className="text-base text-primaryGreen lg:text-xl">
               Thrift it
             </h2>
-            <h2 className="hidden text-xl text-primaryGreen lg:block">
+            <h2 className="text-xs text-primaryGreen lg:text-xl ">
               App concept design, UI/UX
             </h2>
           </div>
         </Link>
         <Hrline />
         <Link to={`/small-web`} className="block">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 space-y-0.5 lg:grid-cols-2 lg:space-y-0">
             <h2 className="text-base text-primaryGreen lg:text-xl">
               Social Internet
             </h2>
-            <h2 className="hidden text-xl text-primaryGreen lg:block">
+            <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
               Speculative & Interaction design
             </h2>
           </div>
         </Link>
         <Hrline />
         <Link to={`/sindhol`} className="block">
-          <div className="grid lg:grid-cols-2">
+          <div className="grid grid-cols-1 space-y-0.5 lg:grid-cols-2 lg:space-y-0">
             <h2 className="text-base text-primaryGreen lg:text-xl">
               From the Lambanis of Sindhol
             </h2>
-            <h2 className="hidden text-xl text-primaryGreen lg:block">Zine </h2>
+            <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
+              Zine{" "}
+            </h2>
           </div>
         </Link>
         <Hrline />
         <Link to={`/browser-project`} className="block">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 space-y-0.5 lg:grid-cols-2 lg:space-y-0">
             <h2 className="text-base text-primaryGreen lg:text-xl">
               The Browser project
             </h2>
-            <h2 className="hidden text-xl text-primaryGreen lg:block">
-              UI/ UX
+            <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
+              Browser concept design, UI/UX
             </h2>
           </div>
         </Link>

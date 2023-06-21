@@ -12,11 +12,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex h-20 w-full items-center justify-between px-6 lg:hidden">
+      <div className="flex h-[44px] w-full items-center justify-between px-6 pt-6 lg:hidden">
         <div
-          className={`flex h-8 w-8 flex-col items-center justify-center space-y-2 transition-transform duration-300 ease-in-out ${
-            open ? "translate-x-2 transform" : ""
-          }`}
+          className="flex h-8 w-8 flex-col items-center justify-center space-y-2 transition-transform duration-300 ease-in-out"
           onClick={handleClick}
         >
           <span className="h-0.5 w-8 rounded-full bg-primaryGreen"></span>
@@ -34,7 +32,9 @@ const Navbar = () => {
           </h3>
         </Link>
         <div className="col-start-5 col-end-6 flex space-x-10">
-          <h3>Info.</h3>
+          <Link to={`/info`} className="inline">
+            <h3>Info.</h3>
+          </Link>
           <h3>Resume</h3>
         </div>
         <h3 className="lg:col-start-10 lg:pr-12">Archive</h3>

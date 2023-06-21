@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import SmallWeb from "./pages/Work/SmallWeb";
 import Sindhol from "./pages/Work/Sindhol";
 import BrowserProject from "./pages/Work/BrowserProject";
+import Info from "./pages/Info";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="info" element={<Info />} />
           <Route path="thrift" element={<Thrift />} />
           <Route path="small-web" element={<SmallWeb />} />
           <Route path="sindhol" element={<Sindhol />} />
