@@ -35,7 +35,14 @@ const Navbar = () => {
           <Link to={`/info`} className="inline">
             <h3>Info.</h3>
           </Link>
-          <h3>Resume</h3>
+          <a
+            href="../assets/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline"
+          >
+            <h3>Resume</h3>
+          </a>
         </div>
         <div className="lg:col-start-13 lg:pr-12">
           <Link to={`/archive`} className="inline">
