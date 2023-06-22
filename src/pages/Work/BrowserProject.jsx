@@ -1,16 +1,15 @@
 import React from "react";
 import ProjectIntro from "../../components/ProjectIntro";
 import TitleImage from "../../assets/browser-project/title-image.png";
-import Anatomy from "../../assets/browser-project/anatomy.png";
-import Frequently from "../../assets/browser-project/frequently.png";
-import Tabs from "../../assets/browser-project/the-tabs.png";
+import Anatomy from "../../assets/browser-project/anatomy.gif";
+import Frequently from "../../assets/browser-project/frequently.gif";
+import Tabs from "../../assets/browser-project/the-tabs.gif";
 import LeftSideText from "../../components/browser-project/LeftSideText";
 import RightSideText from "../../components/browser-project/RightSideText";
 import BrowserProjectNotes from "../../components/browser-project/BrowserProjectNotes";
 import MobileTools from "../../components/browser-project/MobileTools";
 import DesktopTools from "../../components/browser-project/DesktopTools";
 import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
 
 const BrowserProject = () => {
   let paragraphs = [
@@ -105,7 +104,7 @@ const BrowserProject = () => {
       <div className="p-white mt-16 bg-browserProjectBlue pt-8 lg:mt-10 lg:pt-24">
         <MobileTools />
         <DesktopTools />
-        <section className="x-padding mt-28 md:w-9/12 lg:pt-44">
+        <section className="x-padding mt-28 md:w-7/12 lg:pt-44">
           <p className="text-base italic lg:text-4xl">
             More than just a window
           </p>

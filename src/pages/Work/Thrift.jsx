@@ -28,20 +28,19 @@ const Thrift = () => {
         type2="SELF INITIATED"
       />
       <section className="bg-primaryGreen ">
-        <div className="px-6 pt-10">
-          <div className="flex space-x-10 overflow-hidden lg:flex-row lg:justify-center">
-            <img
-              className="w-1/2 max-w-[410px] object-contain lg:pt-[176px]"
-              src={ThriftItJeans}
-              alt=""
-            />
-            <img
-              className="w-1/2 max-w-[410px] object-contain"
-              src={ThriftItJeans}
-              alt=""
-            />
-          </div>
-
+        <div className="flex space-x-10 overflow-x-scroll px-6 pt-10 md:px-0 lg:flex-row lg:justify-center">
+          <img
+            className="w-1/2 max-w-[410px] object-contain lg:pt-[176px]"
+            src={ThriftItJeans}
+            alt=""
+          />
+          <img
+            className="w-1/2 max-w-[410px] object-contain"
+            src={ThriftItJeans}
+            alt=""
+          />
+        </div>
+        <div className="px-6">
           <div className="flex w-full flex-row pt-32 lg:justify-evenly lg:pt-[160px]">
             <div>
               <div className="flex w-full flex-row space-x-1">
@@ -107,7 +106,7 @@ const Thrift = () => {
                   alt=""
                 />
                 <img
-                  className="object-contain pt-5 lg:w-full lg:max-w-[280px]"
+                  className="max-w-[140px] object-contain pt-5 lg:w-full lg:max-w-[280px]"
                   src={CalendarMin}
                   alt=""
                 />

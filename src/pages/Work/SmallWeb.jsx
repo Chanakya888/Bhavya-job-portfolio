@@ -1,11 +1,12 @@
 import React from "react";
 import ProjectIntro from "../../components/ProjectIntro";
-import Interactions from "../../assets/small-web/interactions.png";
+import Interactions from "../../assets/small-web/interactions.gif";
 import ResponseA from "../../assets/small-web/response-a.png";
 import ResponseB from "../../assets/small-web/response-b.png";
-import Gradient from "../../assets/small-web/gradient.png";
+import Gradient from "../../assets/small-web/gradient.gif";
 import Proto from "../../assets/small-web/proto.png";
-import LiveDemo from "../../assets/small-web/live.png";
+import LiveDemo from "../../assets/small-web/live.gif";
+import StopMotion from "../../assets/small-web/stop-motion.gif";
 import Footer from "../../components/Footer";
 import DesktopCover from "../../components/small-web/DesktopCover";
 import FieldGuideDesktop from "../../components/small-web/FieldGuideDesktop";
@@ -55,7 +56,9 @@ const SmallWeb = () => {
                 and surveillance.
               </p>
             </div>
-            <div className="my-8 h-[240px] bg-secondaryBlue lg:hidden"></div>
+            <div className="my-8 w-full lg:hidden">
+              <img className="w-full" src={StopMotion} alt="" />
+            </div>
             <div className="p-container">
               <p>
                 The field guide borrows aspects of a park-like experience and
@@ -198,7 +201,7 @@ const SmallWeb = () => {
         </section>
       </div>
       <section className="mt-14 bg-secondaryBlue pt-7 lg:pt-24">
-        <div className="p-container px-6 text-white lg:w-8/12 lg:px-12">
+        <div className="p-container px-6 text-white lg:w-7/12 lg:px-12">
           <p className=" text-white">
             The project "Reimagining a Public Digital Space: The Small Web
             Edition" has been a journey of exploration and discovery into the

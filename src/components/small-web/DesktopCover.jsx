@@ -4,11 +4,12 @@ import Cover2 from "../../assets/small-web/cover-2.png";
 import Cover3 from "../../assets/small-web/cover-3.png";
 import Cover4 from "../../assets/small-web/cover-4.png";
 import Cover5 from "../../assets/small-web/cover-5.png";
+import ForCover from "../../assets/small-web/for-cover.gif";
 
 const DesktopCover = () => {
   return (
-    <section className="hidden lg:inline">
-      <div className="h-[940px] w-full bg-secondaryBlue p-20">
+    <section className="hidden lg:block">
+      <div className="relative h-[940px] w-full bg-secondaryBlue p-20">
         <div className="h-[600px]">
           <div className="flex space-x-10">
             <div className="flex flex-col space-y-10">
@@ -25,6 +26,13 @@ const DesktopCover = () => {
               <img className="w-[200px] object-contain" src={Cover5} alt="" />
             </div>
           </div>
+        </div>
+        <div className="absolute bottom-16 right-16">
+          <img
+            className="w-full max-w-[240px] object-contain"
+            src={ForCover}
+            alt=""
+          />
         </div>
       </div>
     </section>

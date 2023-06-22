@@ -30,15 +30,17 @@ const Archive = () => {
           />
         </div>
         <div className="flex w-full justify-center pt-10 lg:justify-start lg:px-16 lg:pt-0">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1rosvuMsEZAHOYmedEMezw6UtnrRvq9uy/view?usp=sharing"
-          >
-            <p className="underline">Link to the Book video</p>
-          </a>
+          <div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1rosvuMsEZAHOYmedEMezw6UtnrRvq9uy/view?usp=sharing"
+            >
+              <p className="underline">Link to the Book video</p>
+            </a>
+          </div>
         </div>
-        <div className="absolute bottom-12 left-0 hidden lg:block">
+        <div className="absolute bottom-20 left-0 hidden lg:block">
           <Link to={"/"}>
             <div className="flex w-full items-center space-x-3 pb-6 pl-6 lg:pb-8 lg:pl-8 xl:pb-12 xl:pl-12">
               <div>

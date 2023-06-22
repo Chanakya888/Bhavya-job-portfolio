@@ -1,12 +1,13 @@
 import React from "react";
 import ProfilePicture from "../assets/info/profile-picture.png";
 import Hrline from "../components/Hrline";
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+import GreenLeftArrow from "../assets/info/green-left-arrow.svg";
 
 const Info = () => {
   return (
     <div className="calc-height">
-      <div className=" px-3 pt-10">
+      <div className=" px-3 pt-10 lg:pt-20 xl:pt-24">
         <div className=" lg:flex lg:w-10/12 lg:space-x-12 lg:px-12 xl:space-x-16">
           <div className="lg:w-2/5 lg:pt-10">
             <img
@@ -34,7 +35,7 @@ const Info = () => {
                 contact.
               </p>
             </div>
-            <div className="pt-8">
+            <div className="pt-3">
               <Hrline />
               <div className="space-y-1.5 pt-2.5">
                 <p>For projects/ inquires, please contact:</p>
@@ -44,7 +45,18 @@ const Info = () => {
           </div>
         </div>
       </div>
-      <Footer color="green" />
+      <div className="">
+        <Link to={"/"}>
+          <div className="flex w-full items-center space-x-3 pb-2 pl-3 pt-8 lg:pb-8 lg:pl-8 lg:pt-16 xl:pb-10 xl:pl-12 xl:pt-64">
+            <div>
+              <img src={GreenLeftArrow} alt="" />
+            </div>
+            <div>
+              <p className="text-green text-base lg:text-xl">Home</p>
+            </div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };

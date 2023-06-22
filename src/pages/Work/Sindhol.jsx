@@ -1,7 +1,12 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
 import ProjectIntro from "../../components/ProjectIntro";
 import Footer from "../../components/Footer";
+import ZineGif from "../../assets/sindhol/zine.gif";
+import ZineLeft from "../../assets/sindhol/zine-left.gif";
+import ZineRight from "../../assets/sindhol/zine-right.gif";
+import LeftArrow from "../../assets/home-arrow.svg";
+import GreenLeftArrow from "../../assets/info/green-left-arrow.svg";
+import { Link } from "react-router-dom";
 
 const Sindhol = () => {
   let paragraphs = [
@@ -17,10 +22,21 @@ const Sindhol = () => {
         type="Ethnographic study, Zine"
         type2="TRANSDICIPLINARY LAB PROJECT"
       />
-      <section className="px-6 lg:px-16">
-        <div></div>
-        <div className="lg:flex lg:space-x-10">
-          <p>
+
+      <div className="hidden md:block">
+        <img className="w-full object-contain" src={ZineGif} alt="" />
+      </div>
+      <div className="bg-black md:hidden">
+        <div className="flex w-full justify-start">
+          <img src={ZineLeft} alt="" />
+        </div>
+        <div className="flex w-full justify-end">
+          <img src={ZineRight} alt="" />
+        </div>
+      </div>
+      <section className=" bg-black  pt-10 lg:bg-backgroundGray lg:px-16">
+        <div className="px-6 lg:flex lg:space-x-10 lg:px-0">
+          <p className="text-white lg:text-primaryGreen">
             The zine covers a little introduction to the Thanda, the historic
             traces of the embroidery, the materials used in the making, the
             thought process of the practitioners, a visit to one of the
@@ -28,7 +44,7 @@ const Sindhol = () => {
             practitioners, the rituals associated with the embroidery and the
             evolution of the craft within the Thanda.
           </p>
-          <p className="pt-3 lg:pt-0">
+          <p className="pt-3 text-white lg:pt-0 lg:text-primaryGreen">
             The title “From the Lambanis of Sindhol” is in context to giving
             readers an understanding that the zine is like a letter from the
             people of Sindhol to the general public. The zine aims at looking at
@@ -36,8 +52,22 @@ const Sindhol = () => {
             readers a slice of Sindhol’s embroidery practice.
           </p>
         </div>
+        <div className="px-6 lg:px-0">
+          <Link to={"/"}>
+            <div className="flex w-full items-center space-x-3 pb-6 pt-14 lg:pb-8 lg:pt-16">
+              <div>
+                <img className="lg:hidden" src={LeftArrow} alt="" />
+                <img className="hidden lg:block" src={GreenLeftArrow} alt="" />
+              </div>
+              <div>
+                <p className="text-base text-white lg:text-xl lg:text-primaryGreen">
+                  Home
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
       </section>
-      <Footer />
     </div>
   );
 };

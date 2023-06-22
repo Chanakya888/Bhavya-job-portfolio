@@ -5,7 +5,7 @@ import FieldGuide3 from "../../assets/small-web/field-guide-3.png";
 
 const FieldGuideDesktop = () => {
   return (
-    <section className="hidden pt-10 lg:block">
+    <section className="hidden pt-[147px] lg:block">
       <div>
         <p className="text-2xl md:text-3xl lg:text-5xl">Field guide</p>
       </div>

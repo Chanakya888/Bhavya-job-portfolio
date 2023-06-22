@@ -43,6 +43,10 @@ li {
   @apply text-white;
 }
 
+.p-green p {
+  @apply text-primaryGreen;
+}
+
 .x-padding {
   @apply px-6 lg:px-12;
 }

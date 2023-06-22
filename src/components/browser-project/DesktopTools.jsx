@@ -1,5 +1,5 @@
 import React from "react";
-import Tools from "../../assets/browser-project/the-tools.png";
+import Tools from "../../assets/browser-project/the-tools.gif";
 import Draw from "../../assets/browser-project/draw.png";
 import Code from "../../assets/browser-project/code.png";
 
