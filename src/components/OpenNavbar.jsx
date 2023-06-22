@@ -3,6 +3,7 @@ import Hrline from "./Hrline";
 import Close from "../assets/close.svg";
 import { Link } from "react-router-dom";
 import { NavbarContext } from "../contexts/NavBarContext";
+import Resume from "../assets/Resume.pdf";
 
 const OpenNavbar = () => {
   const { setToggleNav } = useContext(NavbarContext);
@@ -42,7 +43,14 @@ const OpenNavbar = () => {
           <Link to={`/`} onClick={handleCloseNav}>
             <div>
               <div className="h-full w-full pb-6 pt-5">
-                <p className="text-base">Resume</p>
+                <a
+                  href={Resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline"
+                >
+                  <p className="text-base">Resume</p>
+                </a>
               </div>
               <Hrline />
             </div>
