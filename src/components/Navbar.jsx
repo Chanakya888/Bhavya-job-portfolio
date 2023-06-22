@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import OpenNavbar from "./OpenNavbar";
 import { NavbarContext } from "../contexts/NavBarContext";
+import Resume from "../assets/Resume.pdf";
 
 const Navbar = () => {
   const { toggleNav, setToggleNav } = useContext(NavbarContext);
@@ -36,7 +37,7 @@ const Navbar = () => {
             <h3>Info.</h3>
           </Link>
           <a
-            href="../assets/Resume.pdf"
+            href={Resume}
             target="_blank"
             rel="noopener noreferrer"
             className="inline"

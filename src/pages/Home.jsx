@@ -5,9 +5,11 @@ import { HoverContext } from "../contexts/HoverContext";
 const Home = () => {
   const { hoverStates, handleLeave } = useContext(HoverContext);
   useEffect(() => {
-    for (let i = 0; i <= 4; i++) {
-      handleLeave(i);
-    }
+    return () => {
+      for (let i = 0; i <= 4; i++) {
+        handleLeave(i);
+      }
+    };
   }, []);
   return (
     <>
