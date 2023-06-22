@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectIntro from "../../components/ProjectIntro";
-import Navbar from "../../components/Navbar";
 import Interactions from "../../assets/small-web/interactions.png";
 import ResponseA from "../../assets/small-web/response-a.png";
 import ResponseB from "../../assets/small-web/response-b.png";

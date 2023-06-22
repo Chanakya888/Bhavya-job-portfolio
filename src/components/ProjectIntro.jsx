@@ -5,7 +5,7 @@ const ProjectIntro = ({ title, paragraphs, year, type, type2 }) => {
   return (
     <section className="px-6 pb-12 pt-[53px] lg:px-16">
       <div>
-        <h1 className="m-0 text-2xl lg:text-8xl">{title}</h1>
+        <h1 className="m-0 text-2xl lg:w-10/12 lg:text-8xl">{title}</h1>
         <div className="lg:flex lg:space-x-52 lg:pt-10">
           <div className="p-container flex max-w-[636px] flex-col pt-4 sm:w-9/12">
             {paragraphs.map((eachPara, index) => {

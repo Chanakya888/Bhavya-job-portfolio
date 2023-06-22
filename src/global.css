@@ -47,7 +47,16 @@ li {
   @apply px-6 lg:px-12;
 }
 
+.calc-height {
+  height: calc(100vh - 48px);
+}
+.test {
+  object-position: center top -140px;
+}
 @media (min-width: 1024px) {
+  .calc-height {
+    height: calc(100vh - 125px);
+  }
   p,
   li {
     font-size: 20px;

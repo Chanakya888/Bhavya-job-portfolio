@@ -37,7 +37,9 @@ const Navbar = () => {
           </Link>
           <h3>Resume</h3>
         </div>
-        <h3 className="lg:col-start-10 lg:pr-12">Archive</h3>
+        <Link to={`/archive`} className="inline">
+          <h3 className="lg:col-start-10 lg:pr-12">Archive</h3>
+        </Link>
       </div>
       {toggleNav && <OpenNavbar />}
     </>

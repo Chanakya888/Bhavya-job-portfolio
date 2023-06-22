@@ -47,7 +47,7 @@ const OpenNavbar = () => {
               <Hrline />
             </div>
           </Link>
-          <Link to={`/`} onClick={handleCloseNav}>
+          <Link to={`/archive`} onClick={handleCloseNav}>
             <div>
               <div className="h-full w-full pb-6 pt-5">
                 <p className="text-base">Archive</p>

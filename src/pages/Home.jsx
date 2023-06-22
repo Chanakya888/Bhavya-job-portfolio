@@ -3,7 +3,7 @@ import SelectedWork from "../components/SelectedWork";
 const Home = () => {
   return (
     <>
-      <div className="h-[calc(100vh-48px)] px-6 lg:grid lg:h-[calc(100vh-125px)] lg:grid-cols-10">
+      <div className="calc-height px-6 lg:grid  lg:grid-cols-10">
         <div className="hidden h-full items-end lg:flex lg:pb-14 lg:pl-10">
           <p className="text-xs">@bhavyeahgupta</p>
         </div>
