@@ -3,6 +3,7 @@ import ProfilePicture from "../assets/info/profile-picture.png";
 import Hrline from "../components/Hrline";
 import { Link } from "react-router-dom";
 import GreenLeftArrow from "../assets/info/green-left-arrow.svg";
+import EmailIcon from "../assets/email-icon.svg";
 
 const Info = () => {
   return (
@@ -39,7 +40,16 @@ const Info = () => {
               <Hrline />
               <div className="space-y-1.5 pt-2.5">
                 <p>For projects/ inquires, please contact:</p>
-                <p>dsg.bhavya@gmail.com</p>
+                <a href="mailto:dsg.bhavya@gmail.com">
+                  <div className="flex space-x-2">
+                    <img
+                      className="w-[21px] object-contain"
+                      src={EmailIcon}
+                      alt=""
+                    />
+                    <p>dsg.bhavya@gmail.com</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
