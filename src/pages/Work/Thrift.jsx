@@ -8,6 +8,7 @@ import Shirt from "../../assets/thrift-it/shirt.png";
 import Rachel from "../../assets/thrift-it/unique-collection.png";
 import MindMap from "../../assets/thrift-it/Mind-map.png";
 import Jeans from "../../assets/thrift-it/Jeans-new.png";
+import JeansDirectExport from "../../assets/thrift-it/jeans-direct-export.png";
 import Nav from "../../assets/thrift-it/Nav.png";
 import NewDrop from "../../assets/thrift-it/New-drop.png";
 import ProjectIntro from "../../components/ProjectIntro";
@@ -31,7 +32,7 @@ const Thrift = () => {
         <div className="flex space-x-10 overflow-x-scroll px-6 pt-10 md:px-0 lg:flex-row lg:justify-center">
           <img
             className="w-1/2 max-w-[410px] object-contain lg:pt-[176px]"
-            src={ThriftItJeans}
+            src={JeansDirectExport}
             alt=""
           />
           <img
