@@ -201,7 +201,7 @@ const SmallWeb = () => {
         </section>
       </div>
       <section className="mt-14 bg-secondaryBlue pt-7 lg:pt-24">
-        <div className="p-container px-6 text-white lg:w-7/12 lg:px-12">
+        <div className="p-container px-6 text-white lg:w-8/12 lg:px-12">
           <p className=" text-white">
             The project "Reimagining a Public Digital Space: The Small Web
             Edition" has been a journey of exploration and discovery into the

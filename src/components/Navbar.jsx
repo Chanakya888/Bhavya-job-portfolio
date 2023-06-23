@@ -26,7 +26,7 @@ const Navbar = () => {
           <p>@bhavyeahgupta</p>
         </div>
       </div>
-      <div className="hidden w-full lg:grid lg:grid-cols-14 lg:px-6 lg:pt-[55px]">
+      <div className="hidden w-full lg:grid lg:grid-cols-14 lg:px-6 lg:pt-10">
         <Link to={`/`} className="inline">
           <h3 className="inline whitespace-nowrap lg:col-start-1 lg:col-end-3 lg:pl-0 xl:pl-10">
             Bhavya Gupta

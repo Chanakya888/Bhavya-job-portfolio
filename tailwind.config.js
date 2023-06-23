@@ -2,6 +2,17 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontSize: {
+      xs: ["12px", "14px"],
+      sm: ["14px", "20px"],
+      base: ["16px", "20px"],
+      xl: ["20px", "24px"],
+      "2xl": ["24px", "32px"],
+      "3xl": ["30px", "36px"],
+      "4xl": ["36px", "40px"],
+      "5xl": ["48px", "1"],
+      "8xl": ["96px", "1"],
+    },
     extend: {
       gridTemplateColumns: {
         16: "repeat(16, minmax(0, 1fr))",

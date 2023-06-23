@@ -23,16 +23,8 @@ const Sindhol = () => {
         type2="TRANSDICIPLINARY LAB PROJECT"
       />
 
-      <div className="hidden md:block">
+      <div className="w-full">
         <img className="w-full object-contain" src={ZineGif} alt="" />
-      </div>
-      <div className="bg-black md:hidden">
-        <div className="flex w-full justify-start">
-          <img src={ZineLeft} alt="" />
-        </div>
-        <div className="flex w-full justify-end">
-          <img src={ZineRight} alt="" />
-        </div>
       </div>
       <section className=" bg-black  pt-10 lg:bg-backgroundGray lg:px-16">
         <div className="px-6 lg:flex lg:space-x-10 lg:px-0">

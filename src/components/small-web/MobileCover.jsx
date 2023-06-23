@@ -8,11 +8,11 @@ import ForCover from "../../assets/small-web/for-cover.gif";
 
 const MobileCover = () => {
   return (
-    <section className="mt-30 lg:hidden ">
-      <div>
+    <section className="mt-30 bg-secondaryBlue lg:hidden">
+      <div className="w-1/2 pt-4">
         <img className="w-full object-contain" src={ForCover} alt="" />
       </div>
-      <div className="flex  w-full items-center space-x-3 overflow-x-scroll bg-secondaryBlue px-16 pb-20 pt-10">
+      <div className="flex w-full items-center space-x-3 overflow-x-scroll px-4 pb-20 pt-4">
         <img
           className="h-[322px] w-[226px] object-contain"
           src={Cover1}

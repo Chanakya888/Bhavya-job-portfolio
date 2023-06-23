@@ -59,7 +59,7 @@ li {
 }
 @media (min-width: 1024px) {
   .calc-height {
-    height: calc(100vh - 125px);
+    height: calc(100vh - 70px);
   }
   p,
   li {

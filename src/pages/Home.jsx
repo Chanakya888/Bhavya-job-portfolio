@@ -13,12 +13,12 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="calc-height relative px-6  lg:grid lg:grid-cols-14">
+      <div className="calc-height relative px-6  lg:grid lg:grid-cols-14 lg:pb-10">
         <div className="hidden h-full items-end lg:flex lg:pb-4 lg:pl-10">
           <p className="text-xs">@bhavyeahgupta</p>
         </div>
         <div className="flex h-full flex-col flex-wrap justify-between pt-10 lg:col-start-6 lg:col-end-14 lg:pt-10">
-          <p className="w-full text-base text-primaryGreen lg:w-[480px] lg:text-xl">
+          <p className="w-5/6 text-base text-primaryGreen lg:w-[480px] lg:text-xl">
             Hello, I'm Bhavya, a Human-Computer Interaction Researcher and
             Designer based in Hyderabad, India. I am actively seeking a
             full-time position as an Interaction Designer or Researcher, whether

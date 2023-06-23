@@ -1,4 +1,3 @@
-import ThriftItJeans from "../../assets/thrift-it/thrift-it-jeans.png";
 import Y2k from "../../assets/thrift-it/Y2k.png";
 import Calendar from "../../assets/thrift-it/calendar.png";
 import CalendarMin from "../../assets/thrift-it/calendar-min.png";
@@ -7,12 +6,13 @@ import ShoppingCart from "../../assets/thrift-it/shopping-bag.png";
 import Shirt from "../../assets/thrift-it/shirt.png";
 import Rachel from "../../assets/thrift-it/unique-collection.png";
 import MindMap from "../../assets/thrift-it/Mind-map.png";
-import Jeans from "../../assets/thrift-it/Jeans-new.png";
-import JeansDirectExport from "../../assets/thrift-it/jeans-direct-export.png";
-import Nav from "../../assets/thrift-it/Nav.png";
+import AllProducts from "../../assets/thrift-it/all-products.png";
+import Menu from "../../assets/thrift-it/menu.png";
+import Nav from "../../assets/thrift-it/nav.png";
 import NewDrop from "../../assets/thrift-it/New-drop.png";
 import ProjectIntro from "../../components/ProjectIntro";
 import Footer from "../../components/Footer";
+import ThriftItJeans from "../../assets/thrift-it/thrift-it-jeans.png";
 
 const Thrift = () => {
   let paragraphs = [
@@ -30,16 +30,16 @@ const Thrift = () => {
       />
       <section className="bg-primaryGreen ">
         <div className="flex space-x-10 overflow-x-scroll px-6 pt-10 md:px-0 lg:flex-row lg:justify-center">
-          <img
-            className="w-1/2 max-w-[410px] object-contain lg:pt-[176px]"
-            src={JeansDirectExport}
-            alt=""
-          />
-          <img
-            className="w-1/2 max-w-[410px] object-contain"
-            src={ThriftItJeans}
-            alt=""
-          />
+          <div className="max-h-[850px] w-1/2 max-w-[410px] lg:mt-[176px]">
+            <img className="h-full w-full object-contain" src={Menu} alt="" />
+          </div>
+          <div className="max-h-[850px] w-1/2 max-w-[410px] ">
+            <img
+              className="h-full w-full object-contain"
+              src={AllProducts}
+              alt=""
+            />
+          </div>
         </div>
         <div className="px-6">
           <div className="flex w-full flex-row pt-32 lg:justify-evenly lg:pt-[160px]">
@@ -75,7 +75,7 @@ const Thrift = () => {
           <div className="flex min-h-[440px] w-full flex-row justify-center space-x-5 pt-32 lg:flex-row lg:space-x-[100px] lg:pt-[90px]">
             <img
               className="w-1/2 max-w-[414px] object-contain"
-              src={Jeans}
+              src={ThriftItJeans}
               alt=""
             />
             <div className="flex flex-col justify-center lg:justify-start lg:pt-48">
@@ -99,7 +99,7 @@ const Thrift = () => {
           </div>
 
           <div className="flex w-full flex-col justify-center space-x-[100px] pt-32 lg:flex-row">
-            <div className="flex justify-center space-x-6 lg:space-x-10">
+            <div className="flex justify-center space-x-6 lg:space-x-32">
               <div>
                 <img
                   className="max-w-[162px] object-contain pt-10 lg:max-w-[300px]"
@@ -111,7 +111,7 @@ const Thrift = () => {
                   src={CalendarMin}
                   alt=""
                 />
-                <p className="max-w-[420px] pt-10 text-xs text-white sm:text-base lg:text-xl">
+                <p className="max-w-[420px] pt-10 text-xs text-white sm:text-base lg:max-w-[280px] lg:text-xl">
                   Found in the menu option on the nav bar, the calendar feature
                   essentially helps you keep track of all your favorite stores
                   and informs you about collection drops or offers timely.
@@ -137,13 +137,15 @@ const Thrift = () => {
             </div>
           </div>
 
-          <div className="flex w-full justify-evenly space-x-4 pt-32 lg:flex-row lg:space-x-10 lg:pt-[130px]">
-            <img
-              className="w-1/2 max-w-[414px] object-contain"
-              src={ShoppingCart}
-              alt=""
-            />
-            <div className="flex flex-col justify-center">
+          <div className="flex w-full justify-center space-x-4 pt-32 lg:flex-row lg:space-x-20 lg:pt-[130px]">
+            <div className="max-h-[859px] w-1/2 max-w-[414px]">
+              <img
+                className="h-full w-full object-contain"
+                src={ShoppingCart}
+                alt=""
+              />
+            </div>
+            <div className="flex w-1/2 flex-col justify-center lg:max-w-[400px]">
               <img
                 className="w-full max-w-[400px] object-contain"
                 src={Shirt}

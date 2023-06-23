@@ -25,12 +25,12 @@ const BrowserProject = () => {
         type="UI/UX"
         type2="SELF INITIATED"
       />
-      <div className="flex w-full items-center justify-center bg-secondaryPurple">
-        <img className="my-8 w-10/12 object-contain" src={TitleImage} alt="" />
+      <div className="flex w-full justify-center bg-secondaryPurple py-6 lg:py-20 xl:py-24">
+        <img className="w-9/12 object-contain" src={TitleImage} alt="" />
       </div>
       <section className="mt-16 lg:flex ">
         <LeftSideText>
-          <p className="text-2xl md:text-3xl lg:text-5xl">
+          <p className="whitespace-nowrap text-2xl md:text-3xl lg:text-5xl">
             Anatomy of the browser
           </p>
           <div className="p-container pt-8 lg:pt-32">
@@ -82,6 +82,7 @@ const BrowserProject = () => {
             src={Tabs}
             alt=""
           />
+          {/* <video src={Tabs} autoPlay loop></video> */}
         </div>
         <LeftSideText>
           <div className="p-container pt-2">
