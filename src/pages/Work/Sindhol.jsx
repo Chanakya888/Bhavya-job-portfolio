@@ -1,20 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProjectIntro from "../../components/ProjectIntro";
 import Footer from "../../components/Footer";
 import ZineGif from "../../assets/sindhol/zine-full.gif";
-import ZineLeft from "../../assets/sindhol/zine-left.gif";
-import ZineRight from "../../assets/sindhol/zine-right.gif";
-import LeftArrow from "../../assets/home-arrow.svg";
-import GreenLeftArrow from "../../assets/info/green-left-arrow.svg";
-import { Link } from "react-router-dom";
 
 const Sindhol = () => {
   let paragraphs = [
     "From the Lambanis of Sindhol is an ethnographic study that focuses on the practice of Lambani embroidery within the Sindhol Thanda (Thanda meaning: A human settlement).",
     "Inspired by the fluid nature of the Lambani practitioners’ creative process, the research artifact took the form of a zine—a self-published, non-commercial magazine. The zine serves as a medium to authentically capture and represent the essence of Lambani embroidery. It’s unconventional layout and design reflect the unrestricted artistic spirit found within the Lambani community.",
   ];
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
-    <div className="bg-backgroundGray ">
+    <div className=" ">
       <ProjectIntro
         title="From the Lambanis of Sindhol"
         paragraphs={paragraphs}
@@ -45,7 +56,15 @@ const Sindhol = () => {
           </p>
         </div>
       </section>
-      <Footer color="green" nextProject="browser-project" />
+      {screenWidth < 1024 ? (
+        <div className="bg-black">
+          <Footer color="white" nextProject="browser-project" />
+        </div>
+      ) : (
+        <div className="bg-backgroundGray">
+          <Footer color="green" nextProject="browser-project" />
+        </div>
+      )}
     </div>
   );
 };
