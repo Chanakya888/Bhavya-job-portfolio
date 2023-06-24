@@ -194,7 +194,7 @@ const Thrift = () => {
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer nextProject="small-web" />
       </section>
     </div>
   );

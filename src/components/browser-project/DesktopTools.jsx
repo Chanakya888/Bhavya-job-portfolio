@@ -10,6 +10,9 @@ const DesktopTools = () => {
         <div className="pr-5">
           <p>Draw</p>
         </div>
+        {/* <div className="absolute bottom-0 right-0 w-[54px]">
+          <p>3D image borrowed from</p>
+        </div> */}
         {/* <img className="z-10 w-7/12 object-contain" src={Draw} alt="" /> */}
         <video
           className="z-10 w-7/12 object-contain"
@@ -17,7 +20,9 @@ const DesktopTools = () => {
           autoPlay
           loop
           muted
-        ></video>
+        >
+          Video is loading
+        </video>
         <div className="absolute -bottom-60 left-20 max-w-[480px] ">
           <div className="pr-5">
             <p>Stickers</p>

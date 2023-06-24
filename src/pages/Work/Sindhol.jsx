@@ -14,7 +14,7 @@ const Sindhol = () => {
     "Inspired by the fluid nature of the Lambani practitioners’ creative process, the research artifact took the form of a zine—a self-published, non-commercial magazine. The zine serves as a medium to authentically capture and represent the essence of Lambani embroidery. It’s unconventional layout and design reflect the unrestricted artistic spirit found within the Lambani community.",
   ];
   return (
-    <div>
+    <div className="bg-backgroundGray ">
       <ProjectIntro
         title="From the Lambanis of Sindhol"
         paragraphs={paragraphs}
@@ -44,22 +44,8 @@ const Sindhol = () => {
             readers a slice of Sindhol’s embroidery practice.
           </p>
         </div>
-        <div className="px-6 lg:px-0">
-          <Link to={"/"}>
-            <div className="flex w-full items-center space-x-3 pb-6 pt-14 lg:pb-8 lg:pt-16">
-              <div>
-                <img className="lg:hidden" src={LeftArrow} alt="" />
-                <img className="hidden lg:block" src={GreenLeftArrow} alt="" />
-              </div>
-              <div>
-                <p className="text-base text-white lg:text-xl lg:text-primaryGreen">
-                  Home
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
       </section>
+      <Footer color="green" nextProject="browser-project" />
     </div>
   );
 };

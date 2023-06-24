@@ -247,7 +247,7 @@ const SmallWeb = () => {
             today.
           </p>
         </div>
-        <Footer />
+        <Footer nextProject="sindhol" />
       </section>
     </div>
   );

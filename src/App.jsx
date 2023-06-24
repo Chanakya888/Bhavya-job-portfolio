@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, ScrollRestoration } from "react-router-dom";
 import Home from "./pages/Home";
 import Thrift from "./pages/Work/Thrift";
 import { NavBarContextProvider } from "./contexts/NavBarContext";
@@ -10,10 +10,12 @@ import BrowserProject from "./pages/Work/BrowserProject";
 import Info from "./pages/Info";
 import Archive from "./pages/Archive";
 import { HoverContextProvider } from "./contexts/HoverContext";
+import RestoreScroll from "./components/RestoreScroll";
 
 const App = () => {
   return (
     <div className="h-screen w-screen">
+      <RestoreScroll />
       <NavBarContextProvider>
         <HoverContextProvider>
           <Navbar />
