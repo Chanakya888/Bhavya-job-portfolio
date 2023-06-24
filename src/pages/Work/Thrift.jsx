@@ -8,7 +8,7 @@ import Rachel from "../../assets/thrift-it/unique-collection.png";
 import MindMap from "../../assets/thrift-it/Mind-map.png";
 import AllProducts from "../../assets/thrift-it/all-products.png";
 import Menu from "../../assets/thrift-it/menu.png";
-import Nav from "../../assets/thrift-it/nav.png";
+import Nav from "../../assets/thrift-it/nav-bar.png";
 import NewDrop from "../../assets/thrift-it/New-drop.png";
 import ProjectIntro from "../../components/ProjectIntro";
 import Footer from "../../components/Footer";
