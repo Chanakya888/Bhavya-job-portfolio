@@ -179,19 +179,31 @@ const SmallWeb = () => {
               </p>
             </div>
           </div>
-          <div className="pt-3">
+          <div className="pt-3 lg:pt-10">
             <div className="flex flex-col lg:flex-row lg:space-x-10">
               <div className="lg:flex lg:flex-col-reverse">
                 <p className="text-xs lg:flex lg:w-full lg:justify-center lg:pt-3">
                   (a)
                 </p>
-                <img className="object-contain" src={LiveDemo} alt="" />
+                <div className="h-full">
+                  <img
+                    className="h-full object-cover object-center"
+                    src={LiveDemo}
+                    alt=""
+                  />
+                </div>
               </div>
               <div className="pt-3 lg:flex lg:flex-col-reverse  lg:pt-0">
                 <p className="text-xs lg:flex lg:w-full lg:justify-center lg:pt-3">
                   (b)
                 </p>
-                <img className="object-contain" src={Proto} alt="" />
+                <div>
+                  <img
+                    className="h-full w-full object-contain"
+                    src={Proto}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
             <div className="flex justify-center pt-3 lg:pt-12">
@@ -201,7 +213,7 @@ const SmallWeb = () => {
         </section>
       </div>
       <section className="mt-14 bg-secondaryBlue pt-7 lg:pt-24">
-        <div className="p-container px-6 text-white lg:w-8/12 lg:px-12">
+        <div className="p-container px-6 text-white lg:w-7/12 lg:px-12">
           <p className=" text-white">
             The project "Reimagining a Public Digital Space: The Small Web
             Edition" has been a journey of exploration and discovery into the

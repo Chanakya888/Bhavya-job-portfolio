@@ -9,7 +9,7 @@ import ForCover from "../../assets/small-web/for-cover.gif";
 const DesktopCover = () => {
   return (
     <section className="hidden lg:block">
-      <div className="relative h-[940px] w-full bg-secondaryBlue p-20">
+      <div className="relative w-full bg-secondaryBlue p-20">
         <div className="h-[600px]">
           <div className="flex space-x-10">
             <div className="flex flex-col space-y-10">

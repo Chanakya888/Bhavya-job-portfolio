@@ -1,9 +1,9 @@
 import React from "react";
 import ProjectIntro from "../../components/ProjectIntro";
 import TitleImage from "../../assets/browser-project/title-image.png";
-import Anatomy from "../../assets/browser-project/anatomy.gif";
-import Frequently from "../../assets/browser-project/frequently.gif";
-import Tabs from "../../assets/browser-project/the-tabs.gif";
+import Anatomy from "../../assets/browser-project/anatomy.mp4";
+import Frequently from "../../assets/browser-project/frequently.mp4";
+import Tabs from "../../assets/browser-project/the-tabs.mp4";
 import LeftSideText from "../../components/browser-project/LeftSideText";
 import RightSideText from "../../components/browser-project/RightSideText";
 import BrowserProjectNotes from "../../components/browser-project/BrowserProjectNotes";
@@ -47,20 +47,34 @@ const BrowserProject = () => {
           </div>
         </LeftSideText>
         <div className="flex w-full justify-end overflow-hidden pt-2 lg:pt-32">
-          <img
+          {/* <img
             className="translate-x-[150px] object-cover lg:translate-x-[50px] lg:object-contain"
             src={Anatomy}
             alt=""
-          />
+          /> */}
+          <video
+            className="translate-x-[150px] object-cover lg:translate-x-[50px] lg:object-contain"
+            src={Anatomy}
+            autoPlay
+            loop
+            muted
+          ></video>
         </div>
       </section>
       <section className="pt-10 lg:flex lg:pt-44">
         <div className="flex w-full justify-start overflow-hidden">
-          <img
+          {/* <img
             className="max-w-[278px] object-cover lg:w-full lg:max-w-[700px] lg:object-contain"
             src={Frequently}
             alt=""
-          />
+          /> */}
+          <video
+            className="max-w-[278px] object-cover lg:w-full lg:max-w-[700px] lg:object-contain"
+            src={Frequently}
+            autoPlay
+            loop
+            muted
+          ></video>
         </div>
         <RightSideText>
           <p className="italic">Frequently visited</p>
@@ -77,12 +91,12 @@ const BrowserProject = () => {
 
       <section className="pt-10 lg:flex lg:flex-row-reverse lg:pt-44">
         <div className="flex w-full justify-end overflow-hidden pt-2">
-          <img
+          {/* <img
             className="translate-x-[150px] object-cover lg:translate-x-[50px] lg:object-contain"
             src={Tabs}
             alt=""
-          />
-          {/* <video src={Tabs} autoPlay loop></video> */}
+          /> */}
+          <video src={Tabs} autoPlay loop muted></video>
         </div>
         <LeftSideText>
           <div className="p-container pt-2">

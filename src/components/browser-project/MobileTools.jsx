@@ -1,10 +1,10 @@
 import React from "react";
 import LeftSideText from "./LeftSideText";
 import RightSideText from "./RightSideText";
-import Tools from "../../assets/browser-project/the-tools.gif";
+import Tools from "../../assets/browser-project/the-tools.mp4";
 import Notes from "../../assets/browser-project/notes.png";
-import Draw from "../../assets/browser-project/draw.png";
-import Code from "../../assets/browser-project/code.png";
+import Draw from "../../assets/browser-project/draw.mp4";
+import Code from "../../assets/browser-project/code.mp4";
 
 const MobileTools = () => {
   return (
@@ -23,7 +23,8 @@ const MobileTools = () => {
       </section>
       <section>
         <div className="mt-6 px-6">
-          <img className="w-full object-contain" src={Tools} alt="" />
+          {/* <img className="w-full object-contain" src={Tools} alt="" /> */}
+          <video src={Tools} autoPlay loop muted></video>
         </div>
         <RightSideText>
           <p>
@@ -50,7 +51,14 @@ const MobileTools = () => {
       </section>
       <section>
         <div className="mt-10 px-6">
-          <img className="w-full object-contain" src={Code} alt="" />
+          {/* <img className="w-full object-contain" src={Code} alt="" /> */}
+          <video
+            className="w-full object-contain"
+            src={Code}
+            autoPlay
+            loop
+            muted
+          ></video>
         </div>
         <RightSideText>
           <p>
@@ -67,7 +75,14 @@ const MobileTools = () => {
       </section>
       <section>
         <div className="mt-10 px-6">
-          <img className="w-full object-contain" src={Draw} alt="" />
+          <video
+            className="w-full object-contain"
+            src={Draw}
+            autoPlay
+            loop
+            muted
+          ></video>
+          {/* <img className="w-full object-contain" src={Draw} alt="" /> */}
         </div>
         <LeftSideText>
           <div className="p-container pt-2">
