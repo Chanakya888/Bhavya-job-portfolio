@@ -23,7 +23,6 @@ const MobileTools = () => {
       </section>
       <section>
         <div className="mt-6 px-6">
-          {/* <img className="w-full object-contain" src={Tools} alt="" /> */}
           <video src={Tools} autoPlay loop muted></video>
         </div>
         <RightSideText>
@@ -51,7 +50,6 @@ const MobileTools = () => {
       </section>
       <section>
         <div className="mt-10 px-6">
-          {/* <img className="w-full object-contain" src={Code} alt="" /> */}
           <video
             className="w-full object-contain"
             src={Code}
@@ -82,7 +80,17 @@ const MobileTools = () => {
             loop
             muted
           ></video>
-          {/* <img className="w-full object-contain" src={Draw} alt="" /> */}
+        </div>
+        <div className="x-padding flex w-full justify-end pt-0.5">
+          <a
+            href="https://twomuch.studio/projects/communitea"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="super-small underline">
+              3D image borrowed from Two much studio
+            </p>
+          </a>
         </div>
         <LeftSideText>
           <div className="p-container pt-2">

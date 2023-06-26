@@ -20,7 +20,32 @@ const Archive = () => {
         year="2022"
         type="Artist Book"
         type2="workshop"
-      />
+      >
+        <p>
+          The Artist book is themed around the concept of a physical book that
+          evokes a sense of a dysfunctional digital book.
+        </p>
+        <p>
+          The tunnel-like shaped book essentially consists of a set of frames
+          that induce the idea of various stages in the passage of time. The
+          Artist book here tries to inculcate the idea of a short snippet taken
+          from Paul Virilio's - The Original Accident, which is also the text of
+          the book. Virilio interprets one of Aristotle's remarks on the
+          “passage of time”. He essentially throws light on how every substance
+          or being, in the end, eventually becomes a victim of the accident (a
+          catastrophe) in the cumulative course of time.
+        </p>
+        <p>
+          The idea that I wanted to take back from the text was the part with
+          "passage of time and unplanned events (ie -accidents/castastrophes)"
+          and how we essentially succumb to these unplanned events.
+        </p>
+        <p>
+          For my book, the broken screen or the arrangement of the frames in a
+          tunnel like body can perhaps be considered as the series of such
+          events that occur over the circulation of time.
+        </p>
+      </ProjectIntro>
       <section className="relative w-full lg:flex lg:flex-row-reverse lg:justify-between">
         <div className="flex w-full justify-end">
           <img

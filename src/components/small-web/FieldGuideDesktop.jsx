@@ -7,7 +7,7 @@ const FieldGuideDesktop = () => {
   return (
     <section className="hidden pt-[147px] lg:block">
       <div>
-        <p className="text-2xl md:text-3xl lg:text-5xl">Field guide</p>
+        <p className="text-2xl md:text-3xl lg:text-5xl">The Field guide</p>
       </div>
       <div className="grid grid-cols-6 gap-y-24 pt-24">
         <div className="p-container col-start-1 col-end-3 max-w-[330px]">

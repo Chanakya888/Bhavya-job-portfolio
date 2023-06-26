@@ -14,19 +14,38 @@ import FieldGuideMobile from "../../components/small-web/FieldGuideMobile";
 import MobileCover from "../../components/small-web/MobileCover";
 
 const SmallWeb = () => {
-  let paragraphs = [
-    "Public digital spaces are crucial for facilitating public discourse, community engagement, and collective action. They provide a platform for people to express themselves, seek support, learn from others, and collaborate on initiatives addressing shared challenges or promoting common interests.",
-    "Editor X's article on Somewhere Good, a voice note-based social app for intimate community conversations and local hangout spots, nudged my interest in exploring this intervention that emphasized the need to shape our digital environment just as we do with physical spaces.",
-  ];
   return (
     <div>
       <ProjectIntro
         title="The Small Social Web"
-        paragraphs={paragraphs}
         year="2023"
         type="Speculative & Interaction design"
         type2="CAPSTONE PROJECT"
-      />
+      >
+        <div>
+          <p>
+            Public digital spaces are crucial for facilitating public discourse,
+            community engagement, and collective action. They provide a platform
+            for people to express themselves, seek support, learn from others,
+            and collaborate on initiatives addressing shared challenges or
+            promoting common interests.
+          </p>
+          <p>
+            <a
+              className="underline"
+              href="https://www.editorx.com/shaping-design/article/the-designers-creating-a-slower-kinder-future-for-social-media"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Editor X's article on Somewhere Good
+            </a>
+            , a voice note-based social app for intimate community conversations
+            and local hangout spots, nudged my interest in exploring this
+            intervention that emphasized the need to shape our digital
+            environment just as we do with physical spaces.
+          </p>
+        </div>
+      </ProjectIntro>
       <DesktopCover />
       <MobileCover />
       <div className="w-full px-6 lg:px-16">

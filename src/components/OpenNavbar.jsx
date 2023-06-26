@@ -12,7 +12,7 @@ const OpenNavbar = () => {
     setToggleNav(false);
   }
   return (
-    <div className="absolute left-0 top-0 z-10 h-screen w-screen bg-backgroundGray px-6 pt-7">
+    <div className="fixed left-0 top-0 z-10 h-screen w-screen bg-backgroundGray px-6 pt-7">
       <div className="flex justify-between pb-10">
         <button onClick={handleCloseNav}>
           <img className="w-[30px] object-contain" src={Close} alt="" />

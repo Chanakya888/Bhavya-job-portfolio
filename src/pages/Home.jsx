@@ -1,6 +1,10 @@
 import { useContext, useEffect } from "react";
 import SelectedWork from "../components/SelectedWork";
 import { HoverContext } from "../contexts/HoverContext";
+import ThriftItLandingImage from "../assets/landing-page/thrift-it.png";
+import BrowserProjectLandingImage from "../assets/landing-page/browser-project.png";
+import SmallWebLandingImage from "../assets/landing-page/small-web.png";
+import SindholLandingImage from "../assets/landing-page/sindhol.png";
 
 const Home = () => {
   const { hoverStates, handleLeave } = useContext(HoverContext);
@@ -31,14 +35,18 @@ const Home = () => {
             hoverStates[0] ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="h-[280px] w-[380px] bg-black"></div>
+          <div className="bg-g h-[280px] w-[380px]">
+            <img className="object-contain" src={ThriftItLandingImage} alt="" />
+          </div>
         </div>
         <div
           className={`absolute left-12 top-40 hidden transition-opacity duration-300 lg:block ${
             hoverStates[1] ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="h-[280px] w-[380px] bg-browserProjectBlue"></div>
+          <div className="h-[280px] w-[380px]">
+            <img className="object-contain" src={SmallWebLandingImage} alt="" />
+          </div>
         </div>
 
         <div
@@ -46,7 +54,9 @@ const Home = () => {
             hoverStates[2] ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="h-[280px] w-[380px] bg-homePurple"></div>
+          <div className="h-[280px] w-[380px]">
+            <img className="object-contain" src={SindholLandingImage} alt="" />
+          </div>
         </div>
 
         <div
@@ -54,7 +64,13 @@ const Home = () => {
             hoverStates[3] ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="h-[280px] w-[380px] bg-browserProjectBlue"></div>
+          <div className="h-[280px] w-[380px]">
+            <img
+              className="object-contain"
+              src={BrowserProjectLandingImage}
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </>

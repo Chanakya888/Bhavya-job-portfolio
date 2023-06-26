@@ -12,19 +12,27 @@ import DesktopTools from "../../components/browser-project/DesktopTools";
 import Footer from "../../components/Footer";
 
 const BrowserProject = () => {
-  let paragraphs = [
-    "Our window to the Internet are our browsers. With over 33 years since the first browser came out our interactions with the Internet evolved but our windows to these interactions remained pretty much the same. The browser project is an intervention aimed at unlocking the vast potential that lies within these browsers.",
-    "This project aims to rethink the traditional role of browsers, expand their capabilities, and unlock their potential to become powerful tools for productivity, creativity, and discovery.",
-  ];
   return (
     <div>
       <ProjectIntro
         title="The Browser Project"
-        paragraphs={paragraphs}
         year="2023"
         type="UI/UX"
         type2="SELF INITIATED"
-      />
+      >
+        <p>
+          Our window to the Internet are our browsers. With over 33 years since
+          the first browser came out our interactions with the Internet evolved
+          but our windows to these interactions remained pretty much the same.
+          The browser project is an intervention aimed at unlocking the vast
+          potential that lies within these browsers.
+        </p>
+        <p>
+          This project aims to rethink the traditional role of browsers, expand
+          their capabilities, and unlock their potential to become powerful
+          tools for productivity, creativity, and discovery.
+        </p>
+      </ProjectIntro>
       <div className="flex w-full justify-center bg-secondaryPurple py-6 lg:py-20 xl:py-24">
         <img className="w-9/12 object-contain" src={TitleImage} alt="" />
       </div>
@@ -47,11 +55,6 @@ const BrowserProject = () => {
           </div>
         </LeftSideText>
         <div className="flex w-full justify-end overflow-hidden pt-2 lg:pt-32">
-          {/* <img
-            className="translate-x-[150px] object-cover lg:translate-x-[50px] lg:object-contain"
-            src={Anatomy}
-            alt=""
-          /> */}
           <video
             className="translate-x-[150px] object-cover lg:translate-x-[50px] lg:object-contain"
             src={Anatomy}
@@ -63,11 +66,6 @@ const BrowserProject = () => {
       </section>
       <section className="pt-10 lg:flex lg:pt-44">
         <div className="flex w-full justify-start overflow-hidden">
-          {/* <img
-            className="max-w-[278px] object-cover lg:w-full lg:max-w-[700px] lg:object-contain"
-            src={Frequently}
-            alt=""
-          /> */}
           <video
             className="max-w-[278px] object-cover lg:w-full lg:max-w-[700px] lg:object-contain"
             src={Frequently}
@@ -91,11 +89,6 @@ const BrowserProject = () => {
 
       <section className="pt-10 lg:flex lg:flex-row-reverse lg:pt-44">
         <div className="flex w-full justify-end overflow-hidden pt-2">
-          {/* <img
-            className="translate-x-[150px] object-cover lg:translate-x-[50px] lg:object-contain"
-            src={Tabs}
-            alt=""
-          /> */}
           <video src={Tabs} autoPlay loop muted></video>
         </div>
         <LeftSideText>
@@ -119,7 +112,7 @@ const BrowserProject = () => {
       <div className="p-white mt-16 bg-browserProjectBlue pt-8 lg:mt-10 lg:pt-24">
         <MobileTools />
         <DesktopTools />
-        <section className="x-padding mt-28 md:w-7/12 lg:pt-44">
+        <section className="x-padding mt-20 md:w-7/12 lg:pt-44">
           <p className="text-base italic lg:text-4xl">
             More than just a window
           </p>

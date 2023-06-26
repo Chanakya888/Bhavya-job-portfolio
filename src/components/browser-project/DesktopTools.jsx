@@ -10,10 +10,7 @@ const DesktopTools = () => {
         <div className="pr-5">
           <p>Draw</p>
         </div>
-        {/* <div className="absolute bottom-0 right-0 w-[54px]">
-          <p>3D image borrowed from</p>
-        </div> */}
-        {/* <img className="z-10 w-7/12 object-contain" src={Draw} alt="" /> */}
+
         <video
           className="z-10 w-7/12 object-contain"
           src={Draw}
@@ -23,23 +20,26 @@ const DesktopTools = () => {
         >
           Video is loading
         </video>
-        <div className="absolute -bottom-60 left-20 max-w-[480px] ">
+        <div className="flex w-[140px] items-end pl-3">
+          <a
+            href="https://twomuch.studio/projects/communitea"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="underline">3D image borrowed from Two much studio</p>
+          </a>
+        </div>
+        <div className="absolute -bottom-80 left-10 max-w-[500px] ">
           <div className="pr-5">
             <p>Stickers</p>
           </div>
-          {/* <img className="w-full object-contain" src={Tools} alt="" /> */}
           <video src={Tools} autoPlay loop muted></video>
         </div>
       </div>
-      <div className="flex w-full justify-end pt-4 lg:pr-3 xl:pr-16">
+      <div className="flex w-full justify-end space-x-3 pt-4 lg:pr-3 xl:pr-16">
         <div className="flex items-end">
           <p>Collaborate</p>
         </div>
-        {/* <img
-          className="object-contain lg:max-w-[450px] xl:max-w-[650px]"
-          src={Code}
-          alt=""
-        /> */}
         <video
           className="object-contain lg:max-w-[450px] xl:max-w-[650px]"
           src={Code}

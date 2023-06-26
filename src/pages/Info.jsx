@@ -17,24 +17,26 @@ const Info = () => {
               alt=""
             />
           </div>
-          <div className="pt-8 lg:w-3/5 lg:pt-0">
-            <p className="text-xl font-medium uppercase lg:text-2xl">
-              biographical note
-            </p>
-            <div className="p-container pt-2 lg:pt-5">
-              <p>
-                Bhavya Gupta is a M.Des in Human-Centered design graduate from
-                Srishti Manipal Institute of Art, Design & Technology,
-                Bangalore, India. She comes from an engineering background, and
-                her interests lie in Interaction, visual, new media and
-                experience design.{" "}
+          <div className="flex flex-col justify-between pt-8 lg:w-3/5 lg:pt-0">
+            <div>
+              <p className="text-xl font-medium uppercase lg:text-2xl">
+                biographical note
               </p>
-              <p>
-                The portfolio only highlights some major chunks about the
-                projects to give its basic essence. To know more about the
-                process and its details do write a mail to the given below
-                contact.
-              </p>
+              <div className="p-container pt-2 lg:pt-5">
+                <p>
+                  Bhavya Gupta is a M.Des in Human-Centered design graduate from
+                  Srishti Manipal Institute of Art, Design & Technology,
+                  Bangalore, India. She comes from an engineering background,
+                  and her interests lie in Interaction, visual, new media and
+                  experience design.{" "}
+                </p>
+                <p>
+                  The portfolio only highlights some major chunks about the
+                  projects to give its basic essence. To know more about the
+                  process and its details do write a mail to the given below
+                  contact.
+                </p>
+              </div>
             </div>
             <div className="pt-3">
               <Hrline />

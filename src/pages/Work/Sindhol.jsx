@@ -32,7 +32,21 @@ const Sindhol = () => {
         year="2022"
         type="Ethnographic study, Zine"
         type2="TRANSDICIPLINARY LAB PROJECT"
-      />
+      >
+        <p>
+          From the Lambanis of Sindhol is an ethnographic study that focuses on
+          the practice of Lambani embroidery within the Sindhol Thanda (Thanda
+          meaning: A human settlement).
+        </p>
+        <p>
+          Inspired by the fluid nature of the Lambani practitioners’ creative
+          process, the research artifact took the form of a zine—a
+          self-published, non-commercial magazine. The zine serves as a medium
+          to authentically capture and represent the essence of Lambani
+          embroidery. It’s unconventional layout and design reflect the
+          unrestricted artistic spirit found within the Lambani community.
+        </p>
+      </ProjectIntro>
 
       <div className="w-full">
         <img className="w-full object-contain" src={ZineGif} alt="" />

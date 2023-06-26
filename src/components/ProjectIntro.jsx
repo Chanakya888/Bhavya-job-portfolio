@@ -1,22 +1,15 @@
 import React from "react";
 
-const ProjectIntro = ({ title, paragraphs, year, type, type2 }) => {
-  console.log(paragraphs);
+const ProjectIntro = ({ title, year, type, type2, children }) => {
   return (
     <section className="px-6 pb-12 pt-[53px] lg:px-16">
       <div>
-        <h1 className="text-2xl m-0 lg:w-8/12 lg:text-8xl xl:w-6/12">
+        <h1 className="m-0 text-2xl lg:w-8/12 lg:text-8xl xl:w-6/12">
           {title}
         </h1>
         <div className="pt-4 lg:flex lg:space-x-52 lg:pt-10">
-          <div className="p-container flex max-w-[636px] flex-col sm:w-9/12">
-            {paragraphs.map((eachPara, index) => {
-              return (
-                <p key={index} className="text-base lg:text-xl">
-                  {eachPara}
-                </p>
-              );
-            })}
+          <div className="p-container flex max-w-[636px] flex-col text-base sm:w-9/12 lg:text-xl">
+            {children}
           </div>
           <div>
             <div className="flex w-full space-x-6 pt-6 sm:justify-start lg:flex-col lg:space-x-0">

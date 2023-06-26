@@ -15,25 +15,34 @@ import Footer from "../../components/Footer";
 import ThriftItJeans from "../../assets/thrift-it/thrift-it-jeans.png";
 
 const Thrift = () => {
-  let paragraphs = [
-    "Thrift It is an app concept that helps people find new thrift shops, and assists with tracking their favourite collection drops. Thrift It can help make thrifting easier and more accessible for people. It is an initiative to encourage thrifting among people by reducing the consumerism that has contributed to our landfills, which has been a huge contributor to Climate Change.",
-    "Thrift It is a self initiated project that started off during my summer break to explore app ideas and experiment with the approach towards a design language.",
-  ];
   return (
     <div>
       <ProjectIntro
         title="Thrift it"
-        paragraphs={paragraphs}
         year="2022"
         type="Product Design, UI/UX"
         type2="SELF INITIATED"
-      />
+      >
+        <p>
+          Thrift It is an app concept that helps people find new thrift shops,
+          and assists with tracking their favourite collection drops. Thrift It
+          can help make thrifting easier and more accessible for people. It is
+          an initiative to encourage thrifting among people by reducing the
+          consumerism that has contributed to our landfills, which has been a
+          huge contributor to Climate Change.
+        </p>
+        <p>
+          Thrift It is a self initiated project that started off during my
+          summer break to explore app ideas and experiment with the approach
+          towards a design language.
+        </p>
+      </ProjectIntro>
       <section className="bg-primaryGreen ">
-        <div className="flex space-x-10 overflow-x-scroll px-6 pt-10 md:px-0 lg:flex-row lg:justify-center">
-          <div className="max-h-[850px] w-1/2 max-w-[410px] lg:mt-[176px]">
+        <div className="flex overflow-x-scroll px-6 pt-10 md:px-0 lg:flex-row lg:justify-center">
+          <div className="max-h-[650px] w-1/2 max-w-[410px] lg:mt-[176px]">
             <img className="h-full w-full object-contain" src={Menu} alt="" />
           </div>
-          <div className="max-h-[850px] w-1/2 max-w-[410px] ">
+          <div className="max-h-[650px] w-1/2 max-w-[410px] ">
             <img
               className="h-full w-full object-contain"
               src={AllProducts}
