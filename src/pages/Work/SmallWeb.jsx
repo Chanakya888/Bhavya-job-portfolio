@@ -1,11 +1,11 @@
 import React from "react";
 import ProjectIntro from "../../components/ProjectIntro";
-import Interactions from "../../assets/small-web/interactions.gif";
+import Interactions from "../../assets/small-web/interactions.mp4";
 import ResponseA from "../../assets/small-web/response-a.png";
 import ResponseB from "../../assets/small-web/response-b.png";
-import Gradient from "../../assets/small-web/gradient.gif";
+import Gradient from "../../assets/small-web/gradient.mp4";
 import Proto from "../../assets/small-web/proto.png";
-import LiveDemo from "../../assets/small-web/live.gif";
+import LiveDemo from "../../assets/small-web/live.mp4";
 import StopMotion from "../../assets/small-web/stop-motion.gif";
 import Footer from "../../components/Footer";
 import DesktopCover from "../../components/small-web/DesktopCover";
@@ -116,11 +116,13 @@ const SmallWeb = () => {
             </p>
           </div>
           <div className="items-start lg:flex lg:space-x-16 lg:pt-20 xl:space-x-20">
-            <img
+            <video
               className="my-8 w-full max-w-[500px] object-contain lg:my-0"
               src={Interactions}
-              alt=""
-            />
+              autoPlay
+              loop
+              muted
+            ></video>
             <div className="p-container">
               <p>
                 (i) The first interaction is called ‘Like Benches in a Park’
@@ -170,7 +172,13 @@ const SmallWeb = () => {
         <section className="w-full lg:mt-28">
           <div className="grid-cols-2 gap-x-10 lg:grid">
             <div className="order-2 my-8 max-w-[550px] lg:my-0 ">
-              <img className=" w-full object-contain" src={Gradient} alt="" />
+              <video
+                className="w-full object-contain"
+                src={Gradient}
+                autoPlay
+                loop
+                muted
+              ></video>
             </div>
             <div className="p-container order-1">
               <p>
@@ -199,17 +207,19 @@ const SmallWeb = () => {
             </div>
           </div>
           <div className="pt-3 lg:pt-10">
-            <div className="flex flex-col lg:flex-row lg:space-x-10">
-              <div className="lg:flex lg:flex-col-reverse">
+            <div className="flex flex-col lg:grid lg:grid-cols-2 lg:flex-row lg:space-x-10">
+              <div className="lg:flex lg:w-full lg:flex-col-reverse">
                 <p className="text-xs lg:flex lg:w-full lg:justify-center lg:pt-3">
                   (a)
                 </p>
-                <div className="h-full">
-                  <img
-                    className="h-full object-cover object-center"
+                <div className="h-full w-full">
+                  <video
+                    className="h-full w-full object-cover object-center"
                     src={LiveDemo}
-                    alt=""
-                  />
+                    autoPlay
+                    loop
+                    muted
+                  ></video>
                 </div>
               </div>
               <div className="pt-3 lg:flex lg:flex-col-reverse  lg:pt-0">
