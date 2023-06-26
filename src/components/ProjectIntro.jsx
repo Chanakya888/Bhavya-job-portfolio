@@ -8,7 +8,7 @@ const ProjectIntro = ({ title, year, type, type2, children }) => {
           {title}
         </h1>
         <div className="pt-4 lg:flex lg:space-x-52 lg:pt-10">
-          <div className="p-container flex max-w-[636px] flex-col text-base sm:w-9/12 lg:text-xl">
+          <div className=" p-container project-intro-mobile flex max-w-[636px] flex-col text-base sm:w-9/12 lg:text-xl">
             {children}
           </div>
           <div>
