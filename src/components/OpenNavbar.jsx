@@ -40,21 +40,19 @@ const OpenNavbar = () => {
               <Hrline />
             </div>
           </Link>
-          <Link to={`/`} onClick={handleCloseNav}>
-            <div>
-              <div className="h-full w-full pb-6 pt-5">
-                <a
-                  href={Resume}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline"
-                >
-                  <p className="text-base">Resume</p>
-                </a>
-              </div>
-              <Hrline />
+          <div>
+            <div className="h-full w-full pb-6 pt-5">
+              <a
+                href={Resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline"
+              >
+                <p className="text-base">Resume</p>
+              </a>
             </div>
-          </Link>
+            <Hrline />
+          </div>
           <Link to={`/archive`} onClick={handleCloseNav}>
             <div>
               <div className="h-full w-full pb-6 pt-5">

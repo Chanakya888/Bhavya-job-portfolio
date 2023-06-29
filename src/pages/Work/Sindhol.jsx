@@ -4,11 +4,6 @@ import Footer from "../../components/Footer";
 import ZineGif from "../../assets/sindhol/zine-full.gif";
 
 const Sindhol = () => {
-  let paragraphs = [
-    "From the Lambanis of Sindhol is an ethnographic study that focuses on the practice of Lambani embroidery within the Sindhol Thanda (Thanda meaning: A human settlement).",
-    "Inspired by the fluid nature of the Lambani practitioners’ creative process, the research artifact took the form of a zine—a self-published, non-commercial magazine. The zine serves as a medium to authentically capture and represent the essence of Lambani embroidery. It’s unconventional layout and design reflect the unrestricted artistic spirit found within the Lambani community.",
-  ];
-
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -27,8 +22,7 @@ const Sindhol = () => {
   return (
     <div className=" ">
       <ProjectIntro
-        title="From the Lambanis of Sindhol"
-        paragraphs={paragraphs}
+        title="sindhol"
         year="2022"
         type="Ethnographic study, Zine"
         type2="TRANSDICIPLINARY LAB PROJECT"

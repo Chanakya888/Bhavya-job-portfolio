@@ -36,7 +36,7 @@ const MobileTools = () => {
         <div className="mt-10 px-6">
           <img className="w-full object-contain" src={Notes} alt="" />
         </div>
-        <div className="x-padding p-container mt-3">
+        <div className="x-padding p-container mt-3 w-1/2">
           <p>
             Notes - Make notes as you read or participate in a meeting, share
             them as PDF’s or links later.

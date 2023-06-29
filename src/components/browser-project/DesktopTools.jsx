@@ -29,9 +29,9 @@ const DesktopTools = () => {
             <p className="underline">3D image borrowed from Two much studio</p>
           </a>
         </div>
-        <div className="absolute -bottom-80 left-10 max-w-[500px] ">
+        <div className="absolute -bottom-80 left-10 max-w-[500px]">
           <div className="pr-5">
-            <p>Stickers</p>
+            <p>Stickies</p>
           </div>
           <video src={Tools} autoPlay loop muted></video>
         </div>

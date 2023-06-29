@@ -26,15 +26,13 @@ const Info = () => {
                 <p>
                   Bhavya Gupta is a M.Des in Human-Centered design graduate from
                   Srishti Manipal Institute of Art, Design & Technology,
-                  Bangalore, India. She comes from an engineering background,
-                  and her interests lie in Interaction, visual, new media and
-                  experience design.{" "}
+                  Bangalore, India. She comes from a Computer Science
+                  Engineering background, and her interests lie in New Media
+                  Research and Experience design.
                 </p>
                 <p>
-                  The portfolio only highlights some major chunks about the
-                  projects to give its basic essence. To know more about the
-                  process and its details do write a mail to the given below
-                  contact.
+                  To delve deeper into knowing more about the projects or the
+                  process do write a mail to the given below contact.
                 </p>
               </div>
             </div>
@@ -59,7 +57,7 @@ const Info = () => {
       </div>
       <div className="">
         <Link to={"/"}>
-          <div className="flex w-full items-center space-x-3 pb-2 pl-3 pt-8 lg:pb-8 lg:pl-8 lg:pt-16 xl:pb-10 xl:pl-12 xl:pt-64">
+          <div className="flex w-full items-center space-x-3 pb-2 pl-3 pt-8 lg:pb-8 lg:pl-16 lg:pt-16 xl:pb-10 xl:pl-12 xl:pt-64">
             <div>
               <img src={GreenLeftArrow} alt="" />
             </div>

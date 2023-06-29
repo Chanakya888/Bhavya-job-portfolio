@@ -17,7 +17,7 @@ const SmallWeb = () => {
   return (
     <div>
       <ProjectIntro
-        title="The Small Social Web"
+        title="small-web"
         year="2023"
         type="Speculative & Interaction design"
         type2="CAPSTONE PROJECT"
@@ -152,13 +152,21 @@ const SmallWeb = () => {
           <div className="mt-16">
             <div className="lg:flex lg:space-x-10 xl:space-x-20">
               <div className="relative">
-                <img className="w-full object-contain" src={ResponseA} alt="" />
+                <img
+                  className="w-full object-contain lg:h-[300px]"
+                  src={ResponseA}
+                  alt=""
+                />
                 <p className="absolute left-0 top-0 lg:relative lg:flex lg:w-full lg:justify-center lg:pt-7">
                   (a)
                 </p>
               </div>
               <div className="relative">
-                <img className="w-full object-contain" src={ResponseB} alt="" />
+                <img
+                  className="w-full object-contain lg:h-[300px]"
+                  src={ResponseB}
+                  alt=""
+                />
                 <p className="absolute left-0 top-0 lg:relative lg:flex lg:w-full lg:justify-center lg:pt-7">
                   (b)
                 </p>
@@ -170,10 +178,10 @@ const SmallWeb = () => {
           </div>
         </section>
         <section className="w-full lg:mt-28">
-          <div className="grid-cols-2 gap-x-10 lg:grid">
-            <div className="order-2 my-8 max-w-[550px] lg:my-0 ">
+          <div className=" grid-cols-2 gap-x-10 lg:grid">
+            <div className="order-2 my-8 max-h-[400px] max-w-[550px] overflow-hidden lg:my-0 lg:max-h-[600px]">
               <video
-                className="w-full object-contain"
+                className=" w-full -translate-y-[300px] object-contain"
                 src={Gradient}
                 autoPlay
                 loop
@@ -209,7 +217,7 @@ const SmallWeb = () => {
           <div className="pt-3 lg:pt-10">
             <div className="flex flex-col lg:grid lg:grid-cols-2 lg:flex-row lg:space-x-10">
               <div className="lg:flex lg:w-full lg:flex-col-reverse">
-                <p className="text-xs lg:flex lg:w-full lg:justify-center lg:pt-3">
+                <p className="text-sm lg:flex lg:w-full lg:justify-center lg:pt-3">
                   (a)
                 </p>
                 <div className="h-full w-full">
@@ -223,7 +231,7 @@ const SmallWeb = () => {
                 </div>
               </div>
               <div className="pt-3 lg:flex lg:flex-col-reverse  lg:pt-0">
-                <p className="text-xs lg:flex lg:w-full lg:justify-center lg:pt-3">
+                <p className="text-sm lg:flex lg:w-full lg:justify-center lg:pt-3">
                   (b)
                 </p>
                 <div>

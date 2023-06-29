@@ -19,10 +19,19 @@ const Home = () => {
     <>
       <div className="calc-height relative px-6  lg:grid lg:grid-cols-14 lg:pb-10">
         <div className="hidden h-full items-end lg:flex lg:pb-4 lg:pl-10">
-          <p className="text-xs">@bhavyeahgupta</p>
+          <p className="text-xs">
+            <a
+              href="https://www.instagram.com/studio.leftovers/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline"
+            >
+              @bhavyeahgupta
+            </a>
+          </p>
         </div>
         <div className="flex h-full flex-col flex-wrap justify-between pt-10 lg:col-start-6 lg:col-end-14 lg:pt-10">
-          <p className="w-5/6 text-base text-primaryGreen lg:w-[480px] lg:text-xl">
+          <p className="w-4/6 text-base text-primaryGreen lg:w-[480px] lg:text-xl">
             Hello, I'm Bhavya, a Human-Computer Interaction Researcher and
             Designer based in Hyderabad, India. I am actively seeking a
             full-time position as an Interaction Designer or Researcher, whether
@@ -31,7 +40,7 @@ const Home = () => {
           <SelectedWork />
         </div>
         <div
-          className={`absolute left-12 top-40 hidden transition-opacity duration-300 lg:block ${
+          className={`absolute left-12 top-10 hidden transition-opacity duration-300 lg:block ${
             hoverStates[0] ? "opacity-100" : "opacity-0"
           }`}
         >

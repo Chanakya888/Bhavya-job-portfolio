@@ -1,11 +1,12 @@
 import React from "react";
+import TitleHack from "./TitleHack";
 
 const ProjectIntro = ({ title, year, type, type2, children }) => {
   return (
     <section className="px-6 pb-12 pt-[53px] lg:px-16">
       <div>
-        <h1 className="m-0 text-2xl lg:w-8/12 lg:text-8xl xl:w-6/12">
-          {title}
+        <h1 className="m-0 text-2xl lg:w-11/12 lg:text-8xl xl:w-9/12">
+          <TitleHack title={title} />
         </h1>
         <div className="pt-4 lg:flex lg:space-x-52 lg:pt-10">
           <div className=" p-container project-intro-mobile flex max-w-[636px] flex-col text-base sm:w-9/12 lg:text-xl">

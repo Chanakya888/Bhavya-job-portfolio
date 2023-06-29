@@ -9,7 +9,7 @@ const Archive = () => {
   return (
     <div>
       <ProjectIntro
-        title="The Dysfunctional Digital book"
+        title="digital-book"
         year="2022"
         type="Artist Book"
         type2="workshop"
@@ -60,7 +60,7 @@ const Archive = () => {
         </div>
         <div className="absolute bottom-20 left-0 hidden lg:block">
           <Link to={"/"}>
-            <div className="flex w-full items-center space-x-3 pb-6 pl-6 lg:pb-8 lg:pl-8 xl:pb-12 xl:pl-12">
+            <div className="flex w-full items-center space-x-3 pb-6 pl-6 lg:pb-8 lg:pl-16 xl:pb-12 ">
               <div>
                 <img src={GreenLeftArrow} alt="" />
               </div>

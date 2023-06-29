@@ -23,7 +23,14 @@ const Navbar = () => {
           <span className="h-0.5 w-8 rounded-full bg-primaryGreen"></span>
         </div>
         <div>
-          <p>@bhavyeahgupta</p>
+          <a
+            href="https://www.instagram.com/studio.leftovers/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline"
+          >
+            <p>@bhavyeahgupta</p>
+          </a>
         </div>
       </div>
       <div className="hidden w-full lg:grid lg:grid-cols-14 lg:px-6 lg:pt-10">
@@ -34,7 +41,7 @@ const Navbar = () => {
         </Link>
         <div className="col-start-6 col-end-7 flex space-x-10">
           <Link to={`/info`} className="inline">
-            <h3>Info.</h3>
+            <h3>Info</h3>
           </Link>
           <a
             href={Resume}
@@ -45,7 +52,7 @@ const Navbar = () => {
             <h3>Resume</h3>
           </a>
         </div>
-        <div className="lg:col-start-13 lg:pr-12">
+        <div className="flex w-full justify-end lg:col-start-13">
           <Link to={`/archive`} className="inline">
             <h3 className="">Archive</h3>
           </Link>

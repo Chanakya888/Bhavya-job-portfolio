@@ -15,7 +15,7 @@ const BrowserProject = () => {
   return (
     <div>
       <ProjectIntro
-        title="The Browser Project"
+        title="browser-project"
         year="2023"
         type="UI/UX"
         type2="SELF INITIATED"
@@ -36,32 +36,34 @@ const BrowserProject = () => {
       <div className="flex w-full justify-center bg-secondaryPurple py-6 lg:py-20 xl:py-24">
         <img className="w-9/12 object-contain" src={TitleImage} alt="" />
       </div>
-      <section className="mt-16 lg:flex ">
-        <LeftSideText>
-          <p className="whitespace-nowrap text-2xl md:text-3xl lg:text-5xl">
-            Anatomy of the browser
-          </p>
-          <div className="p-container pt-8 lg:pt-32">
-            <p className="italic">Identity of the space</p>
-            <p>
-              Identify the browser space you are in, get to the change the name
-              with one click, add a new space using the + icon beside the name
-              of the space.
-            </p>
-            <p>
-              Your most frequently used tabs can be put under the favorites
-              section, which is right below the search bar.
-            </p>
+      <section className="mt-16">
+        <p className="x-padding whitespace-nowrap text-2xl md:text-3xl lg:text-5xl">
+          Anatomy of the browser
+        </p>
+        <div className="pt-8 lg:flex lg:pt-24">
+          <LeftSideText>
+            <div className="p-container">
+              <p className="italic">Identity of the space</p>
+              <p>
+                Identify the browser space you are in, get to the change the
+                name with one click, add a new space using the + icon beside the
+                name of the space.
+              </p>
+              <p>
+                Your most frequently used tabs can be put under the favorites
+                section, which is right below the search bar.
+              </p>
+            </div>
+          </LeftSideText>
+          <div className="flex w-full justify-end overflow-hidden pt-2 lg:pt-0">
+            <video
+              className="translate-x-[150px] object-cover lg:translate-x-[50px] lg:object-contain"
+              src={Anatomy}
+              autoPlay
+              loop
+              muted
+            ></video>
           </div>
-        </LeftSideText>
-        <div className="flex w-full justify-end overflow-hidden pt-2 lg:pt-32">
-          <video
-            className="translate-x-[150px] object-cover lg:translate-x-[50px] lg:object-contain"
-            src={Anatomy}
-            autoPlay
-            loop
-            muted
-          ></video>
         </div>
       </section>
       <section className="pt-10 lg:flex lg:pt-44">
@@ -89,7 +91,13 @@ const BrowserProject = () => {
 
       <section className="pt-10 lg:flex lg:flex-row-reverse lg:pt-44">
         <div className="flex w-full justify-end overflow-hidden pt-2">
-          <video src={Tabs} autoPlay loop muted></video>
+          <video
+            className="-translate-y-4"
+            src={Tabs}
+            autoPlay
+            loop
+            muted
+          ></video>
         </div>
         <LeftSideText>
           <div className="p-container pt-2">

@@ -29,28 +29,28 @@ const FieldGuideDesktop = () => {
             Introduction to the small social web. Dissecting the terms small |
             social | web, Characteristics of the space.
           </p>
-          <p>Familiarizing people with small social web</p>
+          <p className="italic">Familiarizing people with small social web</p>
         </div>
         <div className="col-start-3 col-end-5 w-full flex-none">
           <img className="w-full object-contain" src={FieldGuide2} alt="" />
         </div>
         <div className="p-container col-start-5 col-end-7 max-w-[300px] pl-20">
           <p>Community guidelines, Glossary, Interactions</p>
-          <p>
+          <p className="italic">
             Conversations and Interactions to experience the notion of the small
             social web (in the context of a park metaphor).
           </p>
         </div>
         <div className="col-start-3 col-end-5 flex w-full  justify-center">
           <img
-            className="w-full max-w-[300px] object-contain"
+            className=" w-full max-w-[300px] object-contain"
             src={FieldGuide3}
             alt=""
           />
         </div>
         <div className="p-container col-start-5 col-end-7 max-w-[300px] pl-20">
           <p>Field notes, The free verse poem</p>
-          <p>
+          <p className="italic">
             To Initiate questions, ideas, thoughts and feelings post
             experiencing the space.
           </p>

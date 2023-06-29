@@ -18,7 +18,7 @@ const Thrift = () => {
   return (
     <div>
       <ProjectIntro
-        title="Thrift it"
+        title="thrift-it"
         year="2022"
         type="Product Design, UI/UX"
         type2="SELF INITIATED"
@@ -53,7 +53,7 @@ const Thrift = () => {
         <div className="px-6">
           <div className="flex w-full flex-row pt-32 lg:justify-evenly lg:pt-[160px]">
             <div>
-              <div className="flex w-full flex-row space-x-1">
+              <div className="flex w-full flex-row justify-between space-x-1">
                 <div className="border-1 inline-flex h-min rounded-3xl border border-white px-2 py-1 lg:px-4">
                   <p className="super-small uppercase text-white">New drop</p>
                 </div>
@@ -76,14 +76,14 @@ const Thrift = () => {
                 </p>
               </div>
             </div>
-            <div className="min-w-[160px] pt-3">
+            <div className="flex max-w-[165px] items-start justify-start pt-3 lg:max-w-[370px] lg:pt-0">
               <img className="object-contain" src={Y2k} alt="" />
             </div>
           </div>
 
           <div className="flex min-h-[440px] w-full flex-row justify-center space-x-5 pt-32 lg:flex-row lg:space-x-[100px] lg:pt-[90px]">
             <img
-              className="w-1/2 max-w-[414px] object-contain"
+              className="max-h-[750px] w-1/2 max-w-[414px] object-contain"
               src={ThriftItJeans}
               alt=""
             />
@@ -111,7 +111,7 @@ const Thrift = () => {
             <div className="flex justify-center space-x-6 lg:space-x-32">
               <div>
                 <img
-                  className="max-w-[162px] object-contain pt-10 lg:max-w-[300px]"
+                  className="max-w-[162px] object-contain lg:max-w-[300px]"
                   src={NewDrop}
                   alt=""
                 />
@@ -133,7 +133,7 @@ const Thrift = () => {
               </div>
               <div className="space-y-5">
                 <img
-                  className="w-full max-w-[414px]  object-contain"
+                  className="max-h-[750px] w-full max-w-[414px]  object-contain"
                   src={Calendar}
                   alt=""
                 />
@@ -149,7 +149,7 @@ const Thrift = () => {
           <div className="flex w-full justify-center space-x-4 pt-32 lg:flex-row lg:space-x-20 lg:pt-[130px]">
             <div className="max-h-[859px] w-1/2 max-w-[414px]">
               <img
-                className="h-full w-full object-contain"
+                className="h-full max-h-[750px] w-full object-contain"
                 src={ShoppingCart}
                 alt=""
               />
