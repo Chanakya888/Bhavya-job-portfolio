@@ -52,8 +52,8 @@ const Thrift = () => {
         </div>
         <div className="px-6">
           <div className="flex w-full flex-row justify-around pt-32 lg:justify-evenly lg:pt-[160px]">
-            <div className="w-[163px]">
-              <div className="flex w-full flex-row justify-between space-x-1">
+            <div className="w-[163px] lg:w-[353px]">
+              <div className="flex w-full flex-row justify-between space-x-1 lg:w-[260px]">
                 <div className="border-1 inline-flex h-min rounded-3xl border border-white px-2 py-1 lg:px-4">
                   <p className="super-small uppercase text-white">New drop</p>
                 </div>

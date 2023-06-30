@@ -21,12 +21,12 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="info" element={<Info />} />
-            <Route path="archive" element={<Archive />} />
-            <Route path="thrift" element={<Thrift />} />
-            <Route path="small-web" element={<SmallWeb />} />
-            <Route path="sindhol" element={<Sindhol />} />
-            <Route path="browser-project" element={<BrowserProject />} />
+            <Route path="/info" element={<Info />} />
+            <Route path="/archive" element={<Archive />} />
+            <Route path="/thrift" element={<Thrift />} />
+            <Route path="/small-web" element={<SmallWeb />} />
+            <Route path="/sindhol" element={<Sindhol />} />
+            <Route path="/browser-project" element={<BrowserProject />} />
           </Routes>
         </HoverContextProvider>
       </NavBarContextProvider>
