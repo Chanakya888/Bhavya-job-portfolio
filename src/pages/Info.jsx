@@ -41,9 +41,9 @@ const Info = () => {
               <div className="space-y-1.5 pt-2.5">
                 <p>For projects/ inquires, please contact:</p>
                 <a href="mailto:dsg.bhavya@gmail.com">
-                  <div className="flex space-x-2">
+                  <div className="flex space-x-1.5 pt-3">
                     <img
-                      className="w-[21px] object-contain"
+                      className="w-[16px] object-contain"
                       src={EmailIcon}
                       alt=""
                     />

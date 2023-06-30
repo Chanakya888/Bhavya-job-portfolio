@@ -42,7 +42,7 @@ const Sindhol = () => {
         </p>
       </ProjectIntro>
 
-      <div className="flex w-full justify-center bg-black">
+      <div className="flex w-full justify-center overflow-hidden bg-black pt-10">
         <img
           className="w-full scale-125 object-contain lg:scale-100"
           src={ZineGif}
