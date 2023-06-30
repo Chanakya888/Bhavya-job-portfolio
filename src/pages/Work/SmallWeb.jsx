@@ -122,6 +122,8 @@ const SmallWeb = () => {
               autoPlay
               loop
               muted
+              playsInline
+              preload="metadata"
             ></video>
             <div className="p-container">
               <p>
@@ -186,6 +188,8 @@ const SmallWeb = () => {
                 autoPlay
                 loop
                 muted
+                playsInline
+                preload="metadata"
               ></video>
             </div>
             <div className="p-container order-1">
@@ -227,6 +231,8 @@ const SmallWeb = () => {
                     autoPlay
                     loop
                     muted
+                    playsInline
+                    preload="metadata"
                   ></video>
                 </div>
               </div>
