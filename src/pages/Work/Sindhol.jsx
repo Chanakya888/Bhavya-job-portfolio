@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectIntro from "../../components/ProjectIntro";
 import Footer from "../../components/Footer";
 import ZineGif from "../../assets/sindhol/zine-full.gif";
@@ -20,7 +20,7 @@ const Sindhol = () => {
     };
   }, []);
   return (
-    <div className=" ">
+    <div>
       <ProjectIntro
         title="sindhol"
         year="2022"
@@ -41,7 +41,6 @@ const Sindhol = () => {
           unrestricted artistic spirit found within the Lambani community.
         </p>
       </ProjectIntro>
-
       <div className="flex w-full justify-center overflow-hidden bg-black pt-10">
         <img
           className="w-full scale-125 object-contain lg:scale-100"
