@@ -33,6 +33,9 @@ li {
   color: var(--primary-green);
   line-height: 14px;
 }
+.zine-width {
+  width: 130%;
+}
 
 .super-small {
   font-size: 8px;

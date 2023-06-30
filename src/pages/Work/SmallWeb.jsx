@@ -117,7 +117,7 @@ const SmallWeb = () => {
           </div>
           <div className="items-start lg:flex lg:space-x-16 lg:pt-20 xl:space-x-20">
             <video
-              className="my-8 w-full max-w-[500px] object-contain lg:my-0"
+              className="my-8 w-full max-w-[500px] object-cover lg:my-0"
               src={Interactions}
               autoPlay
               loop
@@ -150,7 +150,7 @@ const SmallWeb = () => {
             </div>
           </div>
           <div className="mt-16">
-            <div className="lg:flex lg:space-x-10 xl:space-x-20">
+            <div className="lg:flex lg:w-full lg:justify-center lg:space-x-10 xl:space-x-20">
               <div className="relative">
                 <img
                   className="w-full object-contain lg:h-[300px]"
@@ -181,7 +181,7 @@ const SmallWeb = () => {
           <div className=" grid-cols-2 gap-x-10 lg:grid">
             <div className="order-2 my-8 max-h-[400px] max-w-[550px] overflow-hidden lg:my-0 lg:max-h-[600px]">
               <video
-                className=" w-full -translate-y-[300px] object-contain"
+                className="w-full  object-contain"
                 src={Gradient}
                 autoPlay
                 loop

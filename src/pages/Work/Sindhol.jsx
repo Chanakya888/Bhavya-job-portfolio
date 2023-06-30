@@ -42,8 +42,12 @@ const Sindhol = () => {
         </p>
       </ProjectIntro>
 
-      <div className="w-full">
-        <img className="w-full object-contain" src={ZineGif} alt="" />
+      <div className="flex w-full justify-center bg-black">
+        <img
+          className="w-full scale-125 object-contain lg:scale-100"
+          src={ZineGif}
+          alt=""
+        />
       </div>
       <section className=" bg-black  pt-10 lg:bg-backgroundGray lg:px-16">
         <div className="px-6 lg:flex lg:space-x-10 lg:px-0">

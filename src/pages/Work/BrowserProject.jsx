@@ -5,7 +5,6 @@ import Anatomy from "../../assets/browser-project/anatomy.mp4";
 import Frequently from "../../assets/browser-project/frequently.mp4";
 import Tabs from "../../assets/browser-project/the-tabs.mp4";
 import LeftSideText from "../../components/browser-project/LeftSideText";
-import RightSideText from "../../components/browser-project/RightSideText";
 import BrowserProjectNotes from "../../components/browser-project/BrowserProjectNotes";
 import MobileTools from "../../components/browser-project/MobileTools";
 import DesktopTools from "../../components/browser-project/DesktopTools";
@@ -55,50 +54,47 @@ const BrowserProject = () => {
               </p>
             </div>
           </LeftSideText>
-          <div className="flex w-full justify-end overflow-hidden pt-2 lg:pt-0">
+          <div className="flex w-full justify-end overflow-hidden pt-4 lg:pt-0">
             <video
               className="translate-x-[150px] object-cover lg:translate-x-[50px] lg:object-contain"
               src={Anatomy}
               autoPlay
               loop
               muted
+              playsInline
+              preload="metadata"
             ></video>
           </div>
         </div>
       </section>
-      <section className="pt-10 lg:flex lg:pt-44">
-        <div className="flex w-full justify-start overflow-hidden">
+      <section className="pt-10 lg:grid lg:grid-cols-2 lg:pt-44">
+        <div className="lg:order-2">
+          <LeftSideText>
+            <p className="italic">Frequently visited</p>
+            <p className="pt-2">
+              Under the favorites section are the extensions and pinned spaces.
+            </p>
+            <p>
+              The scrolling is vertical to experiment with the current scrolling
+              nature of the browsers and also to cater to a consistent vertical
+              behavior throughout the window.
+            </p>
+          </LeftSideText>
+        </div>
+        <div className="flex w-full justify-end overflow-hidden pt-4 lg:order-1 lg:pt-0">
           <video
             className="max-w-[278px] object-cover lg:w-full lg:max-w-[700px] lg:object-contain"
             src={Frequently}
             autoPlay
             loop
             muted
+            playsInline
+            preload="metadata"
           ></video>
         </div>
-        <RightSideText>
-          <p className="italic">Frequently visited</p>
-          <p>
-            Under the favorites section are the extensions and pinned spaces.
-          </p>
-          <p>
-            The scrolling is vertical to experiment with the current scrolling
-            nature of the browsers and also to cater to a consistent vertical
-            behavior throughout the window.
-          </p>
-        </RightSideText>
       </section>
 
-      <section className="pt-10 lg:flex lg:flex-row-reverse lg:pt-44">
-        <div className="flex w-full justify-end overflow-hidden pt-2">
-          <video
-            className="-translate-y-4"
-            src={Tabs}
-            autoPlay
-            loop
-            muted
-          ></video>
-        </div>
+      <section className="pt-10 lg:flex lg:pt-44">
         <LeftSideText>
           <div className="p-container pt-2">
             <p className="italic">The tabs</p>
@@ -115,6 +111,17 @@ const BrowserProject = () => {
             </p>
           </div>
         </LeftSideText>
+        <div className="mt-4 flex w-full justify-end overflow-hidden">
+          <video
+            className="-translate-y-1 translate-x-1/3 lg:translate-x-0"
+            src={Tabs}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+          ></video>
+        </div>
       </section>
       <BrowserProjectNotes />
       <div className="p-white mt-16 bg-browserProjectBlue pt-8 lg:mt-10 lg:pt-24">

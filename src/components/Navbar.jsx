@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <div>
           <a
-            href="https://www.instagram.com/studio.leftovers/"
+            href="https://instagram.com/bhavyeahgupta?igshid=MjEwN2IyYWYwYw=="
             target="_blank"
             rel="noopener noreferrer"
             className="inline"
@@ -41,7 +41,7 @@ const Navbar = () => {
         </Link>
         <div className="col-start-6 col-end-7 flex space-x-10">
           <Link to={`/info`} className="inline">
-            <h3>Info</h3>
+            <h3>Info.</h3>
           </Link>
           <a
             href={Resume}

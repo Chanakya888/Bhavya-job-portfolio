@@ -21,12 +21,12 @@ const TitleHack = (title) => {
     if (screenWidth >= 1024) {
       return (
         <>
-          <span className="whitespace-nowrap">From the lambanis</span>
+          <span className="whitespace-nowrap">From the Lambanis</span>
           <span className="lg:block">of Sindhol</span>
         </>
       );
     } else {
-      return <span>From the lambanis of Sindhol</span>;
+      return <span>From the Lambanis of Sindhol</span>;
     }
   } else if (title.title == "small-web") {
     if (screenWidth >= 1024) {

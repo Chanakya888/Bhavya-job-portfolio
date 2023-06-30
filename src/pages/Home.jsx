@@ -21,7 +21,7 @@ const Home = () => {
         <div className="hidden h-full items-end lg:flex lg:pb-4 lg:pl-10">
           <p className="text-xs">
             <a
-              href="https://www.instagram.com/studio.leftovers/"
+              href="https://instagram.com/bhavyeahgupta?igshid=MjEwN2IyYWYwYw=="
               target="_blank"
               rel="noopener noreferrer"
               className="inline"
@@ -31,7 +31,8 @@ const Home = () => {
           </p>
         </div>
         <div className="flex h-full flex-col flex-wrap justify-between pt-10 lg:col-start-6 lg:col-end-14 lg:pt-10">
-          <p className="w-4/6 text-base text-primaryGreen lg:w-[480px] lg:text-xl">
+          {/* // make it 80% */}
+          <p className="w-5/6 text-base text-primaryGreen lg:w-[480px] lg:text-xl">
             Hello, I'm Bhavya, a Human-Computer Interaction Researcher and
             Designer based in Hyderabad, India. I am actively seeking a
             full-time position as an Interaction Designer or Researcher, whether

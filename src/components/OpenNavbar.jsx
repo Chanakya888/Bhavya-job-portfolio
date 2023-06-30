@@ -35,7 +35,7 @@ const OpenNavbar = () => {
           <Link to={`info`} onClick={handleCloseNav}>
             <div>
               <div className="h-full w-full pb-6 pt-5">
-                <p className="text-base">Info</p>
+                <p className="text-base">Info.</p>
               </div>
               <Hrline />
             </div>

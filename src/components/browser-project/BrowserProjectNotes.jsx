@@ -30,7 +30,7 @@ const BrowserProjectNotes = () => {
           </li>
           <li>
             Draw - The draw space allows you to sketch out ideas as and when you
-            are engaging with the content online. This pace allows - text,
+            are engaging with the content online. This space allows - text,
             images and has a pencil tool to sketch out ideas.
           </li>
           <li>

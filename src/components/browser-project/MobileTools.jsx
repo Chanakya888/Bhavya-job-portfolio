@@ -96,8 +96,8 @@ const MobileTools = () => {
           <div className="p-container pt-2">
             <p>
               Draw - The draw space allows you to sketch out ideas as and when
-              you are engaging with the content online. This pace allows - text,
-              images and has a pencil tool to sketch out ideas.
+              you are engaging with the content online. This space allows -
+              text, images and has a pencil tool to sketch out ideas.
             </p>
           </div>
         </LeftSideText>
