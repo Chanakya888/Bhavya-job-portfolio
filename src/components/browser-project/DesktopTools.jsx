@@ -17,6 +17,8 @@ const DesktopTools = () => {
           autoPlay
           loop
           muted
+          playsInline
+          preload="metadata"
         >
           Video is loading
         </video>
@@ -33,7 +35,14 @@ const DesktopTools = () => {
           <div className="pr-5">
             <p>Stickies</p>
           </div>
-          <video src={Tools} autoPlay loop muted></video>
+          <video
+            src={Tools}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+          ></video>
         </div>
       </div>
       <div className="flex w-full justify-end space-x-3 pt-4 lg:pr-3 xl:pr-16">
@@ -46,6 +55,8 @@ const DesktopTools = () => {
           autoPlay
           loop
           muted
+          playsInline
+          preload="metadata"
         ></video>
       </div>
     </div>

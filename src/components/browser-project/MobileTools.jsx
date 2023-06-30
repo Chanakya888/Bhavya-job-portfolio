@@ -23,7 +23,14 @@ const MobileTools = () => {
       </section>
       <section>
         <div className="mt-6 px-6">
-          <video src={Tools} autoPlay loop muted></video>
+          <video
+            src={Tools}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+          ></video>
         </div>
         <RightSideText>
           <p>
@@ -56,6 +63,8 @@ const MobileTools = () => {
             autoPlay
             loop
             muted
+            playsInline
+            preload="metadata"
           ></video>
         </div>
         <RightSideText>
@@ -79,6 +88,8 @@ const MobileTools = () => {
             autoPlay
             loop
             muted
+            playsInline
+            preload="metadata"
           ></video>
         </div>
         <div className="x-padding flex w-full justify-end pt-0.5">
