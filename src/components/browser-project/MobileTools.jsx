@@ -22,8 +22,18 @@ const MobileTools = () => {
         </LeftSideText>
       </section>
       <section>
-        <div className="mt-6 px-6">
+        <div className="mt-6">
+          <LeftSideText>
+            <div className="flex space-x-0.5">
+              <p>i.</p>
+              <p>
+                A stickies wall - Play around with the post its and keep track
+                of your important meetings/ reminders
+              </p>
+            </div>
+          </LeftSideText>
           <video
+            className="px-6 pt-4"
             src={Tools}
             autoPlay
             loop
@@ -32,31 +42,48 @@ const MobileTools = () => {
             preload="metadata"
           ></video>
         </div>
-        <RightSideText>
-          <p>
-            A stickies wall - Play around with the post its and keep track of
-            your important meetings/ reminders
-          </p>
-        </RightSideText>
       </section>
-      <section>
-        <div className="mt-10 px-6">
+      <section className="mt-12">
+        <LeftSideText>
+          <div className="">
+            <div className="flex space-x-0.5">
+              <p>ii.</p>
+              <p className="pt-0">
+                Notes - Make notes as you read or participate in a meeting,
+                share them as PDF’s or links later.
+              </p>
+            </div>
+            <p className="pl-3 pt-2">
+              Create a new space - Either use the + sign near the identity
+              section or come down to the browser tools and create a new space
+              on your browser.
+            </p>
+          </div>
+        </LeftSideText>
+        <div className="px-6 pt-4">
           <img className="w-full object-contain" src={Notes} alt="" />
         </div>
-        <div className="x-padding p-container mt-3 w-1/2">
-          <p>
-            Notes - Make notes as you read or participate in a meeting, share
-            them as PDF’s or links later.
-          </p>
-          <p>
-            Create a new space - Either use the + sign near the identity section
-            or come down to the browser tools and create a new space on your
-            browser.
-          </p>
-        </div>
+        <div className="x-padding p-container mt-3 w-1/2"></div>
       </section>
-      <section>
-        <div className="mt-10 px-6">
+      <section className="mt-12">
+        <div>
+          <LeftSideText>
+            <div className="flex space-x-0.5">
+              <p>iii.</p>
+              <p>
+                Collaborate feature - This allows you to collaborate your screen
+                over the browser window.
+              </p>
+            </div>
+            <p className="pl-3 pt-2">
+              The idea was to have friends read over each others essays,
+              programmers go through their codes and have the access to edit in
+              real time, annotate together and essentially offer people what it
+              can feel to be in the digital arena together.
+            </p>
+          </LeftSideText>
+        </div>
+        <div className="px-6 pt-4">
           <video
             className="w-full object-contain"
             src={Code}
@@ -67,21 +94,19 @@ const MobileTools = () => {
             preload="metadata"
           ></video>
         </div>
-        <RightSideText>
-          <p>
-            Collaborate feature - This allows you to collaborate your screen
-            over the browser window.
-          </p>
-          <p>
-            The idea was to have friends read over each others essays,
-            programmers go through their codes and have the access to edit in
-            real time, annotate together and essentially offer people what it
-            can feel to be in the digital arena together.
-          </p>
-        </RightSideText>
       </section>
-      <section>
-        <div className="mt-10 px-6">
+      <section className="pt-12">
+        <LeftSideText>
+          <div className="flex space-x-0.5 pt-2">
+            <p>iv.</p>
+            <p>
+              Draw - The draw space allows you to sketch out ideas as and when
+              you are engaging with the content online. This space allows -
+              text, images and has a pencil tool to sketch out ideas.
+            </p>
+          </div>
+        </LeftSideText>
+        <div className="px-6 pt-4">
           <video
             className="w-full object-contain"
             src={Draw}
@@ -103,15 +128,6 @@ const MobileTools = () => {
             </p>
           </a>
         </div>
-        <LeftSideText>
-          <div className="p-container pt-2">
-            <p>
-              Draw - The draw space allows you to sketch out ideas as and when
-              you are engaging with the content online. This space allows -
-              text, images and has a pencil tool to sketch out ideas.
-            </p>
-          </div>
-        </LeftSideText>
       </section>
     </div>
   );
