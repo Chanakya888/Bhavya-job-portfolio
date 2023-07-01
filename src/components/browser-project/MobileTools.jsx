@@ -27,8 +27,8 @@ const MobileTools = () => {
             <div className="flex space-x-0.5">
               <p>i.</p>
               <p>
-                A stickies wall - Play around with the post its and keep track
-                of your important meetings/ reminders
+                Stickies wall - Play around with the post its and keep track of
+                your important meetings/ reminders
               </p>
             </div>
           </LeftSideText>
@@ -71,8 +71,8 @@ const MobileTools = () => {
             <div className="flex space-x-0.5">
               <p>iii.</p>
               <p>
-                Collaborate feature - This allows you to collaborate your screen
-                over the browser window.
+                Collaborate - This allows you to collaborate your screen over
+                the browser window.
               </p>
             </div>
             <p className="pl-3 pt-2">

@@ -38,7 +38,7 @@ const SelectedWork = () => {
             onMouseLeave={() => handleLeave(1)}
           >
             <h2 className="text-base text-primaryGreen lg:text-xl">
-              Social Internet
+              The Small Social Web
             </h2>
             <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
               Speculative & Interaction design
