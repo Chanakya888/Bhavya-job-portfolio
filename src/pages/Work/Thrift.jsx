@@ -38,7 +38,7 @@ const Thrift = () => {
         </p>
       </ProjectIntro>
       <section className="bg-primaryGreen ">
-        <div className="flex space-x-6 overflow-x-scroll px-6 pt-10 md:px-0 lg:flex-row lg:justify-center lg:space-x-0">
+        <div className="flex space-x-6 px-6 pt-10 md:px-0 lg:flex-row lg:justify-center lg:space-x-0">
           <div className="max-h-[650px] w-1/2 max-w-[410px] lg:mt-[176px]">
             <img className="h-full w-full object-contain" src={Menu} alt="" />
           </div>
