@@ -71,7 +71,7 @@ const OpenNavbar = () => {
           <Link to={`/thrift`} onClick={handleCloseNav}>
             <div className="w-full py-3">
               <p className="text-base">Thrift it</p>
-              <p>App concept design, UI/UX</p>
+              <p>App concept, UX/UI design</p>
             </div>
           </Link>
           <Hrline />

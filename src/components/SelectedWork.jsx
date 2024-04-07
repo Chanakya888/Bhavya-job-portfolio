@@ -26,7 +26,7 @@ const SelectedWork = () => {
               Thrift it
             </h2>
             <h2 className="text-xs text-primaryGreen lg:text-xl ">
-              App concept design, UI/UX
+              App concept, UX/UI design
             </h2>
           </div>
         </Link>
