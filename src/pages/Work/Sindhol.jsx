@@ -29,6 +29,7 @@ const Sindhol = () => {
         type="Ethnographic study, Zine"
         type2="TRANSDISCIPLINARY RESEARCH"
         noTopPadding={true}
+        showMentor={true}
       >
         <p>
           From the Lambanis of Sindhol is an ethnographic study that focuses on
@@ -45,7 +46,7 @@ const Sindhol = () => {
         </p>
       </ProjectIntro>
 
-      <div className="bg-black">
+      <div className="bg-[#010101]">
         <div className="flex w-full justify-center overflow-hidden pt-10">
           <img
             className="w-full scale-125 object-contain lg:scale-100"

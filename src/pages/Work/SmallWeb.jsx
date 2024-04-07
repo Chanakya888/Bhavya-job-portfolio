@@ -21,6 +21,7 @@ const SmallWeb = () => {
         year="2023"
         type="Speculative Research & Design"
         type2="CAPSTONE PROJECT"
+        showMentor={true}
       >
         <div>
           <p>

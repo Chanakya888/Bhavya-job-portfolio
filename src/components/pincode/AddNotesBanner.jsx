@@ -9,7 +9,7 @@ const AddNotesBanner = () => {
       <div className="flex w-full justify-center lg:ml-16 lg:block xl:ml-20">
         <img src={AddNotes1} alt="" className="max-w-[300px]" />
       </div>
-      <div className="xl:max-w-[500px]: hidden max-w-[400px] py-20 lg:block">
+      <div className="hidden max-w-[400px] py-8 lg:block xl:max-w-[650px]">
         <img src={AddNotes2} alt="" />
       </div>
       <div className="max-w-[316px] pb-6 pt-4 lg:hidden">
