@@ -10,6 +10,7 @@ import AllProducts from "../../assets/thrift-it/all-products.png";
 import Menu from "../../assets/thrift-it/menu.png";
 import Nav from "../../assets/thrift-it/nav-bar.png";
 import NewDrop from "../../assets/thrift-it/New-drop.png";
+import Leaf from "../../assets/thrift-it/leaf.svg";
 import ProjectIntro from "../../components/ProjectIntro";
 import Footer from "../../components/Footer";
 import ThriftItJeans from "../../assets/thrift-it/thrift-it-jeans.png";
@@ -65,23 +66,28 @@ const Thrift = () => {
               Navigating you through Thrift It
             </p>
             <p className="text-sm lg:text-xl">
-              The case study presents a breakdown of Thrift It's features, with
-              a focus on exploring its user interfaces. The aim is to illuminate
+              This case study presents a breakdown of Thrift It's features, with
+              a focus on exploring its user interfaces. The idea is to highlight
               the distinctive characteristics of sustainable shopping
-              facilitated by the platform.
+              facilitated by the platform and to gauge how Thrift It sets itself
+              apart within the realm of thrift commerce.
             </p>
             <p className="text-sm lg:text-xl">
-              By exploring each aspect, the case study elucidates an
-              understanding of how Thrift It sets itself apart within the realm
-              of thrift commerce. Further exploring the unique ethos propelling
-              the thrifting community towards a more eco-conscious future.
+              Further exploring the unique ethos propelling the thrifting
+              community towards a more eco-conscious future.
             </p>
           </div>
         </div>
         <div className="flex space-x-6 px-6 pt-10 md:px-0 lg:flex-row lg:justify-center lg:space-x-0">
-          <div className="max-h-[650px] w-1/2 max-w-[410px] lg:mt-[176px]">
-            <img className="h-full w-full object-contain" src={Menu} alt="" />
-            <ImageSubHeading subHeading="Menu" />
+          <div className="max-h-[650px] w-1/2 max-w-[410px] lg:mt-[176px] lg:flex lg:justify-start">
+            <div>
+              <img
+                className="h-full w-full object-contain pl-4"
+                src={Menu}
+                alt=""
+              />
+              <ImageSubHeading subHeading="Menu" />
+            </div>
           </div>
           <div className="max-h-[650px] w-1/2 max-w-[410px] ">
             <img
@@ -93,7 +99,7 @@ const Thrift = () => {
           </div>
         </div>
         <div className="px-6">
-          <div className="flex w-full flex-row justify-around pt-32 lg:justify-evenly lg:pt-[160px]">
+          <div className="flex w-full flex-row justify-around pt-32 lg:justify-center lg:space-x-[70px] lg:pt-[160px]">
             <div className="w-[163px] lg:w-[353px]">
               <div className="flex w-full flex-row justify-between space-x-1 lg:w-[260px]">
                 <div className="border-1 inline-flex h-min rounded-3xl border border-primaryGreen px-2 py-1 lg:px-4">
@@ -108,7 +114,7 @@ const Thrift = () => {
                   <p className="super-small text-primaryGreen">Jeans</p>
                 </div>
               </div>
-              <div className="p-container pt-3">
+              <div className="p-container pt-3 lg:pt-10">
                 <p className="max-w-[320px] text-xs text-primaryGreen sm:text-base lg:text-xl">
                   At the top of the homepage, you'll find selectable tags that
                   update based on the user's search behavior.
@@ -142,13 +148,18 @@ const Thrift = () => {
                   This information also gets collated on the calendar feature
                   that will be discussed further.
                 </p>
-                <p>
-                  On the product page, you can access insights into the
-                  sustainability impact of your purchase that calculates the
-                  estimated reduction in carbon emissions or water usage
-                  compared to purchasing a new item. This highlights the
-                  environmental benefit of choosing thrifted goods.
-                </p>
+                <div className="relative pt-3">
+                  <p>
+                    On the product page, you can access insights into the
+                    sustainability impact of your purchase that calculates the
+                    estimated reduction in carbon emissions or water usage
+                    compared to purchasing a new item. This highlights the
+                    environmental benefit of choosing thrifted goods.
+                  </p>
+                  <div className="absolute -left-6 top-0 pt-4">
+                    <img className="" src={Leaf} alt="leaf" />
+                  </div>
+                </div>
               </div>
             </div>
             <div>
@@ -226,12 +237,17 @@ const Thrift = () => {
             </div>
           </div>
 
-          <div className="flex w-full justify-center pt-32">
-            <img
-              className="max-w-[360px] object-contain lg:max-w-[700px] "
-              src={MindMap}
-              alt=""
-            />
+          <div className="pt-32">
+            <div className="px-6 lg:pl-20">
+              <p className="text-xl lg:text-2xl">User flow</p>
+            </div>
+            <div className="flex w-full justify-center pt-10 lg:pt-20">
+              <img
+                className="max-w-[360px] object-contain lg:max-w-[700px] "
+                src={MindMap}
+                alt=""
+              />
+            </div>
           </div>
           <div className="pt-16 lg:pr-20 lg:pt-28">
             <div className="p-container sm:w-9/12 lg:ml-auto lg:w-[479px]">
