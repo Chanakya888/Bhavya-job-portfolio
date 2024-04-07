@@ -11,17 +11,17 @@ import Nav9 from "../../assets/pincode/navigation/nav9.png";
 
 const Navigation = () => {
   return (
-    <div className="flex space-x-6 overflow-x-scroll bg-pincodeYellow pb-8 pl-6 pt-8 lg:space-x-10 lg:pt-20">
+    <div className="flex space-x-6 overflow-x-scroll bg-pincodeYellow pb-8 pl-6 pt-8 lg:space-x-10 lg:pl-18 lg:pt-20">
       <div className="max-w-[280px] flex-none lg:max-w-[300px]">
         <img src={Nav1} alt="Nav 1" />
-        <p className="pl-1 pr-2 pt-4 text-base lg:text-xl">
+        <p className="pl-1 pr-2 pt-4 text-base ">
           Profile showcasing insights gathered from collected pincodes, along
           with additional account and app customization options 👤
         </p>
       </div>
       <div className="max-w-[280px] flex-none lg:max-w-[300px]">
         <img src={Nav2} alt="Nav 2" />
-        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 lg:text-xl">
+        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 ">
           Home featuring profile and explore buttons, alongside a top navigation
           bar enabling one-click search and display of saved pincodes 🏠
         </p>
@@ -29,10 +29,10 @@ const Navigation = () => {
       <div className="max-w-[280px] flex-none lg:max-w-[300px]">
         <img src={Nav3} alt="Nav 3" />
         <div>
-          <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 lg:text-xl">
+          <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 ">
             On Click Search: Toggle Between Results and Pincode Section" 🔍
           </p>
-          <p className="pl-1 pr-12 pt-2 text-base lg:pr-4 lg:text-xl">
+          <p className="pl-1 pr-12 pt-2 text-base lg:pr-4 ">
             The blue border around a Pincode list profile signifies that the
             user is a local of that place
           </p>
@@ -40,44 +40,38 @@ const Navigation = () => {
       </div>
       <div className="max-w-[280px] flex-none lg:max-w-[300px]">
         <img src={Nav4} alt="Nav 4" />
-        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 lg:text-xl">
-          The place 📍
-        </p>
+        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 ">The place 📍</p>
       </div>
       <div className="max-w-[280px] flex-none lg:max-w-[300px]">
         <img src={Nav5} alt="Nav 5" />
-        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 lg:text-xl">
-          Pincode list 📝
-        </p>
+        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 ">Pincode list 📝</p>
       </div>
       <div className="max-w-[280px] flex-none lg:max-w-[300px]">
         <img src={Nav6} alt="Nav 6" />
-        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 lg:text-xl">
-          Your Pincodes ✨
-        </p>
+        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 ">Your Pincodes ✨</p>
       </div>
       <div className="max-w-[280px] flex-none lg:max-w-[300px]">
         <img src={Nav7} alt="Nav 7" />
-        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 lg:text-xl">
+        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 ">
           Choose to either share the entire list of pincodes or select specific
           ones to share 🤝
         </p>
       </div>
       <div className="max-w-[280px] flex-none lg:max-w-[300px]">
         <img src={Nav8} alt="Nav 8" />
-        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 lg:text-xl">
+        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 ">
           Create Your Pincode List 🖋️ 
         </p>
-        <p className="pl-1 pr-12 pt-2 text-base lg:pr-4 lg:text-xl">
+        <p className="pl-1 pr-12 pt-2 text-base lg:pr-4 ">
           Customize Icon & Description
         </p>
       </div>
       <div className="max-w-[280px] flex-none lg:max-w-[300px]">
         <img src={Nav9} alt="Nav 9" />
-        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 lg:text-xl">
+        <p className="pl-1 pr-12 pt-4 text-base lg:pr-4 ">
           User's Pincode Listed Place  
         </p>
-        <p className="pl-1 pr-12 pt-2 text-base lg:pr-4 lg:text-xl">
+        <p className="pl-1 pr-12 pt-2 text-base lg:pr-4 ">
           Tap to save Pincode & view location on your page 📌
         </p>
       </div>

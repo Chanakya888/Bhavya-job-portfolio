@@ -18,40 +18,45 @@ const Pincode = () => {
   return (
     <div>
       <div className="mt-4 flex w-full justify-center bg-primaryGreen px-4 py-3">
-        <p className="text-center text-base text-white">
-          💡 We are in the process of developing the app for this project
-        </p>
+        <div className="flex space-x-1">
+          <p className="text-base lg:pt-0">💡</p>
+          <p className="text-left text-base text-white">
+            We are in the process of developing the app for this project
+          </p>
+        </div>
       </div>
-      <ProjectIntro
-        title="pincode"
-        year="2024"
-        type="UX/UI Design"
-        type2="SELF INITIATED"
-      >
-        <p className="text-base lg:text-xl">
-          Pincode is a simple way to find and share places online. It is a
-          community-driven platform, where people get to share their favorite
-          spots, eateries, hangouts, must-do activities or just a list of places
-          (or pin codes as we call it) on the public digital forum. To us
-          Pincode is more than just a list; it could be a collective memory of
-          places, or a shared narrative curated by those who resonate with the
-          essence of the place.
-        </p>
-        <p className="text-base lg:pt-6 lg:text-xl">
-          Pincode adds the layer of personal touch. It is fueled by the passion
-          and insights of the locals. People who have been living in your
-          visiting cities for years together sharing what their idea of the
-          place is like. Each pincode creator has the opportunity to add a
-          personal note. These notes can be more than practical tips or
-          recommendations; they could be stories, anecdotes, nuances or
-          idiosyncrasies that add to the flavor of the place.
-        </p>
-      </ProjectIntro>
+      <div className="-mt-4">
+        <ProjectIntro
+          title="pincode"
+          year="2024"
+          type="UX/UI Design"
+          type2="SELF INITIATED"
+        >
+          <p className="text-base lg:text-xl">
+            Pincode is a simple way to find and share places online. It is a
+            community-driven platform, where people get to share their favorite
+            spots, eateries, hangouts, must-do activities or just a list of
+            places (or pin codes as we call it) on the public digital forum. To
+            us Pincode is more than just a list; it could be a collective memory
+            of places, or a shared narrative curated by those who resonate with
+            the essence of the place.
+          </p>
+          <p className="text-base lg:pt-6 lg:text-xl">
+            Pincode adds the layer of personal touch. It is fueled by the
+            passion and insights of the locals. People who have been living in
+            your visiting cities for years together sharing what their idea of
+            the place is like. Each pincode creator has the opportunity to add a
+            personal note. These notes can be more than practical tips or
+            recommendations; they could be stories, anecdotes, nuances or
+            idiosyncrasies that add to the flavor of the place.
+          </p>
+        </ProjectIntro>
+      </div>
       <section className="bg-pincodeYellow">
         <div className="p-container px-6 pt-10 lg:px-12 lg:pt-16 xl:px-18 xl:pt-20">
           <p className="text-xl xl:text-3.5xl">Why did I create the Pincode?</p>
-          <div className="pt-2 lg:flex lg:flex-row-reverse lg:justify-between lg:pt-6">
-            <div>
+          <div className="pt-2 lg:flex lg:flex-row-reverse lg:justify-end lg:pt-6">
+            <div className="lg:pl-28">
               <p className="text-base lg:w-[317px] lg:text-xl">
                 I’ve loved travelling lately and discovering off-the grid
                 experiences of a place or seeking out rare local cuisines had

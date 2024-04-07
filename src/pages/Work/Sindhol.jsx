@@ -30,6 +30,7 @@ const Sindhol = () => {
         type2="TRANSDISCIPLINARY RESEARCH"
         noTopPadding={true}
         showMentor={true}
+        mentorName="Shreyas"
       >
         <p>
           From the Lambanis of Sindhol is an ethnographic study that focuses on

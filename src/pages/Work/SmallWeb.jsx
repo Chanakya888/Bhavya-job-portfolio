@@ -22,6 +22,7 @@ const SmallWeb = () => {
         type="Speculative Research & Design"
         type2="CAPSTONE PROJECT"
         showMentor={true}
+        mentorName="Prof. Paul Anthony George"
       >
         <div>
           <p>

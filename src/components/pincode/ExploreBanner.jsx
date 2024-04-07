@@ -4,8 +4,8 @@ import ExploreComponent from "../../assets/pincode/explore_component.png";
 
 const ExploreBanner = () => {
   return (
-    <div className="-mx-6 mt-8 bg-transparentPincodeYellow px-6 pb-10 lg:mx-0 lg:flex lg:justify-between">
-      <div className="ml-auto max-w-[300px] lg:ml-20">
+    <div className="-mx-6 mt-8 bg-transparentPincodeYellow px-6 pb-10 lg:mx-0 lg:flex lg:justify-between lg:pb-20">
+      <div className="ml-auto max-w-[300px] lg:ml-20 lg:max-w-[400px]">
         <video
           src={ExploreBannerMov}
           autoPlay

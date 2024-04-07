@@ -62,7 +62,7 @@ const Thrift = () => {
       <section className="bg-cream ">
         <div className="max-w-[522px] px-6 pt-12 lg:pl-20 lg:pt-28">
           <div className="p-container">
-            <p className="text-base lg:text-2xl">
+            <p className="text-xl lg:pb-2 lg:text-3xl">
               Navigating you through Thrift It
             </p>
             <p className="text-sm lg:text-xl">
@@ -156,7 +156,7 @@ const Thrift = () => {
                     compared to purchasing a new item. This highlights the
                     environmental benefit of choosing thrifted goods.
                   </p>
-                  <div className="absolute -left-6 top-0 pt-4">
+                  <div className="absolute -left-4 top-0 pt-4 lg:-left-7">
                     <img className="" src={Leaf} alt="leaf" />
                   </div>
                 </div>
@@ -239,7 +239,7 @@ const Thrift = () => {
 
           <div className="pt-32">
             <div className="px-6 lg:pl-20">
-              <p className="text-xl lg:text-2xl">User flow</p>
+              <p className="text-xl lg:text-3xl">User flow</p>
             </div>
             <div className="flex w-full justify-center pt-10 lg:pt-20">
               <img
@@ -251,7 +251,7 @@ const Thrift = () => {
           </div>
           <div className="pt-16 lg:pr-20 lg:pt-28">
             <div className="p-container sm:w-9/12 lg:ml-auto lg:w-[479px]">
-              <p className="text-base lg:pb-2 lg:text-2xl">
+              <p className="text-xl lg:pb-2 lg:text-3xl">
                 Enhancing Thrift-commerce
               </p>
               <p className="text-xs text-primaryGreen sm:text-base lg:text-xl">

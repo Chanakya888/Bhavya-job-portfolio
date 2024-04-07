@@ -8,6 +8,7 @@ const ProjectIntro = ({
   type2,
   noTopPadding,
   showMentor,
+  mentorName,
   children,
 }) => {
   return (
@@ -37,9 +38,7 @@ const ProjectIntro = ({
               {showMentor && (
                 <div className="lg:mt-[30px]">
                   <p className="text-xs lg:text-base">Mentor</p>
-                  <p className="text-base lg:text-xl">
-                    Prof. Paul Anthony George
-                  </p>
+                  <p className="text-base lg:text-xl">{mentorName}</p>
                 </div>
               )}
             </div>
