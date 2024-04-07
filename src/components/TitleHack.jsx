@@ -16,7 +16,6 @@ const TitleHack = (title) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log("title", title);
   if (title.title == "sindhol") {
     if (screenWidth >= 1024) {
       return (
@@ -54,6 +53,8 @@ const TitleHack = (title) => {
     } else {
       return <span>The Dysfunctional digital book</span>;
     }
+  } else if (title.title == "pincode") {
+    return <>Pincode</>;
   }
 };
 

@@ -41,7 +41,7 @@ const SelectedWork = () => {
               The Small Social Web
             </h2>
             <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
-              Speculative & Interaction design
+              Speculative Research & Design
             </h2>
           </div>
         </Link>
@@ -56,22 +56,20 @@ const SelectedWork = () => {
               From the Lambanis of Sindhol
             </h2>
             <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
-              Ethnographic study, Zine
+              Ethnographic Research, Zine
             </h2>
           </div>
         </Link>
         <Hrline />
-        <Link to={`/browser-project`} className="block">
+        <Link to={`/pincode`} className="block">
           <div
             className="grid grid-cols-1 space-y-0.5 lg:grid-cols-2 lg:space-y-0"
             onMouseEnter={() => handleHover(3)}
             onMouseLeave={() => handleLeave(3)}
           >
-            <h2 className="text-base text-primaryGreen lg:text-xl">
-              The Browser project
-            </h2>
+            <h2 className="text-base text-primaryGreen lg:text-xl">Pincode</h2>
             <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
-              Browser concept design, UI/UX
+              App, UX/UI Design
             </h2>
           </div>
         </Link>

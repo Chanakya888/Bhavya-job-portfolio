@@ -14,6 +14,12 @@ export default {
       "8xl": ["96px", "1"],
     },
     extend: {
+      fontSize: {
+        "3.5xl": "32px",
+      },
+      padding: {
+        18: "72px",
+      },
       gridTemplateColumns: {
         16: "repeat(16, minmax(0, 1fr))",
         15: "repeat(15, minmax(0, 1fr))",
@@ -34,8 +40,11 @@ export default {
         backgroundGray: "#FBFBFB",
         homePurple: "#CE72EF",
         homeYellow: "#FFF175",
+        cream: "#F3E7D2",
+        pincodeYellow: "#FFFDAA",
+        transparentPincodeYellow: "#F7F5A0",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

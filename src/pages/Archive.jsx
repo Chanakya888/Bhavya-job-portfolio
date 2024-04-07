@@ -1,78 +1,99 @@
 import React from "react";
 import ProjectIntro from "../components/ProjectIntro";
-import DigitalBook from "../assets/archive/digital-book.png";
+import DigitalBook from "../assets/archive/digital_book_new.png";
+import Trail from "../assets/archive/trail.png";
 import { Link } from "react-router-dom";
 import GreenLeftArrow from "../assets/info/green-left-arrow.svg";
 import Footer from "../components/Footer";
 
 const Archive = () => {
   return (
-    <div>
-      <ProjectIntro
-        title="digital-book"
-        year="2022"
-        type="Artist Book"
-        type2="workshop"
-      >
-        <p>
-          The Artist book is themed around the concept of a physical book that
-          evokes a sense of a dysfunctional digital book.
-        </p>
-        <p>
-          The tunnel-like shaped book essentially consists of a set of frames
-          that induce the idea of various stages in the passage of time. The
-          Artist book here tries to inculcate the idea of a short snippet taken
-          from Paul Virilio's - The Original Accident, which is also the text of
-          the book. Virilio interprets one of Aristotle's remarks on the
-          “passage of time”. He essentially throws light on how every substance
-          or being, in the end, eventually becomes a victim of the accident (a
-          catastrophe) in the cumulative course of time.
-        </p>
-        <p>
-          The idea that I wanted to take back from the text was the part with
-          "passage of time and unplanned events (ie -accidents/castastrophes)"
-          and how we essentially succumb to these unplanned events.
-        </p>
-        <p>
-          For my book, the broken screen or the arrangement of the frames in a
-          tunnel like body can perhaps be considered as the series of such
-          events that occur over the circulation of time.
-        </p>
-      </ProjectIntro>
-      <section className="relative w-full lg:flex lg:flex-row-reverse lg:justify-between">
-        <div className="flex w-full justify-end">
-          <img
-            className="w-full object-contain lg:relative lg:-top-60 lg:w-full"
-            src={DigitalBook}
-            alt=""
-          />
-        </div>
-        <div className="flex w-full justify-center pt-10 lg:justify-start lg:px-16 lg:pt-0">
-          <div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1rosvuMsEZAHOYmedEMezw6UtnrRvq9uy/view?usp=sharing"
-            >
-              <p className="underline">Link to the Book video</p>
-            </a>
+    <div className="border-1 m-1.5 mt-20 grid border border-primaryGreen lg:grid-cols-2 ">
+      <div className="grid-auto-rows grid">
+        <div>
+          <div className="p-3.5">
+            <p className="italic">The Dysfunctional Digital Book</p>
+            <p className="pt-1">
+              An artist book concept based on a snippet from -
+              <br />
+              The Original Accident by Paul Virelio.
+            </p>
+          </div>
+          <div className="h-px w-full bg-primaryGreen"></div>
+          <div className="flex w-full justify-center">
+            <img
+              className="max-h-[380px]"
+              src={DigitalBook}
+              alt="digital book image"
+            />
+          </div>
+          <div className="w-full">
+            <div className="flex justify-end">
+              <button className="rounded-tl-[24px] bg-primaryGreen p-3 text-xs text-white">
+                Checkout the Book video
+              </button>
+            </div>
+            <div className="h-px w-full bg-primaryGreen"></div>
           </div>
         </div>
-        <div className="absolute bottom-20 left-0 hidden lg:block">
-          <Link to={"/"}>
-            <div className="flex w-full items-center space-x-3 pb-6 pl-6 lg:pb-8 lg:pl-16 xl:pb-12 ">
-              <div>
-                <img src={GreenLeftArrow} alt="" />
-              </div>
-              <div>
-                <p className="text-green text-base lg:text-xl">Home</p>
-              </div>
-            </div>
-          </Link>
+        <div>
+          <div className="p-3.5">
+            <p className="italic">The Trail</p>
+            <p className="pt-1">Experiments with p5.js</p>
+          </div>
+          <div className="h-px w-full bg-primaryGreen"></div>
+          <div className="flex w-full items-center justify-center py-20">
+            <img src={Trail} alt="digital book image" />
+          </div>
         </div>
-      </section>
-      <div className="lg:hidden">
-        <Footer color="green" />
+      </div>
+      <div className="hidden border border-y-0 border-l border-r-0 border-primaryGreen lg:block">
+        <div className="flex min-h-[104px] items-center p-3.5 pl-5">
+          <p className="text-xl">Idea Pot</p>
+        </div>
+        <div className="h-px w-full bg-primaryGreen"></div>
+        <div className="grid w-full grid-cols-5 py-5 pl-5">
+          <div className="col-span-3 pr-3">
+            <p className="">
+              AR / Projected experimental art at home | at home experience
+              center
+            </p>
+          </div>
+          <div className="col-span-1">
+            <p>17.02</p>
+          </div>
+          <div className="col-span-1">
+            <p>10:00AM</p>
+          </div>
+        </div>
+        <div className="h-px w-full bg-primaryGreen"></div>
+        <div className="grid w-full grid-cols-5 py-5 pl-5">
+          <div className="col-span-3 pr-3">
+            <p className="">
+              Roger - A video to text (vice versa) + sign language application
+              for people with hard of hearing and speaking
+            </p>
+          </div>
+          <div className="col-span-1">
+            <p>18.02</p>
+          </div>
+          <div className="col-span-1">
+            <p>7:30PM</p>
+          </div>
+        </div>
+        <div className="h-px w-full bg-primaryGreen"></div>
+        <div className="grid w-full grid-cols-5 py-5 pl-5">
+          <div className="col-span-3 pr-3">
+            <p>A Notion like CMS interface</p>
+          </div>
+          <div className="col-span-1">
+            <p>18.02</p>
+          </div>
+          <div className="col-span-1">
+            <p>9:43PM</p>
+          </div>
+        </div>
+        <div className="h-px w-full bg-primaryGreen"></div>
       </div>
     </div>
   );

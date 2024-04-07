@@ -1,7 +1,15 @@
 import React from "react";
 import TitleHack from "./TitleHack";
 
-const ProjectIntro = ({ title, year, type, type2, children }) => {
+const ProjectIntro = ({
+  title,
+  year,
+  type,
+  type2,
+  noTopPadding,
+  showMentor,
+  children,
+}) => {
   return (
     <section className="px-6 pb-12 pt-[53px] lg:px-16">
       <div>
@@ -13,7 +21,11 @@ const ProjectIntro = ({ title, year, type, type2, children }) => {
             {children}
           </div>
           <div>
-            <div className="flex w-full space-x-6 pt-6 sm:justify-start lg:flex-col lg:space-x-0">
+            <div
+              className={`flex w-full space-x-6 ${
+                noTopPadding ? "" : "pt-6"
+              } sm:justify-start lg:flex-col lg:space-x-0`}
+            >
               <div>
                 <p className="text-xs lg:text-base">Year</p>
                 <p className="text-base lg:text-xl">{year}</p>
@@ -22,9 +34,17 @@ const ProjectIntro = ({ title, year, type, type2, children }) => {
                 <p className="text-xs lg:text-base">Type</p>
                 <p className="text-base lg:text-xl">{type}</p>
               </div>
+              {showMentor && (
+                <div className="lg:mt-[30px]">
+                  <p className="text-xs lg:text-base">Mentor</p>
+                  <p className="text-base lg:text-xl">
+                    Prof. Paul Anthony George
+                  </p>
+                </div>
+              )}
             </div>
             <div className="border-1 mt-[30px] hidden whitespace-nowrap rounded border border-primaryGreen p-1 lg:inline-flex">
-              <p className="text-xl uppercase">{type2}</p>
+              <p className="text-base uppercase">{type2}</p>
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@ import Info from "./pages/Info";
 import Archive from "./pages/Archive";
 import { HoverContextProvider } from "./contexts/HoverContext";
 import RestoreScroll from "./components/RestoreScroll";
+import Pincode from "./pages/Work/Pincode";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/small-web" element={<SmallWeb />} />
             <Route path="/sindhol" element={<Sindhol />} />
             <Route path="/browser-project" element={<BrowserProject />} />
+            <Route path="/pincode" element={<Pincode />} />
           </Routes>
         </HoverContextProvider>
       </NavBarContextProvider>

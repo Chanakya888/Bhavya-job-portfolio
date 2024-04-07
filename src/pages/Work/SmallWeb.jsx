@@ -19,30 +19,33 @@ const SmallWeb = () => {
       <ProjectIntro
         title="small-web"
         year="2023"
-        type="Speculative & Interaction design"
+        type="Speculative Research & Design"
         type2="CAPSTONE PROJECT"
       >
         <div>
           <p>
-            Public digital spaces are crucial for facilitating public discourse,
-            community engagement, and collective action. They provide a platform
-            for people to express themselves, seek support, learn from others,
-            and collaborate on initiatives addressing shared challenges or
-            promoting common interests.
+            Public digital spaces are essential for encouraging public
+            discourse, community engagement, and collective action, providing
+            individuals with a platform to express themselves, seek support,
+            learn from others, and collaborate on shared challenges or common
+            interests.
           </p>
           <p>
+            Inspired by{" "}
             <a
               className="underline"
               href="https://www.editorx.com/shaping-design/article/the-designers-creating-a-slower-kinder-future-for-social-media"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Editor X's article on Somewhere Good
+              Editor X's article on a small group of creatives dedicated to
+              designing a more compassionate digital future
             </a>
-            , a voice note-based social app for intimate community conversations
-            and local hangout spots, nudged my interest in exploring this
-            intervention that emphasized the need to shape our digital
-            environment just as we do with physical spaces.
+            , my curiosity led me to explore an intervention that emphasizes the
+            importance of shaping our digital environment, much like we do with
+            our physical spaces. The project involves a field guide with
+            speculative interactions, aiming to replicate the experiences of a
+            small social web in two distinct settings.
           </p>
         </div>
       </ProjectIntro>

@@ -13,19 +13,22 @@ body {
 @font-face {
   font-family: "Circular-std";
   src: url("http://fonts.cdnfonts.com/css/circular-std");
+  font-weight: 450;
 }
 
 h1 {
   font-family: "Circular Std", sans-serif;
   color: var(--primary-green);
+  font-weight: 450;
 }
 
 h3 {
   font-family: "Circular Std", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--primary-green);
-  font-weight: 400;
+  font-weight: 450;
 }
+
 p,
 li {
   font-family: Arial;
@@ -62,6 +65,12 @@ li {
   font-size: 16px;
   line-height: 14px;
 }
+
+.make-all-p p {
+  font-size: 1rem; /* 16px */
+  line-height: 20px; /* 24px */
+}
+
 @media (min-width: 1024px) {
   .calc-height {
     height: calc(100vh - 70px);
@@ -70,9 +79,14 @@ li {
   li {
     font-size: 20px;
     line-height: 24px;
+    font-weight: lighter;
   }
   .super-small {
     font-size: 12px;
+  }
+  .make-all-p p {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

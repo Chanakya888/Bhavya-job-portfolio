@@ -3,9 +3,11 @@ import LeftArrow from "../assets/home-arrow.svg";
 import GreenLeftArrow from "../assets/info/green-left-arrow.svg";
 import { Link } from "react-router-dom";
 
-const Footer = ({ color = "white", nextProject }) => {
+const Footer = ({ color = "white", nextProject, bgColor }) => {
   return (
-    <div className="flex w-full justify-between px-6 pb-6 pt-14 lg:px-8 lg:pb-8 lg:pt-16 xl:px-12 xl:pb-12 xl:pt-20">
+    <div
+      className={`flex w-full justify-between px-6 pb-6 pt-14 lg:px-8 lg:pb-8 lg:pt-16 xl:px-12 xl:pb-12 xl:pt-20 ${bgColor}`}
+    >
       <Link to={"/"}>
         <div className="flex w-full items-center space-x-3 ">
           <div>
