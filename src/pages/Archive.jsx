@@ -12,7 +12,7 @@ const Archive = () => {
       <div className="grid-auto-rows grid">
         <div>
           <div className="p-3.5">
-            <p className="italic">The Dysfunctional Digital Book</p>
+            <p className="">The Dysfunctional Digital Book</p>
             <p className="pt-1">
               An artist book concept based on a snippet from -
               <br />
@@ -29,7 +29,7 @@ const Archive = () => {
           </div>
           <div className="w-full">
             <div className="flex justify-end">
-              <button className="rounded-tl-[24px] bg-primaryGreen p-3 text-xs text-white">
+              <button className=" bg-primaryGreen p-3 text-xs text-white">
                 Checkout the Book video
               </button>
             </div>
@@ -38,7 +38,7 @@ const Archive = () => {
         </div>
         <div>
           <div className="p-3.5">
-            <p className="italic">The Trail</p>
+            <p className="">The Trail</p>
             <p className="pt-1">Experiments with p5.js</p>
           </div>
           <div className="h-px w-full bg-primaryGreen"></div>
