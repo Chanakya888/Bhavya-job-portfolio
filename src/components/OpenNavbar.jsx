@@ -89,10 +89,10 @@ const OpenNavbar = () => {
             </div>
           </Link>
           <Hrline />
-          <Link to={`/browser-project`} onClick={handleCloseNav}>
+          <Link to={`/pincode`} onClick={handleCloseNav}>
             <div className="w-full py-3">
-              <p className="text-base">The Browser project</p>
-              <p>Browser concept design, UI/UX</p>
+              <p className="text-base">Pincode</p>
+              <p>App, UX/UI Design</p>
             </div>
           </Link>
           <Hrline />
