@@ -54,7 +54,7 @@ const Pincode = () => {
       </div>
       <section className="bg-pincodeYellow">
         <div className="p-container px-6 pt-10 lg:px-12 lg:pt-16 xl:px-18 xl:pt-20">
-          <p className="text-xl xl:text-3.5xl">Why did I create the Pincode?</p>
+          <p className="text-xl xl:text-3.5xl">Why did I create Pincode?</p>
           <div className="pt-2 lg:flex lg:flex-row-reverse lg:justify-end lg:pt-6">
             <div className="lg:pl-28">
               <p className="text-base lg:w-[317px] lg:text-xl">
