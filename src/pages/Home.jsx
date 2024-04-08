@@ -35,8 +35,8 @@ const Home = () => {
           <p className="w-5/6 text-base text-primaryGreen lg:w-[480px] lg:text-xl">
             Hello, I'm Bhavya, a Human-Computer Interaction Researcher and
             Designer based in Hyderabad, India. I am actively seeking a
-            full-time position as an Interaction Designer or Researcher, whether
-            remote or located in Hyderabad or Bangalore.
+            full-time position as a UX Designer/ Researcher, open to relocation
+            and remote opportunities.
           </p>
           <SelectedWork />
         </div>
