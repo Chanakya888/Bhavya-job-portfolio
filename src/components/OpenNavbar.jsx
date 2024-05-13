@@ -4,6 +4,8 @@ import Close from "../assets/close.svg";
 import { Link } from "react-router-dom";
 import { NavbarContext } from "../contexts/NavBarContext";
 import Resume from "../assets/Resume.pdf";
+import Contact from "./Contact";
+import SelectedWork from "./SelectedWork";
 
 const OpenNavbar = () => {
   const { setToggleNav } = useContext(NavbarContext);
@@ -12,17 +14,14 @@ const OpenNavbar = () => {
     setToggleNav(false);
   }
   return (
-    <div className="fixed left-0 top-0 z-10 h-screen w-screen bg-backgroundGray px-6 pt-7">
-      <div className="flex justify-between pb-10">
+    <div className="h-svh fixed left-0 top-0 z-10 w-screen bg-backgroundGray px-6 ">
+      <div className="h-[44px] pt-6">
         <button onClick={handleCloseNav}>
           <img className="w-[30px] object-contain" src={Close} alt="" />
         </button>
-        <div>
-          <p className="text-xs">@bhavyeahgupta</p>
-        </div>
       </div>
-      <div className="flex h-[calc(100vh-100px)]  flex-col justify-between">
-        <section>
+      <div className="calc-height flex flex-col justify-between pt-10">
+        <section className="h-[270px]">
           <Link to={`/`} onClick={handleCloseNav}>
             <div>
               <Hrline />
@@ -62,41 +61,12 @@ const OpenNavbar = () => {
             </div>
           </Link>
         </section>
-
-        <section className="pb-10">
-          <div className="space-y-3">
-            <p className="text-xs uppercase">Selected work</p>
-            <Hrline />
-          </div>
-          <Link to={`/thrift`} onClick={handleCloseNav}>
-            <div className="w-full py-3">
-              <p className="text-base">Thrift it</p>
-              <p>App concept, UX/UI design</p>
-            </div>
-          </Link>
-          <Hrline />
-          <Link to={`/small-web`} onClick={handleCloseNav}>
-            <div className="w-full py-3">
-              <p className="text-base">Small social web</p>
-              <p>Speculative and Interaction design</p>
-            </div>
-          </Link>
-          <Hrline />
-          <Link to={`/sindhol`} onClick={handleCloseNav}>
-            <div className="w-full py-3">
-              <p className="text-base">From the Lambanins of Sindhol </p>
-              <p>Ethnographic study, Zine</p>
-            </div>
-          </Link>
-          <Hrline />
-          <Link to={`/pincode`} onClick={handleCloseNav}>
-            <div className="w-full py-3">
-              <p className="text-base">Pincode</p>
-              <p>App, UX/UI Design</p>
-            </div>
-          </Link>
-          <Hrline />
+        <section>
+          <SelectedWork />
         </section>
+        <div className="pb-7">
+          <Contact />
+        </div>
       </div>
     </div>
   );

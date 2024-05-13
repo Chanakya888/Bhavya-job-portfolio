@@ -7,14 +7,14 @@ const SelectedWork = () => {
   const { handleHover, handleLeave } = useContext(HoverContext);
 
   return (
-    <div className="pb-10 lg:pb-0">
+    <div className="lg:pb-0">
       <div className="grid grid-cols-2 pb-3">
         <h2 className="text-xs uppercase text-primaryGreen">selected work</h2>
         <h2 className="hidden text-xs uppercase text-primaryGreen lg:block">
           type
         </h2>
       </div>
-      <div className="space-y-5">
+      <div className="space-y-3 lg:space-y-5">
         <Hrline />
         <Link to={`/thrift`} className="block">
           <div
@@ -41,7 +41,7 @@ const SelectedWork = () => {
               The Small Social Web
             </h2>
             <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
-              Speculative Research & Design
+              Speculative and Interaction design
             </h2>
           </div>
         </Link>
@@ -56,7 +56,7 @@ const SelectedWork = () => {
               From the Lambanis of Sindhol
             </h2>
             <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
-              Ethnographic Research, Zine
+              Ethnographic study, Zine
             </h2>
           </div>
         </Link>
@@ -69,7 +69,7 @@ const SelectedWork = () => {
           >
             <h2 className="text-base text-primaryGreen lg:text-xl">Pincode</h2>
             <h2 className="text-xs text-primaryGreen lg:block lg:text-xl">
-              App, UX/UI Design
+              App, UX/UI
             </h2>
           </div>
         </Link>

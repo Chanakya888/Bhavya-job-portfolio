@@ -37,7 +37,7 @@ export default {
         secondaryBlue: "#0800F3",
         secondaryPurple: "#CF72EC",
         browserProjectBlue: "#487AFB",
-        backgroundGray: "#FBFBFB",
+        backgroundGray: "#F1F1F1",
         homePurple: "#CE72EF",
         homeYellow: "#FFF175",
         cream: "#F3E7D2",

@@ -30,16 +30,6 @@ const Navbar = () => {
           <span className="h-0.5 w-8 rounded-full bg-primaryGreen"></span>
           <span className="h-0.5 w-8 rounded-full bg-primaryGreen"></span>
         </div>
-        <div>
-          <a
-            href="https://instagram.com/bhavyeahgupta?igshid=MjEwN2IyYWYwYw=="
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline"
-          >
-            <p>@bhavyeahgupta</p>
-          </a>
-        </div>
       </div>
       <div className="hidden w-full lg:grid lg:grid-cols-14 lg:px-6 lg:pt-10">
         <Link to={`/`} className="inline">
