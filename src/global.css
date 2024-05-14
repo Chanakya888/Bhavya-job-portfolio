@@ -59,7 +59,7 @@ li {
 }
 
 .calc-height {
-  height: calc(100svh - 44px);
+  height: calc(100dvh - 44px);
 }
 .project-intro-mobile {
   font-size: 16px;
@@ -73,7 +73,7 @@ li {
 
 @media (min-width: 1024px) {
   .calc-height {
-    height: calc(100svh - 70px);
+    height: calc(100dvh - 70px);
   }
   p,
   li {
