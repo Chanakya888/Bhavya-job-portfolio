@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <div className="calc-height relative px-6  lg:grid lg:grid-cols-14 lg:pb-10">
-        <div className="hidden h-full items-end lg:flex lg:flex-row lg:pb-4 lg:pl-0 xl:pl-10">
+        <div className="hidden h-full items-end lg:flex lg:flex-row lg:pl-0 xl:pl-10">
           <Contact />
         </div>
         <div className="flex h-full flex-col flex-wrap justify-between pt-10 lg:col-start-6 lg:col-end-14 lg:pt-10">

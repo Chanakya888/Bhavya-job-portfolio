@@ -14,7 +14,7 @@ const OpenNavbar = () => {
     setToggleNav(false);
   }
   return (
-    <div className="h-svh fixed left-0 top-0 z-10 w-screen bg-backgroundGray px-6 ">
+    <div className="fixed left-0 top-0 z-10 w-screen bg-backgroundGray px-6 ">
       <div className="h-[44px] pt-6">
         <button onClick={handleCloseNav}>
           <img className="w-[30px] object-contain" src={Close} alt="" />
@@ -25,7 +25,7 @@ const OpenNavbar = () => {
           <Link to={`/`} onClick={handleCloseNav}>
             <div>
               <Hrline />
-              <div className="h-full w-full pb-6 pt-5">
+              <div className="h-full w-full py-5">
                 <p className="text-base">Home</p>
               </div>
               <Hrline />
@@ -33,14 +33,14 @@ const OpenNavbar = () => {
           </Link>
           <Link to={`info`} onClick={handleCloseNav}>
             <div>
-              <div className="h-full w-full pb-6 pt-5">
+              <div className="h-full w-full py-5">
                 <p className="text-base">Info.</p>
               </div>
               <Hrline />
             </div>
           </Link>
           <div>
-            <div className="h-full w-full pb-6 pt-5">
+            <div className="h-full w-full py-5">
               <a
                 href={Resume}
                 target="_blank"
@@ -54,7 +54,7 @@ const OpenNavbar = () => {
           </div>
           <Link to={`/archive`} onClick={handleCloseNav}>
             <div>
-              <div className="h-full w-full pb-6 pt-5">
+              <div className="h-full w-full py-5">
                 <p className="text-base">Archive</p>
               </div>
               <Hrline />
