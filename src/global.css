@@ -59,7 +59,7 @@ li {
 }
 
 .calc-height {
-  height: calc(100dvh - env(safe-area-inset-bottom) - 44px);
+  height: calc(100dvh);
   overflow: hidden;
 }
 .project-intro-mobile {
