@@ -8,94 +8,156 @@ import Footer from "../components/Footer";
 
 const Archive = () => {
   return (
-    <div className="border-1 m-1.5 mt-20 grid border border-primaryGreen lg:grid-cols-2 ">
-      <div className="grid-auto-rows grid">
-        <div>
-          <div className="p-3.5">
-            <p className="">The Dysfunctional Digital Book</p>
-            <p className="pt-1">
-              An artist book concept based on a snippet from -
-              <br />
-              The Original Accident by Paul Virelio.
+    <>
+      <div className="px-6 pt-12 lg:grid lg:grid-cols-14">
+        <div className="lg:hidden">
+          <h3 className="text-xl font-normal">Archive</h3>
+        </div>
+        <div className="mt-3 lg:col-start-1 lg:col-end-5 lg:mt-0 lg:flex lg:flex-col lg:justify-between xl:ml-10">
+          <div className="p-container">
+            <p className="text-base lg:text-xl">
+              I’d like to think of this space as my digital brain where i get to
+              share my thoughts, ideas or previous projects with people on the
+              Internet. As a designer I am constantly iterating, and I believe
+              this space will help me keep track.
+            </p>
+            <p className="text-base lg:text-xl">
+              This space serves as a place to return to for inspiration or
+              ideas.
             </p>
           </div>
-          <div className="h-px w-full bg-primaryGreen"></div>
-          <div className="flex w-full justify-center">
-            <img
-              className="max-h-[380px]"
-              src={DigitalBook}
-              alt="digital book image"
-            />
+          <div className="hidden lg:col-start-1 lg:block">
+            <Link to="/">
+              <div className="flex space-x-3">
+                <img src={GreenLeftArrow} alt="" />
+                <p className="tex-green">Home</p>
+              </div>
+            </Link>
           </div>
-          <div className="w-full">
-            <div className="flex justify-end">
-              <button className=" bg-primaryGreen p-3 text-xs text-white">
-                Checkout the Book video
-              </button>
+        </div>
+        <div className="mt-10 lg:col-start-6 lg:col-end-14 lg:mt-0">
+          <div className="sticky top-0">
+            <div className="border-[1px] border-solid border-primaryGreen bg-[#F1F1F1]">
+              <div className="lg:grid lg:grid-cols-10">
+                <div className="m-1 bg-[#DCEEE4] lg:col-start-1 lg:col-end-11 lg:m-2">
+                  <p className="py-2.5 pl-2.5 text-base lg:text-xl">
+                    Thoughts/ Ideas/ Archive
+                  </p>
+                </div>
+
+                <div className="hidden lg:col-start-8 lg:col-end-11">
+                  <div className="h-full w-px bg-primaryGreen"></div>
+                  <div className="m-2 w-full bg-[#DCEEE4]">
+                    <p className="py-2.5 pl-2.5 text-base lg:text-xl">
+                      Time stamps
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="h-px w-full bg-primaryGreen"></div>
           </div>
-        </div>
-        <div>
-          <div className="p-3.5">
-            <p className="">The Trail</p>
-            <p className="pt-1">Experiments with p5.js</p>
-          </div>
-          <div className="h-px w-full bg-primaryGreen"></div>
-          <div className="flex w-full items-center justify-center py-20">
-            <img src={Trail} alt="digital book image" />
+          <div className="border-x-[1px] border-b-[1px] border-solid border-primaryGreen">
+            <div className="p-4 lg:grid lg:grid-cols-10">
+              <div className="lg:col-start-1 lg:col-end-8">
+                <p className="text-base lg:text-xl">
+                  AR / Projected experimental art at home | At home experience
+                  center
+                </p>
+              </div>
+              <div className="hidden lg:col-start-8 lg:col-end-11">
+                <div className="h-full w-px bg-primaryGreen"></div>
+                <p className="text-base lg:text-xl">17 - 02 - 2024 22:24</p>
+              </div>
+              <div></div>
+            </div>
+            <div className="h-px bg-primaryGreen"></div>
+            <div className="p-4">
+              <p className="text-base lg:text-xl">
+                Roger - A video to text (vice versa) + sign language application
+                for people with hard of hearing and speaking
+              </p>
+            </div>
+            <div className="h-px bg-primaryGreen"></div>
+            <div className="p-4">
+              <p className="text-base lg:text-xl">
+                A Notion like CMS interface
+              </p>
+            </div>
+            <div className="h-px bg-primaryGreen"></div>
+            <div className="p-4">
+              <p className="text-base lg:text-xl">Pinterest for places</p>
+            </div>
+            <div className="h-px bg-primaryGreen"></div>
+            <div className="p-4">
+              <p className="text-base lg:text-xl">
+                A p5 interactive interface to tweak textile patterns
+              </p>
+            </div>
+            <div className="h-px bg-primaryGreen"></div>
+            <div className="p-container p-4">
+              <p className="text-base lg:text-xl">
+                As part of a workshop during my time at my design school, I
+                curated an artist book. The workshop aimed to explore the book
+                beyond its traditional codex form, encouraging experimentation
+                with its shape, structure, medium, materiality and physicality.
+                Usability was set aside in favor of pure experimentation and
+                exploration which really opened avenues to making without the
+                idea of user-centricity. The book is is based on a snippet from
+                - The Original Accident by Paul Virelio - The title: A
+                Dysfunctional Digital book.
+              </p>
+              <p className="text-base lg:text-xl">
+                The book, shaped like a tunnel, is comprised of frames that
+                symbolize different stages in the passage of time. Drawing from
+                Paul Virilio's ‘The Original Accident,’ Virilio interprets one
+                of Aristotle's remarks on the ‘passage of time’ illuminating the
+                concept that every entity ultimately succumbs to accidents or
+                catastrophes as time progresses
+              </p>
+              <p className="text-base lg:text-xl">
+                In my book I interpreted technology through the passage of time
+                (the tunnel shape) in my book, the fractured screen or the
+                arrangement of frames in a tunnel-like structure can be
+                interpreted as a sequence of such events unfolding over time.
+              </p>
+              <p className=" text-base lg:text-xl">View it here:</p>
+              <p className="break-words text-base lg:text-xl">
+                <a href="https://drive.google.com/file/d/1rosvuMsEZAHOYmedEMezw6UtnrRvq9uy/view">
+                  https://drive.google.com/file/d/1rosvuMsEZAHOYmedEMezw6UtnrRvq9uy/view
+                </a>
+              </p>
+            </div>
+            <div className="h-px bg-primaryGreen"></div>
+            <div className="p-container p-4">
+              <p className="text-base lg:text-xl">
+                The current freelance market lacks a centralized platform that
+                enables freelancers to establish formal contracts with clients
+                and validate their professional credentials, akin to the
+                structured certification approach seen in platforms like
+                Coursera for Google Certification.
+              </p>
+              <p className="text-base lg:text-xl">
+                This absence of a dedicated solution results in fragmented
+                engagements and challenges in showcasing freelance work in a
+                credible and organized manner. Freelancers need a platform that
+                streamlines contract creation and maintenance while enhancing
+                the visibility and legitimacy of their services to potential
+                clients.
+              </p>
+              <p className="text-base lg:text-xl">
+                Furthermore, there will be a curated pool of freelancers
+                available for clients to browse and engage with, curating a
+                community within the platform.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="hidden border border-y-0 border-l border-r-0 border-primaryGreen lg:block">
-        <div className="flex min-h-[104px] items-center p-3.5 pl-5">
-          <p className="text-xl">Idea Pot</p>
-        </div>
-        <div className="h-px w-full bg-primaryGreen"></div>
-        <div className="grid w-full grid-cols-5 py-5 pl-5">
-          <div className="col-span-3 pr-3">
-            <p className="">
-              AR / Projected experimental art at home | at home experience
-              center
-            </p>
-          </div>
-          <div className="col-span-1">
-            <p>17.02</p>
-          </div>
-          <div className="col-span-1">
-            <p>10:00AM</p>
-          </div>
-        </div>
-        <div className="h-px w-full bg-primaryGreen"></div>
-        <div className="grid w-full grid-cols-5 py-5 pl-5">
-          <div className="col-span-3 pr-3">
-            <p className="">
-              Roger - A video to text (vice versa) + sign language application
-              for people with hard of hearing and speaking
-            </p>
-          </div>
-          <div className="col-span-1">
-            <p>18.02</p>
-          </div>
-          <div className="col-span-1">
-            <p>7:30PM</p>
-          </div>
-        </div>
-        <div className="h-px w-full bg-primaryGreen"></div>
-        <div className="grid w-full grid-cols-5 py-5 pl-5">
-          <div className="col-span-3 pr-3">
-            <p>A Notion like CMS interface</p>
-          </div>
-          <div className="col-span-1">
-            <p>18.02</p>
-          </div>
-          <div className="col-span-1">
-            <p>9:43PM</p>
-          </div>
-        </div>
-        <div className="h-px w-full bg-primaryGreen"></div>
+      <div className="lg:hidden">
+        <Footer color="green" />
       </div>
-    </div>
+      <div className="hidden h-[90px] lg:block"></div>
+    </>
   );
 };
 

@@ -15,7 +15,7 @@ import Pincode from "./pages/Work/Pincode";
 
 const App = () => {
   return (
-    <div className="h-dvh w-screen bg-backgroundGray">
+    <div className="h-full w-screen bg-backgroundGray">
       <RestoreScroll />
       <NavBarContextProvider>
         <HoverContextProvider>
