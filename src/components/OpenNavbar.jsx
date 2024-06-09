@@ -62,7 +62,7 @@ const OpenNavbar = () => {
           </Link>
         </section>
         <section>
-          <SelectedWork />
+          <SelectedWork closeNavbar={handleCloseNav} />
         </section>
         <div className="pb-7">
           <Contact />

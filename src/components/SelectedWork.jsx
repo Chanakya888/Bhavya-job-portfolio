@@ -3,9 +3,14 @@ import Hrline from "./Hrline";
 import { Link } from "react-router-dom";
 import { HoverContext } from "../contexts/HoverContext";
 
-const SelectedWork = () => {
+const SelectedWork = ({ closeNavbar }) => {
   const { handleHover, handleLeave } = useContext(HoverContext);
 
+  const closeNav = () => {
+    if (closeNavbar) {
+      closeNavbar();
+    }
+  };
   return (
     <div className="lg:pb-0">
       <div className="grid grid-cols-2 pb-3">
@@ -16,7 +21,7 @@ const SelectedWork = () => {
       </div>
       <div className="space-y-3 lg:space-y-5">
         <Hrline />
-        <Link to={`/thrift`} className="block">
+        <Link to={`/thrift`} className="block" onClick={closeNav}>
           <div
             className="grid grid-cols-1 space-y-0.5 lg:grid-cols-2 lg:space-y-0"
             onMouseEnter={() => handleHover(0)}
@@ -31,7 +36,7 @@ const SelectedWork = () => {
           </div>
         </Link>
         <Hrline />
-        <Link to={`/small-web`} className="block">
+        <Link to={`/small-web`} className="block" onClick={closeNav}>
           <div
             className="grid grid-cols-1 space-y-0.5 lg:grid-cols-2 lg:space-y-0"
             onMouseEnter={() => handleHover(1)}
@@ -46,7 +51,7 @@ const SelectedWork = () => {
           </div>
         </Link>
         <Hrline />
-        <Link to={`/sindhol`} className="block">
+        <Link to={`/sindhol`} className="block" onClick={closeNav}>
           <div
             className="grid grid-cols-1 space-y-0.5 lg:grid-cols-2 lg:space-y-0"
             onMouseEnter={() => handleHover(2)}
@@ -61,7 +66,7 @@ const SelectedWork = () => {
           </div>
         </Link>
         <Hrline />
-        <Link to={`/pincode`} className="block">
+        <Link to={`/pincode`} className="block" onClick={closeNav}>
           <div
             className="grid grid-cols-1 space-y-0.5 lg:grid-cols-2 lg:space-y-0"
             onMouseEnter={() => handleHover(3)}
